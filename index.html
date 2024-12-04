@@ -7,17 +7,19 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     let currentDate = new Date();
+    let selectedCanteenId = 32; // Voreingestellt: Mensa Johanna
 
     // Format date as YYYY-MM-DD
     function formatDate(date) {
       return date.toISOString().split("T")[0];
     }
 
-    // Get dates for the current week
+    // Get dates for the current week (Montag bis Freitag, ohne Wochenende)
     function getWeekDates() {
       const dates = [];
       const startDate = new Date(currentDate);
-      for (let i = 0; i < 7; i++) {
+      startDate.setDate(startDate.getDate() - startDate.getDay() + 1); // Montag der aktuellen Woche
+      for (let i = 0; i < 5; i++) { // Nur Montag bis Freitag
         const date = new Date(startDate);
         date.setDate(date.getDate() + i);
         dates.push(formatDate(date));
@@ -25,14 +27,47 @@
       return dates;
     }
 
-    // Fetch meals for a given day from API
-    async function fetchMeals(date) {
-      const url = `https://api.studentenwerk-dresden.de/openmensa/v2/canteens/32/days/${date}/meals`;
+    // Fetch list of canteens
+    async function fetchCanteens() {
+      const url = `https://api.studentenwerk-dresden.de/openmensa/v2/canteens`;
       const response = await fetch(url);
       if (response.ok) {
         return response.json();
       } else {
-        console.error("Error fetching data:", response.status);
+        console.error("Error fetching canteens:", response.status);
+        return [];
+      }
+    }
+
+    // Populate the dropdown with canteens
+    async function populateCanteens() {
+      const canteens = await fetchCanteens();
+      const dropdown = document.getElementById("canteenDropdown");
+
+      dropdown.innerHTML = ""; // Clear existing options
+      canteens.forEach((canteen) => {
+        const option = document.createElement("option");
+        option.value = canteen.id;
+        option.textContent = canteen.name;
+        if (canteen.id === 32) {
+          option.selected = true; // Voreinstellung: Mensa Johanna
+        }
+        dropdown.appendChild(option);
+      });
+
+      // Set default selection
+      renderWeek();
+    }
+
+    // Fetch meals for a given day and canteen
+    async function fetchMeals(date) {
+      if (!selectedCanteenId) return [];
+      const url = `https://api.studentenwerk-dresden.de/openmensa/v2/canteens/${selectedCanteenId}/days/${date}/meals`;
+      const response = await fetch(url);
+      if (response.ok) {
+        return response.json();
+      } else {
+        console.error("Error fetching meals:", response.status);
         return [];
       }
     }
@@ -96,15 +131,21 @@
       }
     }
 
+    // Change selected canteen
+    function changeCanteen(event) {
+      selectedCanteenId = parseInt(event.target.value, 10);
+      renderWeek();
+    }
+
     // Navigate between weeks
-    function changeWeek(days) {
-      currentDate.setDate(currentDate.getDate() + days * 7);
+    function changeWeek(weeks) {
+      currentDate.setDate(currentDate.getDate() + weeks * 7);
       renderWeek();
     }
 
     // Initialize page
     document.addEventListener("DOMContentLoaded", () => {
-      renderWeek();
+      populateCanteens();
     });
   </script>
 </head>
@@ -113,7 +154,12 @@
     <!-- Header -->
     <header class="text-center mb-8">
       <h1 class="text-4xl font-extrabold text-gray-800">Meal Planner</h1>
-      <button class="bg-green-100 text-green-700 text-sm py-1 px-3 rounded-full mt-2 hover:bg-green-200">Chef's Choice</button>
+      <div class="mt-4">
+        <label for="canteenDropdown" class="block text-gray-700 font-bold mb-2">Wähle eine Mensa:</label>
+        <select id="canteenDropdown" class="w-full md:w-1/2 bg-white border border-gray-300 rounded-lg px-4 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500" onchange="changeCanteen(event)">
+          <!-- Options will be populated dynamically -->
+        </select>
+      </div>
       <div class="flex justify-center items-center space-x-4 mt-4">
         <button onclick="changeWeek(-1)" class="text-gray-500 hover:text-gray-700">&lt; Vorherige Woche</button>
         <button onclick="changeWeek(1)" class="text-gray-500 hover:text-gray-700">Nächste Woche &gt;</button>
