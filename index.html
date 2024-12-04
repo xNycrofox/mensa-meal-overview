@@ -124,79 +124,48 @@
 
     // Funktion zum Bewegen des Carousels
     function moveCarousel(carousel, direction) {
+      const itemWidth = carousel.children[0].offsetWidth + 24; // Breite + Gap
       const totalItems = carousel.children.length;
       const visibleItems = 3;
-      const itemWidth = carousel.children[0].offsetWidth + 24; // Breite + Gap (1.5rem = 24px)
-      const maxTranslate = -(totalItems - visibleItems) * (itemWidth);
       let currentTranslate = getCurrentTranslate(carousel);
 
-      const prevButton = carousel.parentElement.querySelector('.carousel-btn.left');
-      const nextButton = carousel.parentElement.querySelector('.carousel-btn.right');
-
       if (direction === 'next') {
-        // Wenn das nächste Verschieben über das Ende hinausgeht, setze auf Anfang
-        if (Math.abs(currentTranslate) + visibleItems * itemWidth >= totalItems * itemWidth) {
-          carousel.style.transition = "transform 0.5s ease-in-out";
-          carousel.style.transform = `translateX(0px)`;
-          setTimeout(() => {
-            carousel.style.transition = "none";
-            currentTranslate = 0;
-            updateButtons(carousel, currentTranslate, maxTranslate, prevButton, nextButton);
-          }, 500);
-        } else {
-          // Normales Verschieben
-          carousel.style.transition = "transform 0.5s ease-in-out";
-          carousel.style.transform = `translateX(${currentTranslate - itemWidth}px)`;
-          currentTranslate -= itemWidth;
-          updateButtons(carousel, currentTranslate, maxTranslate, prevButton, nextButton);
-        }
+        carousel.style.transition = "transform 0.5s ease-in-out";
+        currentTranslate -= itemWidth;
+        carousel.style.transform = `translateX(${currentTranslate}px)`;
       } else if (direction === 'prev') {
-        // Wenn das vorherige Verschieben über den Anfang hinausgeht, setze auf Ende
-        if (currentTranslate === 0) {
-          carousel.style.transition = "transform 0.5s ease-in-out";
-          carousel.style.transform = `translateX(-${(totalItems - visibleItems) * itemWidth}px)`;
-          setTimeout(() => {
-            carousel.style.transition = "none";
-            currentTranslate = -(totalItems - visibleItems) * itemWidth;
-            updateButtons(carousel, currentTranslate, maxTranslate, prevButton, nextButton);
-          }, 500);
-        } else {
-          // Normales Verschieben
-          carousel.style.transition = "transform 0.5s ease-in-out";
-          carousel.style.transform = `translateX(${currentTranslate + itemWidth}px)`;
-          currentTranslate += itemWidth;
-          updateButtons(carousel, currentTranslate, maxTranslate, prevButton, nextButton);
-        }
+        carousel.style.transition = "transform 0.5s ease-in-out";
+        currentTranslate += itemWidth;
+        carousel.style.transform = `translateX(${currentTranslate}px)`;
       }
 
-      // Nach dem ersten Vorwärtsklick soll der linke Pfeil sichtbar sein
-      if (direction === 'next') {
-        prevButton.style.display = 'flex';
-      }
+      // Event Listener für Übergangseffekt
+      carousel.addEventListener('transitionend', function handler() {
+        const maxTranslate = -((totalItems - visibleItems) * itemWidth);
+        const minTranslate = -visibleItems * itemWidth;
+
+        if (currentTranslate <= maxTranslate) {
+          // Am Ende angekommen, springe zum Anfang
+          carousel.style.transition = "none";
+          currentTranslate = minTranslate;
+          carousel.style.transform = `translateX(${currentTranslate}px)`;
+        } else if (currentTranslate >= 0) {
+          // Am Anfang angekommen, springe zum Ende
+          carousel.style.transition = "none";
+          currentTranslate = -((totalItems - 2 * visibleItems) * itemWidth);
+          carousel.style.transform = `translateX(${currentTranslate}px)`;
+        }
+
+        // Entferne den Listener, um Mehrfachaufrufe zu vermeiden
+        carousel.removeEventListener('transitionend', handler);
+      });
     }
 
     // Hilfsfunktion zur Ermittlung des aktuellen TranslateX-Werts
     function getCurrentTranslate(element) {
       const style = window.getComputedStyle(element);
-      const matrix = new WebKitCSSMatrix(style.transform);
+      const matrix = new WebKitCSSMatrix(style.transform || 'none');
       return matrix.m41;
-    }
-
-    // Aktualisieren des Button-Status
-    function updateButtons(carousel, currentTranslate, maxTranslate, prevButton, nextButton) {
-      // Linker Button wird nur angezeigt, wenn mindestens einmal nach rechts geklickt wurde
-      if (currentTranslate < 0) {
-        prevButton.style.display = 'flex';
-      } else {
-        prevButton.style.display = 'none';
-      }
-
-      // Rechter Button wird nur angezeigt, wenn mehr als 3 Items vorhanden sind
-      if (carousel.children.length > 3) {
-        nextButton.style.display = 'flex';
-      } else {
-        nextButton.style.display = 'none';
-      }
     }
 
     // Rendern der Mahlzeiten für einen bestimmten Tag
@@ -223,12 +192,34 @@
 
         const carousel = document.createElement("div");
         carousel.classList.add("carousel", "w-full");
-        carousel.style.transform = `translateX(0px)`;
 
         meals.forEach((meal) => {
           const card = createMealCard(meal);
           carousel.appendChild(card);
         });
+
+        const visibleItems = 3; // Anzahl der gleichzeitig sichtbaren Elemente
+        const itemWidth = carousel.children[0].offsetWidth + 24; // Breite + Gap
+
+        // Warten, bis die Bilder geladen sind, um die korrekte Breite zu erhalten
+        await new Promise((resolve) => setTimeout(resolve, 0));
+
+        // Klone die ersten Elemente und füge sie ans Ende
+        for (let i = 0; i < visibleItems; i++) {
+          const clone = carousel.children[i].cloneNode(true);
+          clone.classList.add('clone');
+          carousel.appendChild(clone);
+        }
+
+        // Klone die letzten Elemente und füge sie an den Anfang
+        for (let i = meals.length - 1; i >= meals.length - visibleItems; i--) {
+          const clone = carousel.children[i].cloneNode(true);
+          clone.classList.add('clone');
+          carousel.insertBefore(clone, carousel.firstChild);
+        }
+
+        // Setze die Anfangsposition des Carousels
+        carousel.style.transform = `translateX(-${visibleItems * itemWidth}px)`;
 
         carouselWrapper.appendChild(carousel);
 
@@ -236,7 +227,6 @@
         const prevButton = document.createElement("button");
         prevButton.innerHTML = "&#x276E;";
         prevButton.classList.add("carousel-btn", "left");
-        prevButton.style.display = 'none'; // Anfangs nicht anzeigen
         prevButton.setAttribute('aria-label', 'Vorherige Gerichte');
         prevButton.addEventListener("click", () => {
           moveCarousel(carousel, 'prev');
@@ -254,8 +244,9 @@
         carouselWrapper.appendChild(nextButton);
         dayContainer.appendChild(carouselWrapper);
 
-        // Initial Button Status Aktualisieren
-        updateButtons(carousel, getCurrentTranslate(carousel), -(meals.length - 3) * (carousel.children[0].offsetWidth + 24), prevButton, nextButton);
+        // Buttons immer sichtbar machen
+        prevButton.style.display = 'flex';
+        nextButton.style.display = 'flex';
       } else {
         // Rasterdarstellung für bis zu 3 Gerichte
         const grid = document.createElement("div");
