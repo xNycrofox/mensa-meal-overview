@@ -1,84 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meal Planner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Speiseplan für Uni Mensen</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .carousel {
+      display: flex;
+      gap: 1.5rem;
+      transition: transform 0.5s ease-in-out;
+    }
+    .carousel-wrapper {
+      position: relative;
+      overflow: hidden;
+    }
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      width: 2.5rem;
+      height: 2.5rem;
+      background: #ffffff;
+      border: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.3s, opacity 0.3s;
+    }
+    .carousel-btn:hover {
+      background: #f3f3f3;
+    }
+    .carousel-btn.left {
+      left: 0.5rem;
+    }
+    .carousel-btn.right {
+      right: 0.5rem;
+    }
+    /* Sicherstellen, dass genau 3 Items angezeigt werden */
+    .carousel-item {
+      flex: 0 0 33.3333%;
+    }
+    /* Deaktivierte Buttons stylen */
+    .carousel-btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  </style>
   <script>
     let currentDate = new Date();
-    let selectedCanteenId = 32; // Voreingestellt: Mensa Johanna
+    let selectedCanteenId = 32; // Standard: Mensa Johanna
 
-    // Format date as YYYY-MM-DD
+    // Formatieren des Datums als YYYY-MM-DD
     function formatDate(date) {
       return date.toISOString().split("T")[0];
     }
 
-    // Get dates for the current week (Montag bis Freitag, ohne Wochenende)
+    // Holen der Daten für die aktuelle Woche (Montag bis Freitag)
     function getWeekDates() {
       const dates = [];
       const startDate = new Date(currentDate);
-      startDate.setDate(startDate.getDate() - startDate.getDay() + 1); // Montag der aktuellen Woche
+      const dayOfWeek = startDate.getDay(); // 0 (Sonntag) bis 6 (Samstag)
+      const diffToMonday = dayOfWeek === 0 ? -6 : 1 - dayOfWeek;
+      startDate.setDate(startDate.getDate() + diffToMonday); // Setze auf Montag
       for (let i = 0; i < 5; i++) { // Nur Montag bis Freitag
         const date = new Date(startDate);
-        date.setDate(date.getDate() + i);
+        date.setDate(startDate.getDate() + i);
         dates.push(formatDate(date));
       }
       return dates;
     }
 
-    // Fetch list of canteens
-    async function fetchCanteens() {
-      const url = `https://api.studentenwerk-dresden.de/openmensa/v2/canteens`;
-      const response = await fetch(url);
-      if (response.ok) {
-        return response.json();
-      } else {
-        console.error("Error fetching canteens:", response.status);
-        return [];
-      }
-    }
-
-    // Populate the dropdown with canteens
-    async function populateCanteens() {
-      const canteens = await fetchCanteens();
-      const dropdown = document.getElementById("canteenDropdown");
-
-      dropdown.innerHTML = ""; // Clear existing options
-      canteens.forEach((canteen) => {
-        const option = document.createElement("option");
-        option.value = canteen.id;
-        option.textContent = canteen.name;
-        if (canteen.id === 32) {
-          option.selected = true; // Voreinstellung: Mensa Johanna
-        }
-        dropdown.appendChild(option);
-      });
-
-      // Set default selection
-      renderWeek();
-    }
-
-    // Fetch meals for a given day and canteen
+    // Abrufen der Gerichte für einen bestimmten Tag und eine bestimmte Mensa
     async function fetchMeals(date) {
       if (!selectedCanteenId) return [];
       const url = `https://api.studentenwerk-dresden.de/openmensa/v2/canteens/${selectedCanteenId}/days/${date}/meals`;
-      const response = await fetch(url);
-      if (response.ok) {
-        return response.json();
-      } else {
-        console.error("Error fetching meals:", response.status);
+      try {
+        const response = await fetch(url);
+        if (response.ok) {
+          return await response.json();
+        } else {
+          console.error("Fehler beim Abrufen der Gerichte:", response.status);
+          return [];
+        }
+      } catch (error) {
+        console.error("Fehler beim Abrufen der Gerichte:", error);
         return [];
       }
     }
 
-    // Render meals dynamically for a specific day
+    // Erstellen einer Mahlzeitenkarte
+    function createMealCard(meal) {
+      const card = document.createElement("div");
+      card.classList.add(
+        "bg-white",
+        "rounded-lg",
+        "shadow-lg",
+        "p-4",
+        "hover:shadow-xl",
+        "transition-shadow",
+        "duration-200",
+        "flex-none",
+        "w-1/3"
+      );
+
+      card.innerHTML = `
+        <div class="relative">
+          <img src="https:${meal.image}" alt="${meal.name}" class="w-full h-40 rounded-lg object-cover">
+          <span class="absolute top-2 right-2 bg-green-500 text-white text-xs font-semibold py-1 px-2 rounded-full">Bewertet</span>
+        </div>
+        <h3 class="font-bold text-gray-800 mt-4 text-lg">${meal.name}</h3>
+        <div class="flex items-center space-x-4 text-gray-500 text-sm mt-2">
+          <p>${meal.category}</p>
+          <p>${meal.prices.Studierende.toFixed(2)} €</p>
+        </div>
+      `;
+      return card;
+    }
+
+    // Funktion zum Bewegen des Carousels
+    function moveCarousel(carousel, direction) {
+      const totalItems = carousel.children.length;
+      const visibleItems = 3;
+      const itemWidth = carousel.children[0].offsetWidth + 24; // Breite + Gap (1.5rem = 24px)
+      const maxTranslate = -(totalItems - visibleItems) * (itemWidth);
+      let currentTranslate = getCurrentTranslate(carousel);
+
+      const prevButton = carousel.parentElement.querySelector('.carousel-btn.left');
+      const nextButton = carousel.parentElement.querySelector('.carousel-btn.right');
+
+      if (direction === 'next') {
+        // Wenn das nächste Verschieben über das Ende hinausgeht, setze auf Anfang
+        if (Math.abs(currentTranslate) + visibleItems * itemWidth >= totalItems * itemWidth) {
+          carousel.style.transition = "transform 0.5s ease-in-out";
+          carousel.style.transform = `translateX(0px)`;
+          setTimeout(() => {
+            carousel.style.transition = "none";
+            currentTranslate = 0;
+            updateButtons(carousel, currentTranslate, maxTranslate, prevButton, nextButton);
+          }, 500);
+        } else {
+          // Normales Verschieben
+          carousel.style.transition = "transform 0.5s ease-in-out";
+          carousel.style.transform = `translateX(${currentTranslate - itemWidth}px)`;
+          currentTranslate -= itemWidth;
+          updateButtons(carousel, currentTranslate, maxTranslate, prevButton, nextButton);
+        }
+      } else if (direction === 'prev') {
+        // Wenn das vorherige Verschieben über den Anfang hinausgeht, setze auf Ende
+        if (currentTranslate === 0) {
+          carousel.style.transition = "transform 0.5s ease-in-out";
+          carousel.style.transform = `translateX(-${(totalItems - visibleItems) * itemWidth}px)`;
+          setTimeout(() => {
+            carousel.style.transition = "none";
+            currentTranslate = -(totalItems - visibleItems) * itemWidth;
+            updateButtons(carousel, currentTranslate, maxTranslate, prevButton, nextButton);
+          }, 500);
+        } else {
+          // Normales Verschieben
+          carousel.style.transition = "transform 0.5s ease-in-out";
+          carousel.style.transform = `translateX(${currentTranslate + itemWidth}px)`;
+          currentTranslate += itemWidth;
+          updateButtons(carousel, currentTranslate, maxTranslate, prevButton, nextButton);
+        }
+      }
+
+      // Nach dem ersten Vorwärtsklick soll der linke Pfeil sichtbar sein
+      if (direction === 'next') {
+        prevButton.style.display = 'flex';
+      }
+    }
+
+    // Hilfsfunktion zur Ermittlung des aktuellen TranslateX-Werts
+    function getCurrentTranslate(element) {
+      const style = window.getComputedStyle(element);
+      const matrix = new WebKitCSSMatrix(style.transform);
+      return matrix.m41;
+    }
+
+    // Aktualisieren des Button-Status
+    function updateButtons(carousel, currentTranslate, maxTranslate, prevButton, nextButton) {
+      // Linker Button wird nur angezeigt, wenn mindestens einmal nach rechts geklickt wurde
+      if (currentTranslate < 0) {
+        prevButton.style.display = 'flex';
+      } else {
+        prevButton.style.display = 'none';
+      }
+
+      // Rechter Button wird nur angezeigt, wenn mehr als 3 Items vorhanden sind
+      if (carousel.children.length > 3) {
+        nextButton.style.display = 'flex';
+      } else {
+        nextButton.style.display = 'none';
+      }
+    }
+
+    // Rendern der Mahlzeiten für einen bestimmten Tag
     async function renderDay(date) {
       const meals = await fetchMeals(date);
       const dayContainer = document.createElement("div");
       dayContainer.classList.add("mb-8");
 
-      // Day Header
+      // Tagesüberschrift
       const dayHeader = document.createElement("h2");
       dayHeader.classList.add("text-2xl", "font-bold", "text-gray-800", "mb-4");
       dayHeader.textContent = new Date(date).toLocaleDateString('de-DE', {
@@ -89,61 +216,108 @@
 
       dayContainer.appendChild(dayHeader);
 
-      // Meals Grid
-      const mealGrid = document.createElement("div");
-      mealGrid.classList.add("flex", "flex-wrap", "gap-6");
+      if (meals.length > 3) {
+        // Einfacher Carousel-Slider
+        const carouselWrapper = document.createElement("div");
+        carouselWrapper.classList.add("carousel-wrapper", "w-full", "relative");
 
-      if (meals.length > 0) {
+        const carousel = document.createElement("div");
+        carousel.classList.add("carousel", "w-full");
+        carousel.style.transform = `translateX(0px)`;
+
         meals.forEach((meal) => {
-          const card = document.createElement("div");
-          card.classList.add("bg-white", "rounded-lg", "shadow-lg", "p-4", "hover:shadow-xl", "transition-shadow", "duration-200", "w-72");
-
-          card.innerHTML = `
-            <div class="relative">
-              <img src="https:${meal.image}" alt="${meal.name}" class="w-full h-40 rounded-lg object-cover">
-              <span class="absolute top-2 right-2 bg-green-500 text-white text-xs font-semibold py-1 px-2 rounded-full">Rated</span>
-            </div>
-            <h3 class="font-bold text-gray-800 mt-4 text-lg">${meal.name}</h3>
-            <div class="flex items-center space-x-4 text-gray-500 text-sm mt-2">
-              <p>${meal.category}</p>
-              <p>${meal.prices.Studierende.toFixed(2)} €</p>
-            </div>
-          `;
-          mealGrid.appendChild(card);
+          const card = createMealCard(meal);
+          carousel.appendChild(card);
         });
+
+        carouselWrapper.appendChild(carousel);
+
+        // Carousel Buttons
+        const prevButton = document.createElement("button");
+        prevButton.innerHTML = "&#x276E;";
+        prevButton.classList.add("carousel-btn", "left");
+        prevButton.style.display = 'none'; // Anfangs nicht anzeigen
+        prevButton.setAttribute('aria-label', 'Vorherige Gerichte');
+        prevButton.addEventListener("click", () => {
+          moveCarousel(carousel, 'prev');
+        });
+
+        const nextButton = document.createElement("button");
+        nextButton.innerHTML = "&#x276F;";
+        nextButton.classList.add("carousel-btn", "right");
+        nextButton.setAttribute('aria-label', 'Nächste Gerichte');
+        nextButton.addEventListener("click", () => {
+          moveCarousel(carousel, 'next');
+        });
+
+        carouselWrapper.appendChild(prevButton);
+        carouselWrapper.appendChild(nextButton);
+        dayContainer.appendChild(carouselWrapper);
+
+        // Initial Button Status Aktualisieren
+        updateButtons(carousel, getCurrentTranslate(carousel), -(meals.length - 3) * (carousel.children[0].offsetWidth + 24), prevButton, nextButton);
       } else {
-        mealGrid.innerHTML = `<p class="text-gray-500 mt-2">Keine Gerichte verfügbar.</p>`;
+        // Rasterdarstellung für bis zu 3 Gerichte
+        const grid = document.createElement("div");
+        grid.classList.add("flex", "gap-6", "flex-wrap");
+        meals.forEach((meal) => {
+          const card = createMealCard(meal);
+          grid.appendChild(card);
+        });
+        dayContainer.appendChild(grid);
       }
 
-      dayContainer.appendChild(mealGrid);
-
-      // Append to main container
       document.getElementById("weekContainer").appendChild(dayContainer);
     }
 
-    // Render all days for the week
+    // Rendern der gesamten Woche
     async function renderWeek() {
       const weekContainer = document.getElementById("weekContainer");
-      weekContainer.innerHTML = ""; // Clear previous content
+      weekContainer.innerHTML = ""; // Vorherigen Inhalt löschen
       const dates = getWeekDates();
       for (const date of dates) {
         await renderDay(date);
       }
     }
 
-    // Change selected canteen
+    // Befüllen des Dropdowns mit Mensen
+    async function populateCanteens() {
+      const url = `https://api.studentenwerk-dresden.de/openmensa/v2/canteens`;
+      try {
+        const response = await fetch(url);
+        const dropdown = document.getElementById("canteenDropdown");
+        dropdown.innerHTML = ""; // Vorhandene Optionen löschen
+
+        if (response.ok) {
+          const canteens = await response.json();
+          canteens.forEach((canteen) => {
+            const option = document.createElement("option");
+            option.value = canteen.id;
+            option.textContent = canteen.name;
+            if (canteen.id === selectedCanteenId) {
+              option.selected = true; // Standardmäßig Mensa Johanna auswählen
+            }
+            dropdown.appendChild(option);
+          });
+        } else {
+          console.error("Fehler beim Abrufen der Mensen:", response.status);
+          dropdown.innerHTML = "<option>Keine Mensen verfügbar</option>";
+        }
+      } catch (error) {
+        console.error("Fehler beim Abrufen der Mensen:", error);
+        const dropdown = document.getElementById("canteenDropdown");
+        dropdown.innerHTML = "<option>Fehler beim Laden</option>";
+      }
+      renderWeek();
+    }
+
+    // Ändern der ausgewählten Mensa
     function changeCanteen(event) {
       selectedCanteenId = parseInt(event.target.value, 10);
       renderWeek();
     }
 
-    // Navigate between weeks
-    function changeWeek(weeks) {
-      currentDate.setDate(currentDate.getDate() + weeks * 7);
-      renderWeek();
-    }
-
-    // Initialize page
+    // Initialisierung nach dem Laden des Dokuments
     document.addEventListener("DOMContentLoaded", () => {
       populateCanteens();
     });
@@ -153,22 +327,17 @@
   <div class="max-w-6xl mx-auto">
     <!-- Header -->
     <header class="text-center mb-8">
-      <h1 class="text-4xl font-extrabold text-gray-800">Meal Planner</h1>
+      <h1 class="text-4xl font-extrabold text-gray-800">Speiseplan für Uni Mensen</h1>
       <div class="mt-4">
         <label for="canteenDropdown" class="block text-gray-700 font-bold mb-2">Wähle eine Mensa:</label>
         <select id="canteenDropdown" class="w-full md:w-1/2 bg-white border border-gray-300 rounded-lg px-4 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500" onchange="changeCanteen(event)">
-          <!-- Options will be populated dynamically -->
         </select>
-      </div>
-      <div class="flex justify-center items-center space-x-4 mt-4">
-        <button onclick="changeWeek(-1)" class="text-gray-500 hover:text-gray-700">&lt; Vorherige Woche</button>
-        <button onclick="changeWeek(1)" class="text-gray-500 hover:text-gray-700">Nächste Woche &gt;</button>
       </div>
     </header>
 
     <!-- Week Container -->
     <div id="weekContainer">
-      <!-- Days and Meals will be rendered dynamically here -->
+      <!-- Tage und Gerichte werden hier dynamisch gerendert -->
     </div>
   </div>
 </body>
