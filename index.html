@@ -3,52 +3,271 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Speiseplan für Uni Mensen</title>
+  <title>Mensa Meals</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta name="theme-color" content="#22c55e">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Mensa Meals">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" href="icons/icon-192x192.png">
   <style>
-    .carousel {
-      display: flex;
-      gap: 1.5rem;
-      transition: transform 0.5s ease-in-out;
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #FAFAFA;
     }
-    .carousel-wrapper {
+
+    .meal-card {
+      background: white;
+      border-radius: 24px;
+      transition: all 0.3s ease;
+      border: 1px solid #F3F3F3;
+      position: relative;
+      z-index: 1;
+    }
+
+    .meal-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+    }
+
+    .rating-badge {
+      background: white;
+      border-radius: 100px;
+      padding: 6px 12px;
+      font-size: 14px;
+      color: #1a1a1a;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .health-score {
+      display: flex;
+      gap: 2px;
+      margin-top: 12px;
+    }
+
+    .health-bar {
+      width: 12px;
+      height: 8px;
+      background: #E5E7EB;
+      border-radius: 4px;
+    }
+
+    .health-bar.active {
+      background: #86EFAC;
+    }
+
+    .date-nav {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .nav-btn {
+      background: none;
+      border: none;
+      padding: 8px;
+      cursor: pointer;
+      color: #666;
+    }
+
+    .nav-btn:hover {
+      color: #000;
+    }
+
+    .filter-chip {
+      background: #F3F4F6;
+      border-radius: 100px;
+      padding: 8px 16px;
+      font-size: 14px;
+      color: #1F2937;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .modal-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 50;
+      backdrop-filter: blur(4px);
+    }
+
+    .modal-content {
+      background: white;
+      border-radius: 24px;
+      max-width: 90%;
+      max-height: 90vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .modal-content img {
+      max-height: 80vh;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: white;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .carousel-container {
       position: relative;
       overflow: hidden;
     }
+
+    .carousel {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
     .carousel-btn {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
       z-index: 10;
-      width: 2.5rem;
-      height: 2.5rem;
-      background: #ffffff;
-      border: none;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      cursor: pointer;
+      background: white;
       border-radius: 50%;
+      width: 40px;
+      height: 40px;
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: background 0.3s, opacity 0.3s;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      border: none;
+      opacity: 0;
+      transition: opacity 0.3s ease;
     }
-    .carousel-btn:hover {
-      background: #f3f3f3;
+
+    .carousel-btn.prev {
+      left: 16px;
     }
-    .carousel-btn.left {
-      left: 0.5rem;
+
+    .carousel-btn.next {
+      right: 16px;
     }
-    .carousel-btn.right {
-      right: 0.5rem;
+
+    .carousel-container:hover .carousel-btn {
+      opacity: 1;
     }
-    /* Sicherstellen, dass genau 3 Items angezeigt werden */
-    .carousel-item {
-      flex: 0 0 33.3333%;
+
+    .diet-badge {
+      background: white;
+      border-radius: 100px;
+      padding: 6px 12px;
+      font-size: 14px;
+      color: #22c55e;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     }
-    /* Deaktivierte Buttons stylen */
-    .carousel-btn:disabled {
-      opacity: 0.5;
-      cursor: not-allowed;
+
+    .tooltip-container {
+      position: relative;
+      z-index: 30;
+    }
+
+    .tooltip-trigger {
+      position: relative;
+    }
+
+    .tooltip {
+      position: absolute;
+      left: 50%;
+      bottom: 100%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      z-index: 40;
+      margin-bottom: 8px;
+      background: #111827;
+      color: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+      pointer-events: none;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.2s, visibility 0.2s;
+    }
+
+    .tooltip::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 4px;
+      border-style: solid;
+      border-color: #111827 transparent transparent transparent;
+    }
+
+    .tooltip-trigger:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .tooltip-trigger:hover .tooltip.tooltip-left {
+      transform: translateX(-10%);
+    }
+
+    .tooltip-trigger:hover .tooltip.tooltip-right {
+      transform: translateX(-90%);
+    }
+
+    .allergens-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 16px;
+      position: relative;
+      z-index: 20;
+    }
+
+    /* PWA Install Button Style */
+    .install-button {
+      opacity: 0;
+      transform: scale(0.8);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .install-button.visible {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    @media (hover: hover) {
+      .install-button:hover {
+        transform: scale(1.1);
+      }
     }
   </style>
   <script>
@@ -77,18 +296,22 @@
 
     // Abrufen der Gerichte für einen bestimmten Tag und eine bestimmte Mensa
     async function fetchMeals(date) {
-      if (!selectedCanteenId) return [];
+      if (!selectedCanteenId || !date) {
+        console.error('Ungültige Parameter für fetchMeals');
+        return [];
+      }
+
       const url = `https://api.studentenwerk-dresden.de/openmensa/v2/canteens/${selectedCanteenId}/days/${date}/meals`;
+      
       try {
         const response = await fetch(url);
-        if (response.ok) {
-          return await response.json();
-        } else {
-          console.error("Fehler beim Abrufen der Gerichte:", response.status);
-          return [];
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
         }
+        const data = await response.json();
+        return Array.isArray(data) ? data : [];
       } catch (error) {
-        console.error("Fehler beim Abrufen der Gerichte:", error);
+        console.error(`Fehler beim Abrufen der Gerichte für ${date}:`, error);
         return [];
       }
     }
@@ -96,169 +319,262 @@
     // Erstellen einer Mahlzeitenkarte
     function createMealCard(meal) {
       const card = document.createElement("div");
-      card.classList.add(
-        "bg-white",
-        "rounded-lg",
-        "shadow-lg",
-        "p-4",
-        "hover:shadow-xl",
-        "transition-shadow",
-        "duration-200",
-        "flex-none",
-        "w-1/3"
-      );
+      card.classList.add("meal-card");
+
+      const imageUrl = meal.image ? `https:${meal.image}` : 'placeholder-image-url.jpg';
+      const price = meal.prices?.Studierende ? `${meal.prices.Studierende.toFixed(2)} €` : 'Preis nicht verfügbar';
+      
+      // Neue Symbole für vegan/vegetarisch mit Font Awesome
+      const dietBadge = meal.notes?.includes("Menü ist vegan") 
+        ? `<div class="diet-badge">
+            <i class="fa-solid fa-leaf"></i>
+            <span>Vegan</span>
+          </div>`
+        : meal.notes?.includes("Menü ist vegetarisch")
+        ? `<div class="diet-badge">
+            <i class="fa-solid fa-seedling"></i>
+            <span>Vegetarisch</span>
+          </div>`
+        : '';
+
+      // Überarbeitetes Symbol-Mapping mit Font Awesome Icons
+      const symbolMap = {
+        "Glutenhaltiges Getreide": {
+          icon: `<i class="fa-solid fa-wheat-awn"></i>`,
+          class: "text-amber-600"
+        },
+        "Weizen": {
+          icon: `<i class="fa-solid fa-wheat-awn"></i>`,
+          class: "text-amber-700"
+        },
+        "Eier": {
+          icon: `<i class="fa-solid fa-egg"></i>`,
+          class: "text-yellow-500"
+        },
+        "Milch": {
+          icon: `<i class="fa-solid fa-cow"></i>`,
+          class: "text-blue-400"
+        },
+        "Sellerie": {
+          icon: `<i class="fa-solid fa-carrot"></i>`,
+          class: "text-green-600"
+        },
+        "CO₂": {
+          icon: `<i class="fa-solid fa-truck-fast"></i>`,
+          class: "text-green-500"
+        }
+      };
+
+      // Funktion zum Extrahieren des Hauptallergens
+      function extractMainAllergen(note) {
+        const allergenMatches = {
+          "Glutenhaltiges Getreide": ["Glutenhaltiges Getreide", "Weizen", "Roggen", "Gerste"],
+          "Milch": ["Milch", "Laktose"],
+          "Eier": ["Eier"],
+          "Sellerie": ["Sellerie"],
+          "CO₂": ["CO₂"]
+        };
+
+        for (const [main, patterns] of Object.entries(allergenMatches)) {
+          if (patterns.some(pattern => note.includes(pattern))) {
+            return main;
+          }
+        }
+        return null;
+      }
+
+      // HTML für die Allergene generieren
+      const allergensHtml = meal.notes
+        ?.map(note => {
+          const mainAllergen = extractMainAllergen(note);
+          if (mainAllergen && symbolMap[mainAllergen]) {
+            return `
+              <div class="tooltip-container">
+                <div class="tooltip-trigger ${symbolMap[mainAllergen].class} bg-gray-100 rounded-full p-1.5 cursor-help">
+                  ${symbolMap[mainAllergen].icon}
+                  <div class="tooltip">
+                    ${note}
+                  </div>
+                </div>
+              </div>
+            `;
+          }
+          return '';
+        })
+        .join('') || '';
 
       card.innerHTML = `
         <div class="relative">
-          <img src="https:${meal.image}" alt="${meal.name}" class="w-full h-40 rounded-lg object-cover">
-          <span class="absolute top-2 right-2 bg-green-500 text-white text-xs font-semibold py-1 px-2 rounded-full">Bewertet</span>
+          <img src="${imageUrl}" 
+               alt="${meal.name}" 
+               class="w-full h-52 object-cover"
+               onerror="this.src='placeholder-image-url.jpg'">
+          <div class="absolute top-4 right-4">
+            ${dietBadge}
+          </div>
         </div>
-        <h3 class="font-bold text-gray-800 mt-4 text-lg">${meal.name}</h3>
-        <div class="flex items-center space-x-4 text-gray-500 text-sm mt-2">
-          <p>${meal.category}</p>
-          <p>${meal.prices.Studierende.toFixed(2)} €</p>
+        <div class="p-6">
+          <h3 class="font-semibold text-xl text-gray-900 mb-3">${meal.name}</h3>
+          <div class="flex items-center gap-4 text-gray-600 text-sm">
+            <div class="flex items-center gap-1.5">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0-2.08.402-2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              ${price}
+            </div>
+          </div>
+          <div class="allergens-container">
+            ${allergensHtml}
+          </div>
         </div>
       `;
+
+      // Tooltip Event Listener
+      addTooltipListeners(card);
+
+      // Modifiziere den Bildbereich
+      card.querySelector('img').addEventListener('click', () => {
+        showImageModal(imageUrl, meal.name);
+      });
+
       return card;
     }
 
-    // Funktion zum Bewegen des Carousels
-    function moveCarousel(carousel, direction) {
-      const itemWidth = carousel.children[0].offsetWidth + 24; // Breite + Gap
-      const totalItems = carousel.children.length;
-      const visibleItems = 3;
-      let currentTranslate = getCurrentTranslate(carousel);
+    // Neue Funktion für die Bildvorschau
+    function showImageModal(imageUrl, title) {
+      const modal = document.createElement('div');
+      modal.classList.add('modal-backdrop');
+      modal.style.display = 'flex';
+      
+      modal.innerHTML = `
+        <div class="modal-content">
+          <div class="modal-close">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </div>
+          <img src="${imageUrl}" alt="${title}" class="w-full">
+        </div>
+      `;
 
-      if (direction === 'next') {
-        carousel.style.transition = "transform 0.5s ease-in-out";
-        currentTranslate -= itemWidth;
-        carousel.style.transform = `translateX(${currentTranslate}px)`;
-      } else if (direction === 'prev') {
-        carousel.style.transition = "transform 0.5s ease-in-out";
-        currentTranslate += itemWidth;
-        carousel.style.transform = `translateX(${currentTranslate}px)`;
-      }
-
-      // Event Listener für Übergangseffekt
-      carousel.addEventListener('transitionend', function handler() {
-        const maxTranslate = -((totalItems - visibleItems) * itemWidth);
-        const minTranslate = -visibleItems * itemWidth;
-
-        if (currentTranslate <= maxTranslate) {
-          // Am Ende angekommen, springe zum Anfang
-          carousel.style.transition = "none";
-          currentTranslate = minTranslate;
-          carousel.style.transform = `translateX(${currentTranslate}px)`;
-        } else if (currentTranslate >= 0) {
-          // Am Anfang angekommen, springe zum Ende
-          carousel.style.transition = "none";
-          currentTranslate = -((totalItems - 2 * visibleItems) * itemWidth);
-          carousel.style.transform = `translateX(${currentTranslate}px)`;
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal || e.target.closest('.modal-close')) {
+          modal.remove();
         }
-
-        // Entferne den Listener, um Mehrfachaufrufe zu vermeiden
-        carousel.removeEventListener('transitionend', handler);
       });
+
+      document.body.appendChild(modal);
     }
 
-    // Hilfsfunktion zur Ermittlung des aktuellen TranslateX-Werts
-    function getCurrentTranslate(element) {
-      const style = window.getComputedStyle(element);
-      const matrix = new WebKitCSSMatrix(style.transform || 'none');
-      return matrix.m41;
-    }
-
-    // Rendern der Mahlzeiten für einen bestimmten Tag
+    // Überarbeitete renderDay Funktion für das Carousel
     async function renderDay(date) {
+      if (!date) return;
+
       const meals = await fetchMeals(date);
       const dayContainer = document.createElement("div");
-      dayContainer.classList.add("mb-8");
+      dayContainer.classList.add("mb-12");
 
-      // Tagesüberschrift
       const dayHeader = document.createElement("h2");
-      dayHeader.classList.add("text-2xl", "font-bold", "text-gray-800", "mb-4");
-      dayHeader.textContent = new Date(date).toLocaleDateString('de-DE', {
-        weekday: 'long',
-        day: 'numeric',
-        month: 'long'
-      });
+      dayHeader.classList.add("text-2xl", "font-bold", "text-gray-900", "mb-6");
+      
+      try {
+        dayHeader.textContent = new Date(date).toLocaleDateString('de-DE', {
+          weekday: 'long'
+        });
+      } catch (error) {
+        dayHeader.textContent = date;
+        console.error('Fehler beim Formatieren des Datums:', error);
+      }
 
       dayContainer.appendChild(dayHeader);
 
+      if (meals.length === 0) {
+        const noMealsMessage = document.createElement("p");
+        noMealsMessage.classList.add("text-gray-500", "text-center", "py-4");
+        noMealsMessage.textContent = "Keine Gerichte verfügbar für diesen Tag";
+        dayContainer.appendChild(noMealsMessage);
+        return dayContainer;
+      }
+
+      // Grid für Mobile (immer) und Desktop (wenn ≤ 3 Gerichte)
+      const mealsGrid = document.createElement("div");
+      const gridClasses = [
+        "grid",
+        "gap-6",
+        "grid-cols-1",
+        "md:grid-cols-2",
+        "lg:grid-cols-3"
+      ];
+      
+      // Füge die "md:hidden" Klasse nur hinzu, wenn mehr als 3 Gerichte vorhanden sind
       if (meals.length > 3) {
-        // Einfacher Carousel-Slider
-        const carouselWrapper = document.createElement("div");
-        carouselWrapper.classList.add("carousel-wrapper", "w-full", "relative");
+        gridClasses.push("md:hidden");
+      }
+      
+      mealsGrid.classList.add(...gridClasses);
 
-        const carousel = document.createElement("div");
-        carousel.classList.add("carousel", "w-full");
+      meals.forEach(meal => {
+        mealsGrid.appendChild(createMealCard(meal));
+      });
 
-        meals.forEach((meal) => {
+      dayContainer.appendChild(mealsGrid);
+
+      // Carousel nur für Desktop/Tablet wenn > 3 Gerichte
+      if (meals.length > 3) {
+        const carouselContainer = document.createElement('div');
+        carouselContainer.classList.add('carousel-container', 'hidden', 'md:block');
+
+        const carousel = document.createElement('div');
+        carousel.classList.add('carousel');
+
+        // Dupliziere die ersten 3 Gerichte am Ende für den unendlichen Effekt
+        const allMeals = [...meals, ...meals.slice(0, 3)];
+        
+        allMeals.forEach(meal => {
           const card = createMealCard(meal);
+          card.classList.add('w-1/3', 'flex-shrink-0');
           carousel.appendChild(card);
         });
 
-        const visibleItems = 3; // Anzahl der gleichzeitig sichtbaren Elemente
-        const itemWidth = carousel.children[0].offsetWidth + 24; // Breite + Gap
+        const prevBtn = document.createElement('button');
+        prevBtn.classList.add('carousel-btn', 'prev');
+        prevBtn.innerHTML = `
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+          </svg>
+        `;
 
-        // Warten, bis die Bilder geladen sind, um die korrekte Breite zu erhalten
-        await new Promise((resolve) => setTimeout(resolve, 0));
+        const nextBtn = document.createElement('button');
+        nextBtn.classList.add('carousel-btn', 'next');
+        nextBtn.innerHTML = `
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+          </svg>
+        `;
 
-        // Klone die ersten Elemente und füge sie ans Ende
-        for (let i = 0; i < visibleItems; i++) {
-          const clone = carousel.children[i].cloneNode(true);
-          clone.classList.add('clone');
-          carousel.appendChild(clone);
+        let currentIndex = 0;
+        const slideWidth = 100 / 3;
+
+        function updateCarousel(direction) {
+          if (direction === 'next') {
+            currentIndex++;
+          } else {
+            currentIndex--;
+          }
+          
+          carousel.style.transform = `translateX(-${(currentIndex % meals.length) * slideWidth}%)`;
         }
 
-        // Klone die letzten Elemente und füge sie an den Anfang
-        for (let i = meals.length - 1; i >= meals.length - visibleItems; i--) {
-          const clone = carousel.children[i].cloneNode(true);
-          clone.classList.add('clone');
-          carousel.insertBefore(clone, carousel.firstChild);
-        }
+        prevBtn.addEventListener('click', () => updateCarousel('prev'));
+        nextBtn.addEventListener('click', () => updateCarousel('next'));
 
-        // Setze die Anfangsposition des Carousels
-        carousel.style.transform = `translateX(-${visibleItems * itemWidth}px)`;
-
-        carouselWrapper.appendChild(carousel);
-
-        // Carousel Buttons
-        const prevButton = document.createElement("button");
-        prevButton.innerHTML = "&#x276E;";
-        prevButton.classList.add("carousel-btn", "left");
-        prevButton.setAttribute('aria-label', 'Vorherige Gerichte');
-        prevButton.addEventListener("click", () => {
-          moveCarousel(carousel, 'prev');
-        });
-
-        const nextButton = document.createElement("button");
-        nextButton.innerHTML = "&#x276F;";
-        nextButton.classList.add("carousel-btn", "right");
-        nextButton.setAttribute('aria-label', 'Nächste Gerichte');
-        nextButton.addEventListener("click", () => {
-          moveCarousel(carousel, 'next');
-        });
-
-        carouselWrapper.appendChild(prevButton);
-        carouselWrapper.appendChild(nextButton);
-        dayContainer.appendChild(carouselWrapper);
-
-        // Buttons immer sichtbar machen
-        prevButton.style.display = 'flex';
-        nextButton.style.display = 'flex';
-      } else {
-        // Rasterdarstellung für bis zu 3 Gerichte
-        const grid = document.createElement("div");
-        grid.classList.add("flex", "gap-6", "flex-wrap");
-        meals.forEach((meal) => {
-          const card = createMealCard(meal);
-          grid.appendChild(card);
-        });
-        dayContainer.appendChild(grid);
+        carouselContainer.appendChild(prevBtn);
+        carouselContainer.appendChild(carousel);
+        carouselContainer.appendChild(nextBtn);
+        dayContainer.appendChild(carouselContainer);
       }
 
-      document.getElementById("weekContainer").appendChild(dayContainer);
+      return dayContainer;
     }
 
     // Rendern der gesamten Woche
@@ -267,8 +583,38 @@
       weekContainer.innerHTML = ""; // Vorherigen Inhalt löschen
       const dates = getWeekDates();
       for (const date of dates) {
-        await renderDay(date);
+        const dayElement = await renderDay(date);
+        if (dayElement) {
+          weekContainer.appendChild(dayElement);
+        }
       }
+      
+      // Aktualisiere den Datumsbereich im Header
+      updateDateRange(dates[0], dates[dates.length - 1]);
+    }
+
+    // Neue Funktion für die Datumsanzeige
+    function updateDateRange(startDate, endDate) {
+      const dateRangeElement = document.getElementById("dateRange");
+      const start = new Date(startDate);
+      const end = new Date(endDate);
+      
+      const formatOptions = { day: 'numeric', month: 'short' };
+      const startStr = start.toLocaleDateString('de-DE', formatOptions);
+      const endStr = end.toLocaleDateString('de-DE', formatOptions);
+      
+      dateRangeElement.textContent = `${startStr} - ${endStr}`;
+    }
+
+    // Neue Funktionen für die Navigation
+    function previousWeek() {
+      currentDate.setDate(currentDate.getDate() - 7);
+      renderWeek();
+    }
+
+    function nextWeek() {
+      currentDate.setDate(currentDate.getDate() + 7);
+      renderWeek();
     }
 
     // Befüllen des Dropdowns mit Mensen
@@ -308,28 +654,182 @@
       renderWeek();
     }
 
+    // Modifiziere die Event Listener für die Tooltips
+    function addTooltipListeners(card) {
+      card.querySelectorAll('.tooltip-trigger').forEach(trigger => {
+        const tooltip = trigger.querySelector('.tooltip');
+        
+        trigger.addEventListener('mouseenter', () => {
+          tooltip.style.visibility = 'visible';
+          tooltip.style.opacity = '1';
+        });
+        
+        trigger.addEventListener('mouseleave', () => {
+          tooltip.style.visibility = 'hidden';
+          tooltip.style.opacity = '0';
+        });
+      });
+    }
+
+    // PWA Installation
+    let deferredPrompt;
+
+    // Bessere Safari-Erkennung
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent) || 
+                     (navigator.userAgent.includes('iPhone') && navigator.vendor.includes('Apple'));
+    const isIOSSafari = isIOS && isSafari;
+
+    // Zeige unterschiedliche Install-Buttons je nach Plattform
+    function showInstallButton() {
+      const installButton = document.getElementById('installButton');
+      if (!installButton) return;
+
+      // Zeige den Button immer in Safari auf iOS
+      if (isIOS && window.navigator.standalone === undefined) {
+        // Bereits als PWA installiert
+        installButton.style.display = 'none';
+      } else if (isIOSSafari) {
+        installButton.classList.add('visible');
+        installButton.onclick = () => showIOSInstallInstructions(false);
+      } else if (isIOS) {
+        installButton.classList.add('visible');
+        installButton.onclick = () => showIOSInstallInstructions(true);
+      } else if (deferredPrompt) {
+        installButton.classList.add('visible');
+        installButton.onclick = installPWA;
+      } else {
+        installButton.classList.remove('visible');
+      }
+    }
+
+    // Aktualisierte iOS Installationsanleitung
+    function showIOSInstallInstructions(needsSafari = false) {
+      const modal = document.createElement('div');
+      modal.classList.add('modal-backdrop');
+      modal.style.display = 'flex';
+      
+      if (needsSafari) {
+        modal.innerHTML = `
+          <div class="modal-content p-6 max-w-md">
+            <h3 class="text-xl font-bold mb-4">Installation auf iOS</h3>
+            <p class="text-red-500 mb-4">Diese Seite muss in Safari geöffnet werden!</p>
+            <button onclick="this.closest('.modal-backdrop').remove()" 
+                    class="w-full py-2 bg-gray-200 rounded-lg">
+              Verstanden
+            </button>
+          </div>
+        `;
+      } else {
+        modal.innerHTML = `
+          <div class="modal-content p-6 max-w-md">
+            <h3 class="text-xl font-bold mb-4">Zum Home-Bildschirm hinzufügen</h3>
+            <ol class="space-y-2 mb-4">
+              <li class="flex items-center gap-2">
+                1. Tippe auf das Share-Symbol <i class="fa-solid fa-share-from-square"></i>
+              </li>
+              <li>2. Scrolle im Share-Menü nach unten</li>
+              <li class="flex items-center gap-2">
+                3. Tippe auf "Zum Home-Bildschirm hinzufügen" <i class="fa-solid fa-plus"></i>
+              </li>
+            </ol>
+            <button onclick="this.closest('.modal-backdrop').remove()" 
+                    class="w-full py-2 bg-gray-200 rounded-lg">
+              Verstanden
+            </button>
+          </div>
+        `;
+      }
+
+      document.body.appendChild(modal);
+    }
+
+    // Event Listener für Install-Prompt (nicht-iOS)
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      showInstallButton();
+    });
+
+    // Zeige den iOS Button sofort
+    if (isIOS) {
+      // Warte kurz, bis die Seite geladen ist
+      setTimeout(showInstallButton, 1000);
+    }
+
+    async function installPWA() {
+      if (!deferredPrompt) return;
+      
+      deferredPrompt.prompt();
+      const { outcome } = await deferredPrompt.userChoice;
+      
+      if (outcome === 'accepted') {
+        const installButton = document.getElementById('installButton');
+        if (installButton) {
+          installButton.classList.remove('visible');
+        }
+      }
+      
+      deferredPrompt = null;
+    }
+
+    // Service Worker Registration
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(registration => {
+            console.log('ServiceWorker registration successful');
+          })
+          .catch(err => {
+            console.log('ServiceWorker registration failed: ', err);
+          });
+      });
+    }
+
     // Initialisierung nach dem Laden des Dokuments
     document.addEventListener("DOMContentLoaded", () => {
       populateCanteens();
     });
   </script>
 </head>
-<body class="bg-gray-50 font-sans p-6">
-  <div class="max-w-6xl mx-auto">
-    <!-- Header -->
-    <header class="text-center mb-8">
-      <h1 class="text-4xl font-extrabold text-gray-800">Speiseplan für Uni Mensen</h1>
-      <div class="mt-4">
-        <label for="canteenDropdown" class="block text-gray-700 font-bold mb-2">Wähle eine Mensa:</label>
-        <select id="canteenDropdown" class="w-full md:w-1/2 bg-white border border-gray-300 rounded-lg px-4 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500" onchange="changeCanteen(event)">
-        </select>
+<body class="p-6 md:p-8">
+  <div class="max-w-7xl mx-auto">
+    <header class="mb-12">
+      <h1 class="text-4xl font-bold text-gray-900 mb-8">Mensa Meals</h1>
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 md:gap-8">
+        <div class="flex items-center gap-4">
+          <div class="filter-chip">
+            <i class="fa-solid fa-school-flag text-gray-600"></i>
+            <select id="canteenDropdown" 
+                    class="bg-transparent border-none focus:outline-none focus:ring-0 text-gray-700 pr-8"
+                    onchange="changeCanteen(event)">
+            </select>
+          </div>
+        </div>
+        <div class="date-nav">
+          <button class="nav-btn" onclick="previousWeek()">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+            </svg>
+          </button>
+          <span class="text-base font-medium text-gray-900" id="dateRange"></span>
+          <button class="nav-btn" onclick="nextWeek()">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
 
-    <!-- Week Container -->
     <div id="weekContainer">
       <!-- Tage und Gerichte werden hier dynamisch gerendert -->
     </div>
+
+    <!-- Füge den FAB am Ende des body hinzu -->
+    <button id="installButton" class="fixed bottom-6 right-6 w-12 h-12 bg-green-500 rounded-full shadow-lg flex items-center justify-center text-white cursor-pointer hover:bg-green-600 transition-colors z-50">
+      <i class="fa-solid fa-plus text-xl"></i>
+    </button>
   </div>
 </body>
 </html>
