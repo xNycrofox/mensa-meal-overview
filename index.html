@@ -6,12 +6,6 @@
   <title>Mensa Meals</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <meta name="theme-color" content="#22c55e">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="Mensa Meals">
-  <link rel="manifest" href="/manifest.json">
-  <link rel="apple-touch-icon" href="icons/icon-192x192.png">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
@@ -27,13 +21,11 @@
       border: 1px solid #F3F3F3;
       position: relative;
       z-index: 1;
-      height: 100%;
-      transform: translateY(-4px);
     }
 
     .meal-card:hover {
-      transform: translateY(-4px) scale(1.02);
-      z-index: 2;
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
     }
 
     .rating-badge {
@@ -99,13 +91,13 @@
       position: fixed;
       top: 0;
       left: 0;
-      width: 100vw;
-      height: 100vh;
+      width: 100%;
+      height: 100%;
       background: rgba(0, 0, 0, 0.7);
       display: none;
       justify-content: center;
       align-items: center;
-      z-index: 1000;
+      z-index: 10000;
       backdrop-filter: blur(4px);
     }
 
@@ -199,6 +191,7 @@
 
     .tooltip-trigger {
       position: relative;
+      cursor: pointer;
     }
 
     .tooltip {
@@ -207,14 +200,14 @@
       bottom: 100%;
       transform: translateX(-50%);
       white-space: nowrap;
-      z-index: 40;
+      z-index: 1000;
       margin-bottom: 8px;
       background: #111827;
       color: white;
       padding: 4px 8px;
       border-radius: 4px;
       font-size: 12px;
-      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+      filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.15));
       pointer-events: none;
       visibility: hidden;
       opacity: 0;
@@ -254,33 +247,49 @@
       z-index: 20;
     }
 
-    /* PWA Install Button Style */
-    .install-button {
-      opacity: 0;
-      transform: scale(0.8);
-      transition: opacity 0.3s ease, transform 0.3s ease;
-    }
-
-    .install-button.visible {
-      opacity: 1;
-      transform: scale(1);
-    }
-
-    @media (hover: hover) {
-      .install-button:hover {
-        transform: scale(1.1);
+    /* Mobile Anpassungen */
+    @media (max-width: 768px) {
+      .tooltip {
+        position: absolute;
+        bottom: auto;
+        top: -40px;  /* Position über dem Symbol */
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: normal;
+        width: auto;
+        max-width: 200px;
+        text-align: center;
+        z-index: 99999;  /* Sehr hoher z-index */
+        background: rgba(17, 24, 39, 0.95);  /* Leicht transparent */
+        backdrop-filter: blur(4px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
-    }
 
-    /* Verhindere Scrollen wenn Modal offen ist */
-    body.modal-open {
-      overflow: hidden;
-    }
+      .tooltip::after {
+        content: '';
+        position: absolute;
+        top: 100%;  /* Pfeil nach unten */
+        left: 50%;
+        transform: translateX(-50%);
+        border-width: 4px;
+        border-style: solid;
+        border-color: rgba(17, 24, 39, 0.95) transparent transparent transparent;
+      }
 
-    /* Container für gleichmäßige Card-Höhen */
-    .grid {
-      display: grid;
-      gap: 6px;
+      .tooltip-container {
+        position: relative;  /* Zurück zu relative */
+      }
+
+      .tooltip-trigger {
+        position: relative;
+        z-index: 1;
+        padding: 6px;
+      }
+
+      /* Entferne alle anderen z-index Anpassungen */
+      .allergens-container {
+        position: relative;
+      }
     }
   </style>
   <script>
@@ -457,7 +466,6 @@
     function showImageModal(imageUrl, title) {
       const modal = document.createElement('div');
       modal.classList.add('modal-backdrop');
-      document.body.classList.add('modal-open');
       modal.style.display = 'flex';
       
       modal.innerHTML = `
@@ -473,7 +481,6 @@
 
       modal.addEventListener('click', (e) => {
         if (e.target === modal || e.target.closest('.modal-close')) {
-          document.body.classList.remove('modal-open');
           modal.remove();
         }
       });
@@ -674,130 +681,50 @@
       card.querySelectorAll('.tooltip-trigger').forEach(trigger => {
         const tooltip = trigger.querySelector('.tooltip');
         
-        trigger.addEventListener('mouseenter', () => {
-          tooltip.style.visibility = 'visible';
-          tooltip.style.opacity = '1';
-        });
-        
-        trigger.addEventListener('mouseleave', () => {
-          tooltip.style.visibility = 'hidden';
-          tooltip.style.opacity = '0';
-        });
-      });
-    }
-
-    // PWA Installation
-    let deferredPrompt;
-
-    // Bessere Safari-Erkennung
-    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent) || 
-                     (navigator.userAgent.includes('iPhone') && navigator.vendor.includes('Apple'));
-    const isIOSSafari = isIOS && isSafari;
-
-    // Zeige unterschiedliche Install-Buttons je nach Plattform
-    function showInstallButton() {
-      const installButton = document.getElementById('installButton');
-      if (!installButton) return;
-
-      // Zeige den Button immer in Safari auf iOS
-      if (isIOS && window.navigator.standalone === undefined) {
-        // Bereits als PWA installiert
-        installButton.style.display = 'none';
-      } else if (isIOSSafari) {
-        installButton.classList.add('visible');
-        installButton.onclick = () => showIOSInstallInstructions(false);
-      } else if (isIOS) {
-        installButton.classList.add('visible');
-        installButton.onclick = () => showIOSInstallInstructions(true);
-      } else if (deferredPrompt) {
-        installButton.classList.add('visible');
-        installButton.onclick = installPWA;
-      } else {
-        installButton.classList.remove('visible');
-      }
-    }
-
-    // Aktualisierte iOS Installationsanleitung
-    function showIOSInstallInstructions(needsSafari = false) {
-      const modal = document.createElement('div');
-      modal.classList.add('modal-backdrop');
-      modal.style.display = 'flex';
-      
-      if (needsSafari) {
-        modal.innerHTML = `
-          <div class="modal-content p-6 max-w-md">
-            <h3 class="text-xl font-bold mb-4">Installation auf iOS</h3>
-            <p class="text-red-500 mb-4">Diese Seite muss in Safari geöffnet werden!</p>
-            <button onclick="this.closest('.modal-backdrop').remove()" 
-                    class="w-full py-2 bg-gray-200 rounded-lg">
-              Verstanden
-            </button>
-          </div>
-        `;
-      } else {
-        modal.innerHTML = `
-          <div class="modal-content p-6 max-w-md">
-            <h3 class="text-xl font-bold mb-4">Zum Home-Bildschirm hinzufügen</h3>
-            <ol class="space-y-2 mb-4">
-              <li class="flex items-center gap-2">
-                1. Tippe auf das Share-Symbol <i class="fa-solid fa-share-from-square"></i>
-              </li>
-              <li>2. Scrolle im Share-Menü nach unten</li>
-              <li class="flex items-center gap-2">
-                3. Tippe auf "Zum Home-Bildschirm hinzufügen" <i class="fa-solid fa-plus"></i>
-              </li>
-            </ol>
-            <button onclick="this.closest('.modal-backdrop').remove()" 
-                    class="w-full py-2 bg-gray-200 rounded-lg">
-              Verstanden
-            </button>
-          </div>
-        `;
-      }
-
-      document.body.appendChild(modal);
-    }
-
-    // Event Listener für Install-Prompt (nicht-iOS)
-    window.addEventListener('beforeinstallprompt', (e) => {
-      e.preventDefault();
-      deferredPrompt = e;
-      showInstallButton();
-    });
-
-    // Zeige den iOS Button sofort
-    if (isIOS) {
-      // Warte kurz, bis die Seite geladen ist
-      setTimeout(showInstallButton, 1000);
-    }
-
-    async function installPWA() {
-      if (!deferredPrompt) return;
-      
-      deferredPrompt.prompt();
-      const { outcome } = await deferredPrompt.userChoice;
-      
-      if (outcome === 'accepted') {
-        const installButton = document.getElementById('installButton');
-        if (installButton) {
-          installButton.classList.remove('visible');
-        }
-      }
-      
-      deferredPrompt = null;
-    }
-
-    // Service Worker Registration
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js')
-          .then(registration => {
-            console.log('ServiceWorker registration successful');
-          })
-          .catch(err => {
-            console.log('ServiceWorker registration failed: ', err);
+        // Prüfe ob es ein Touch-Gerät ist
+        if ('ontouchstart' in window) {
+          // Touch Events
+          trigger.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            // Schließe alle anderen offenen Tooltips
+            document.querySelectorAll('.tooltip').forEach(t => {
+              if (t !== tooltip) {
+                t.style.visibility = 'hidden';
+                t.style.opacity = '0';
+              }
+            });
+            
+            // Toggle aktuellen Tooltip
+            if (tooltip.style.visibility === 'visible') {
+              tooltip.style.visibility = 'hidden';
+              tooltip.style.opacity = '0';
+            } else {
+              tooltip.style.visibility = 'visible';
+              tooltip.style.opacity = '1';
+            }
           });
+          
+          // Schließe Tooltip wenn woanders hingeklickt wird
+          document.addEventListener('click', (e) => {
+            if (!trigger.contains(e.target)) {
+              tooltip.style.visibility = 'hidden';
+              tooltip.style.opacity = '0';
+            }
+          });
+        } else {
+          // Desktop Hover Events
+          trigger.addEventListener('mouseenter', () => {
+            tooltip.style.visibility = 'visible';
+            tooltip.style.opacity = '1';
+          });
+          
+          trigger.addEventListener('mouseleave', () => {
+            tooltip.style.visibility = 'hidden';
+            tooltip.style.opacity = '0';
+          });
+        }
       });
     }
 
