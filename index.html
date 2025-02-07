@@ -28,7 +28,7 @@
       position: relative;
       z-index: 1;
       height: 100%;
-      transform-origin: center top;
+      transform: translateY(-4px);
     }
 
     .meal-card:hover {
@@ -193,18 +193,21 @@
     }
 
     .tooltip-container {
-      position: static;
+      position: relative;
+      z-index: 30;
     }
 
     .tooltip-trigger {
       position: relative;
-      display: inline-block;
     }
 
     .tooltip {
-      position: fixed;
-      pointer-events: none;
-      z-index: 1000;
+      position: absolute;
+      left: 50%;
+      bottom: 100%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      z-index: 40;
       margin-bottom: 8px;
       background: #111827;
       color: white;
@@ -212,6 +215,7 @@
       border-radius: 4px;
       font-size: 12px;
       filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+      pointer-events: none;
       visibility: hidden;
       opacity: 0;
       transition: opacity 0.2s, visibility 0.2s;
@@ -276,7 +280,7 @@
     /* Container für gleichmäßige Card-Höhen */
     .grid {
       display: grid;
-      grid-auto-rows: 1fr;
+      gap: 6px;
     }
   </style>
   <script>
@@ -670,24 +674,9 @@
       card.querySelectorAll('.tooltip-trigger').forEach(trigger => {
         const tooltip = trigger.querySelector('.tooltip');
         
-        trigger.addEventListener('mouseenter', (e) => {
-          const rect = trigger.getBoundingClientRect();
+        trigger.addEventListener('mouseenter', () => {
           tooltip.style.visibility = 'visible';
           tooltip.style.opacity = '1';
-          
-          // Positioniere Tooltip über dem Element
-          tooltip.style.left = rect.left + (rect.width / 2) + 'px';
-          tooltip.style.top = rect.top - 10 + 'px';
-          
-          // Prüfe Viewport-Grenzen
-          const tooltipRect = tooltip.getBoundingClientRect();
-          if (tooltipRect.left < 0) {
-            tooltip.style.left = '10px';
-            tooltip.style.transform = 'translateY(-100%)';
-          } else if (tooltipRect.right > window.innerWidth) {
-            tooltip.style.left = (window.innerWidth - 10) + 'px';
-            tooltip.style.transform = 'translate(-100%, -100%)';
-          }
         });
         
         trigger.addEventListener('mouseleave', () => {
