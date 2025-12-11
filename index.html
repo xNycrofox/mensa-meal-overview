@@ -6,6 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mensa Meals</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {}
+      }
+    }
+  </script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
@@ -17,6 +25,12 @@
     body {
       font-family: 'Inter', sans-serif;
       background-color: #FAFAFA;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    body.dark {
+      background-color: #111827;
+      color: #F9FAFB;
     }
 
     .meal-card {
@@ -26,6 +40,68 @@
       border: 1px solid #F3F3F3;
       position: relative;
       z-index: 1;
+    }
+
+    .dark .meal-card {
+      background: #1F2937;
+      border-color: #374151;
+    }
+
+    .dark .text-gray-900 {
+      color: #F3F4F6 !important;
+      /* Force override Tailwind utilities */
+    }
+
+    .dark .text-gray-600,
+    .dark .text-gray-700,
+    .dark .text-gray-500 {
+      color: #9CA3AF !important;
+    }
+
+    .dark .carousel-btn {
+      background: #1F2937;
+      border: 1px solid #374151;
+      color: #F3F4F6;
+    }
+
+    .dark .bg-gray-200 {
+      background-color: #374151;
+      /* Button container */
+    }
+
+    .dark .bg-white {
+      background-color: #1F2937;
+      /* Buttons inactive */
+    }
+
+    .dark .bg-gray-900 {
+      background-color: #111827;
+      /* Buttons active */
+      color: #F3F4F6;
+    }
+
+    .dark .filter-chip {
+      background: #374151;
+      color: #F3F4F6;
+    }
+
+    .dark select {
+      color: #F3F4F6 !important;
+    }
+
+    .dark .tooltip {
+      background: rgba(255, 255, 255, 0.95) !important;
+      color: #111827 !important;
+    }
+
+    .dark .tooltip::after {
+      border-color: rgba(255, 255, 255, 0.95) transparent transparent transparent !important;
+    }
+
+    .dark .sold-out-badge {
+      background: rgba(31, 41, 55, 0.95);
+      /* Dark background for badge in dark mode */
+      border-color: #7F1D1D;
     }
 
     .meal-card:hover {
@@ -341,6 +417,17 @@
   <script>
     let currentDate = new Date();
     let selectedCanteenId = 32; // Standard: Mensa Johanna
+    let currentPriceRole = localStorage.getItem('priceRole') || 'Studierende'; // Standard: Studierendenpreis
+
+    // Preis-Mapping für die API Keys
+    const priceKeys = {
+      'Studierende': 'Studierende',
+      'Bedienstete': 'Bedienstete',
+      'Gäste': 'Andere' // Vermutung: API nutzt oft 'Andere' oder 'Gäste'
+    };
+
+    // Aktive Filter laden
+    let activeFilters = JSON.parse(localStorage.getItem('activeFilters') || '[]');
 
     // Formatieren des Datums als YYYY-MM-DD
     function formatDate(date) {
@@ -412,7 +499,22 @@
       contentWrapper.style.flexDirection = "column";
 
       const imageUrl = meal.image ? `https:${meal.image}` : 'placeholder-image-url.jpg';
-      const price = meal.prices?.Studierende ? `${meal.prices.Studierende.toFixed(2)} €` : 'Preis nicht verfügbar';
+
+      const priceKey = priceKeys[currentPriceRole] || currentPriceRole;
+      let priceValue = meal.prices?.[priceKey];
+
+      // Fallback: Wenn 'Andere/Gäste' nicht da ist, nimm Bedienstete + Aufschlag (simuliert) oder zeige n/a
+      // Dresden API hat oft nur Studierende/Bedienstete.
+      if (!priceValue && currentPriceRole === 'Gäste') {
+        // Fallback Logik oder einfach Bedienstetenpreis anzeigen (oft identisch für Externe an Hochschulen?)
+        // Wir lassen es erstmal leer wenn nicht vorhanden.
+        if (meal.prices?.['Bedienstete']) {
+          // Oft ist Gäste = Bedienstete + X. Wir nehmen erstmal Bedienstete als Proxy wenn 'Gäste' fehlt.
+          priceValue = meal.prices['Bedienstete'];
+        }
+      }
+
+      const price = priceValue ? `${priceValue.toFixed(2)} €` : 'Preis k.A.';
 
       // Neue Symbole für vegan/vegetarisch mit Font Awesome
       const dietBadge = meal.notes?.includes("Menü ist vegan")
@@ -590,14 +692,34 @@
     async function renderDay(date) {
       if (!date) return;
 
-      const meals = await fetchMeals(date);
+      let meals = await fetchMeals(date);
+
+      // Filter anwenden
+      if (activeFilters.length > 0) {
+        meals = meals.filter(meal => {
+          const notes = (meal.notes || []).join(" ").toLowerCase();
+
+          if (activeFilters.includes('vegan') && !notes.includes('vegan')) return false;
+          if (activeFilters.includes('vegetarian') && !notes.includes('vegetarisch') && !notes.includes('vegan')) return false;
+          if (activeFilters.includes('no-pork') && notes.includes('schwein')) return false;
+          // Gluten: Prüfe auf Allergen Code A oder Text. (Einfachheitshalber Text)
+          // "Glutenhaltiges Getreide"
+          if (activeFilters.includes('no-gluten') && (notes.includes('gluten') || notes.includes('weizen') || notes.includes('roggen'))) return false;
+
+          return true;
+        });
+      }
+
       const dayContainer = document.createElement("div");
       dayContainer.classList.add("mb-12");
       // ID für das Scrollen setzen
       dayContainer.id = `day-${date}`;
 
       const dayHeader = document.createElement("h2");
-      dayHeader.classList.add("text-2xl", "font-bold", "text-gray-900", "mb-6");
+      dayHeader.classList.add("text-2xl", "font-bold", "text-gray-900");
+
+      const headerContainer = document.createElement("div");
+      headerContainer.classList.add("flex", "items-center", "justify-between", "mb-6");
 
       try {
         dayHeader.textContent = new Date(date).toLocaleDateString('de-DE', {
@@ -608,7 +730,8 @@
         console.error('Fehler beim Formatieren des Datums:', error);
       }
 
-      dayContainer.appendChild(dayHeader);
+      headerContainer.appendChild(dayHeader);
+      dayContainer.appendChild(headerContainer);
 
       if (meals.length === 0) {
         const noMealsMessage = document.createElement("p");
@@ -783,7 +906,7 @@
 
     // Neue Funktion für die Datumsanzeige
     function updateDateRange(startDate, endDate) {
-      const dateRangeElement = document.getElementById("dateRange");
+      const dateRangeElement = document.getElementById("currentDateRange");
       const start = new Date(startDate);
       const end = new Date(endDate);
 
@@ -833,13 +956,153 @@
         const dropdown = document.getElementById("canteenDropdown");
         dropdown.innerHTML = "<option>Fehler beim Laden</option>";
       }
-      renderWeek();
     }
+
 
     // Ändern der ausgewählten Mensa
     function changeCanteen(event) {
       selectedCanteenId = parseInt(event.target.value, 10);
       renderWeek();
+    }
+
+    // Ändern der Preisgruppe
+    function changePriceRole(role) {
+      currentPriceRole = role;
+      localStorage.setItem('priceRole', role);
+
+      // Update Button Styles
+      document.querySelectorAll('.price-btn').forEach(btn => {
+        if (btn.dataset.role === role) {
+          // Dark Mode aware classes handling via CSS overrides/specifics or utility updates
+          // Wir nutzen einfache Logik, da global dark class auf body ist
+          btn.classList.add('active-role');
+        } else {
+          btn.classList.remove('active-role');
+        }
+      });
+
+      // Manuelles class swapping für buttons hier ist mühsam mit Dark Mode. 
+      // Besser: wir entfernen die harten classes und nutzen CSS selector basierend auf 'active-role'.
+      // Aber okay, wir passen einfach die Klassen an für "active" Zustand.
+
+      document.querySelectorAll('.price-btn').forEach(btn => {
+        // Reset base
+        btn.className = "price-btn px-4 py-1.5 rounded-md text-sm font-medium transition-colors";
+        if (btn.dataset.role === role) {
+          btn.classList.add('bg-gray-900', 'text-white');
+        } else {
+          btn.classList.add('bg-white', 'text-gray-700');
+        }
+      });
+
+      renderWeek();
+    }
+
+    // Dark Mode Logic
+    function toggleDarkMode() {
+      document.documentElement.classList.toggle('dark');
+      document.body.classList.toggle('dark'); // Fallback/Support
+      const isDark = document.documentElement.classList.contains('dark');
+      localStorage.setItem('darkMode', isDark);
+      updateDarkModeToggle();
+    }
+
+    function updateDarkModeIcon() {
+      const isDark = document.documentElement.classList.contains('dark');
+      const icon = document.getElementById('darkModeIcon');
+      if (icon) {
+        icon.className = isDark ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+      }
+    }
+
+    function initDarkMode() {
+      const saved = localStorage.getItem('darkMode') === 'true';
+      if (saved) {
+        document.documentElement.classList.add('dark');
+        document.body.classList.add('dark');
+      }
+      updateDarkModeToggle();
+    }
+
+    // Toggle Filter
+    function toggleFilter(filter) {
+      if (activeFilters.includes(filter)) {
+        activeFilters = activeFilters.filter(f => f !== filter);
+      } else {
+        // Logik: Vegan impliziert Vegetarian
+        activeFilters.push(filter);
+      }
+      localStorage.setItem('activeFilters', JSON.stringify(activeFilters));
+      renderFilters();
+      renderWeek();
+    }
+
+    // Filter UI rendern
+    function renderFilters() {
+      const container = document.getElementById('filterContainer');
+      const filters = [
+        { id: 'vegan', label: 'Vegan', icon: 'fa-leaf' },
+        { id: 'vegetarian', label: 'Vegetarisch', icon: 'fa-seedling' },
+        { id: 'no-pork', label: 'Kein Schwein', icon: 'fa-ban' }, // Icons ggf. anpassen
+        { id: 'no-gluten', label: 'Glutenfrei', icon: 'fa-wheat-awn-circle-exclamation' }
+      ];
+
+      container.innerHTML = filters.map(f => {
+        const isActive = activeFilters.includes(f.id);
+        const activeClass = isActive ? 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900/50 dark:text-indigo-300 border-indigo-200 dark:border-indigo-800' : 'bg-gray-50 text-gray-600 dark:bg-gray-700/50 dark:text-gray-300 border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600/50';
+        return `
+          <button onclick="toggleFilter('${f.id}')"
+                  class="${activeClass} border px-3 py-1.5 rounded-full text-sm font-medium transition-colors flex items-center gap-2">
+            <i class="fa-solid ${f.icon}"></i>
+            ${f.label}
+          </button>
+        `;
+      }).join('');
+    }
+
+    // Share Funktion
+    async function shareDay(date, meals) {
+      const dateStr = new Date(date).toLocaleDateString('de-DE', { weekday: 'long', day: '2-digit', month: '2-digit' });
+      let text = `📅 Mensa ${dateStr}\n\n`;
+
+      if (meals.length === 0) {
+        text += "Keine Gerichte verfügbar.";
+      } else {
+        meals.forEach(meal => {
+          // Preis ermitteln
+          const priceKey = priceKeys[currentPriceRole] || currentPriceRole;
+          const price = meal.prices?.[priceKey] ? `${meal.prices[priceKey].toFixed(2)}€` : 'N/A';
+
+          // Status prüfen (für Text markieren?)
+          // Wir könnten checkMealAvailability hier nicht synchron nutzen.
+          // Wir lassen Verfügbarkeit im Text weg oder rufen sie parallel ab (zu aufwendig für Share Button).
+          // Einfach Gerichte auflisten.
+
+          text += `🍽️ ${meal.name} (${price})\n`;
+        });
+      }
+
+      text += `\n🔗 https://www.studentenwerk-dresden.de/mensen/speiseplan/`;
+
+      if (navigator.share) {
+        try {
+          await navigator.share({
+            title: `Mensa Speiseplan ${dateStr}`,
+            text: text
+          });
+        } catch (err) {
+          console.log('Error sharing:', err);
+        }
+      } else {
+        // Fallback Clipboard
+        try {
+          await navigator.clipboard.writeText(text);
+          alert("Speiseplan in die Zwischenablage kopiert!");
+        } catch (err) {
+          console.error('Failed to copy!', err);
+          alert("Konnte nicht kopieren.");
+        }
+      }
     }
 
     // Modifiziere die Event Listener für die Tooltips
@@ -896,7 +1159,14 @@
 
     // Initialisierung nach dem Laden des Dokuments
     document.addEventListener("DOMContentLoaded", () => {
+      initDarkMode();
       populateCanteens();
+      // Initiale Preisgruppen-Anzeige setzen
+      changePriceRole(currentPriceRole);
+      renderFilters();
+
+      document.getElementById('prevWeekBtn').addEventListener('click', previousWeek);
+      document.getElementById('nextWeekBtn').addEventListener('click', nextWeek);
     });
   </script>
 </head>
@@ -904,28 +1174,46 @@
 <body class="p-6 md:p-8">
   <div class="max-w-7xl mx-auto">
     <header class="mb-12">
-      <h1 class="text-4xl font-bold text-gray-900 mb-8">Mensa Meals</h1>
+      <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-8">Mensa Meals</h1>
       <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 md:gap-8">
         <div class="flex items-center gap-4">
-          <div class="filter-chip">
-            <i class="fa-solid fa-school-flag text-gray-600"></i>
+          <div class="filter-chip bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
+            <i class="fa-solid fa-school-flag text-gray-600 dark:text-gray-300"></i>
             <select id="canteenDropdown"
-              class="bg-transparent border-none focus:outline-none focus:ring-0 text-gray-700 pr-8"
+              class="bg-transparent border-none focus:outline-none focus:ring-0 text-gray-700 dark:text-gray-200 pr-8"
               onchange="changeCanteen(event)">
             </select>
           </div>
         </div>
-        <div class="date-nav">
-          <button class="nav-btn" onclick="previousWeek()">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-            </svg>
+
+        <div class="flex items-center gap-4">
+          <!-- Date Nav -->
+          <div
+            class="date-nav flex items-center gap-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-full px-2 py-1 shadow-sm">
+            <button id="prevWeekBtn"
+              class="nav-btn p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <h2 id="currentDateRange"
+              class="text-base font-semibold text-gray-800 dark:text-white min-w-[120px] text-center">
+              Lade Woche...
+            </h2>
+            <button id="nextWeekBtn"
+              class="nav-btn p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+
+          <!-- Share Button -->
+          <button onclick="openShareModal()"
+            class="bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 p-3 rounded-full hover:shadow-lg transition-all border border-gray-100 dark:border-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400">
+            <i class="fa-solid fa-share-nodes"></i>
           </button>
-          <span class="text-base font-medium text-gray-900" id="dateRange"></span>
-          <button class="nav-btn" onclick="nextWeek()">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-            </svg>
+
+          <!-- Settings Button -->
+          <button onclick="openSettings()"
+            class="bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 p-3 rounded-full hover:shadow-lg transition-all border border-gray-100 dark:border-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400">
+            <i class="fa-solid fa-sliders"></i>
           </button>
         </div>
       </div>
@@ -936,7 +1224,209 @@
     </div>
 
 
+    <footer class="mt-16 py-8 border-t border-gray-100 dark:border-gray-800 text-center">
+      <a href="https://github.com/xNycrofox/mensa-meal-overview" target="_blank" rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 text-gray-400 hover:text-gray-900 dark:text-gray-500 dark:hover:text-gray-300 transition-colors group">
+        <i class="fa-brands fa-github text-lg group-hover:scale-110 transition-transform"></i>
+        <span class="text-sm font-medium">Mitentwickeln auf GitHub</span>
+      </a>
+    </footer>
   </div>
+  <!-- Settings Modal -->
+  <div id="settingsModal"
+    class="modal-backdrop hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center opacity-0 transition-opacity duration-300">
+    <div
+      class="bg-white dark:bg-gray-800 rounded-2xl w-full max-w-md mx-4 overflow-hidden shadow-2xl transform scale-95 transition-transform duration-300"
+      id="settingsModalContent">
+      <div
+        class="px-6 py-4 border-b border-gray-100 dark:border-gray-700 flex justify-between items-center bg-gray-50/50 dark:bg-gray-800/50 backdrop-blur-sm">
+        <h3 class="text-xl font-bold text-gray-900 dark:text-white">Einstellungen</h3>
+        <button onclick="closeSettingsModal()"
+          class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="p-6 space-y-8">
+
+        <!-- Price Section -->
+        <div class="space-y-3">
+          <label
+            class="block text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">Preise</label>
+          <div class="flex bg-gray-100 dark:bg-gray-700 p-1.5 rounded-xl">
+            <button class="price-btn flex-1 py-2 rounded-lg text-sm font-medium transition-all shadow-sm"
+              data-role="Studierende" onclick="changePriceRole('Studierende')">Studis</button>
+            <button class="price-btn flex-1 py-2 rounded-lg text-sm font-medium transition-all shadow-sm"
+              data-role="Bedienstete" onclick="changePriceRole('Bedienstete')">Mitarbeitende</button>
+          </div>
+        </div>
+
+        <!-- Filter Section -->
+        <div class="space-y-3">
+          <label
+            class="block text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">Filter</label>
+          <div id="filterContainer" class="flex flex-wrap gap-2">
+            <!-- Wird dynamisch befüllt -->
+          </div>
+        </div>
+
+        <!-- Appearance Section -->
+        <div class="space-y-3">
+          <label
+            class="block text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">Erscheinungsbild</label>
+          <div
+            class="flex items-center justify-between bg-gray-50 dark:bg-gray-700/50 p-4 rounded-xl border border-gray-100 dark:border-gray-700">
+            <div class="flex items-center gap-3">
+              <div
+                class="w-8 h-8 rounded-full bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center text-indigo-600 dark:text-indigo-400">
+                <i id="darkModeIcon" class="fa-solid fa-moon"></i>
+              </div>
+              <span class="text-gray-700 dark:text-gray-200 font-medium">Dark Mode</span>
+            </div>
+            <label class="relative inline-flex items-center cursor-pointer">
+              <input type="checkbox" id="darkModeToggle" class="sr-only peer" onchange="toggleDarkMode()">
+              <div
+                class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer dark:bg-gray-600 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-indigo-600">
+              </div>
+            </label>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Share Modal -->
+  <div id="shareModal"
+    class="modal-backdrop hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center opacity-0 transition-opacity duration-300">
+    <div
+      class="bg-white dark:bg-gray-800 rounded-2xl w-full max-w-sm mx-4 overflow-hidden shadow-2xl transform scale-95 transition-transform duration-300"
+      id="shareModalContent">
+      <div
+        class="px-6 py-4 border-b border-gray-100 dark:border-gray-700 flex justify-between items-center bg-gray-50/50 dark:bg-gray-800/50 backdrop-blur-sm">
+        <h3 class="text-xl font-bold text-gray-900 dark:text-white">App Teilen</h3>
+        <button onclick="closeShareModal()"
+          class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="p-6 space-y-4">
+        <p class="text-gray-600 dark:text-gray-300 text-sm">Teile diesen Link mit deinen Freunden, damit sie auch sehen,
+          was es heute in der Mensa gibt!</p>
+
+        <div class="relative">
+          <input type="text" id="shareLinkInput" readonly
+            class="w-full bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-gray-900 dark:text-gray-100 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block p-2.5"
+            value="https://mensa-meals.com">
+        </div>
+
+        <button id="copyLinkBtn" onclick="copyShareLink()"
+          class="w-full text-white bg-indigo-600 hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-indigo-600 dark:hover:bg-indigo-700 focus:outline-none dark:focus:ring-indigo-800 transition-all flex items-center justify-center gap-2">
+          <span>📋</span> Link kopieren
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Settings Modal Logic
+    const settingsModal = document.getElementById('settingsModal');
+    const settingsModalContent = document.getElementById('settingsModalContent');
+
+    function openSettings() {
+      settingsModal.classList.remove('hidden');
+      // Force reflow
+      void settingsModal.offsetWidth;
+      settingsModal.classList.remove('opacity-0');
+      settingsModalContent.classList.remove('scale-95');
+      settingsModalContent.classList.add('scale-100');
+    }
+
+    function closeSettingsModal() {
+      settingsModal.classList.add('opacity-0');
+      settingsModalContent.classList.remove('scale-100');
+      settingsModalContent.classList.add('scale-95');
+      setTimeout(() => {
+        settingsModal.classList.add('hidden');
+      }, 300);
+    }
+
+    settingsModal.addEventListener('click', (e) => {
+      if (e.target === settingsModal) closeSettingsModal();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !settingsModal.classList.contains('hidden')) {
+        closeSettingsModal();
+      }
+    });
+
+    // Dark Mode Sync for Toggle Switch
+    function updateDarkModeToggle() {
+      const isDark = document.documentElement.classList.contains('dark');
+      const toggle = document.getElementById('darkModeToggle');
+      if (toggle) toggle.checked = isDark;
+      updateDarkModeIcon();
+    }
+
+    // Share Modal Logic
+    const shareModal = document.getElementById('shareModal');
+    const shareModalContent = document.getElementById('shareModalContent');
+
+    function openShareModal() {
+      // Setze aktuelle URL
+      document.getElementById('shareLinkInput').value = window.location.href;
+
+      shareModal.classList.remove('hidden');
+      void shareModal.offsetWidth;
+      shareModal.classList.remove('opacity-0');
+      shareModalContent.classList.remove('scale-95');
+      shareModalContent.classList.add('scale-100');
+    }
+
+    function closeShareModal() {
+      shareModal.classList.add('opacity-0');
+      shareModalContent.classList.remove('scale-100');
+      shareModalContent.classList.add('scale-95');
+      setTimeout(() => {
+        shareModal.classList.add('hidden');
+      }, 300);
+    }
+
+    shareModal.addEventListener('click', (e) => {
+      if (e.target === shareModal) closeShareModal();
+    });
+
+    function copyShareLink() {
+      const copyText = document.getElementById("shareLinkInput");
+      const btn = document.getElementById("copyLinkBtn");
+
+      copyText.select();
+      copyText.setSelectionRange(0, 99999);
+
+      navigator.clipboard.writeText(copyText.value).then(() => {
+        // Feedback Button
+        const originalContent = btn.innerHTML;
+        btn.innerHTML = `<span>✅</span> Kopiert!`;
+        btn.classList.add('bg-green-600', 'hover:bg-green-700', 'dark:bg-green-600', 'dark:hover:bg-green-700');
+        btn.classList.remove('bg-indigo-600', 'hover:bg-indigo-700', 'dark:bg-indigo-600', 'dark:hover:bg-indigo-700');
+
+        setTimeout(() => {
+          btn.innerHTML = originalContent;
+          btn.classList.remove('bg-green-600', 'hover:bg-green-700', 'dark:bg-green-600', 'dark:hover:bg-green-700');
+          btn.classList.add('bg-indigo-600', 'hover:bg-indigo-700', 'dark:bg-indigo-600', 'dark:hover:bg-indigo-700');
+          closeShareModal();
+        }, 1500);
+      }).catch(err => {
+        console.error('Copy failed', err);
+      });
+    }
+  </script>
 </body>
 
 </html>
