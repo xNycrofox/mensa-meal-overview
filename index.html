@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,6 +9,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       font-family: 'Inter', sans-serif;
@@ -252,15 +257,18 @@
       .tooltip {
         position: absolute;
         bottom: auto;
-        top: -40px;  /* Position über dem Symbol */
+        top: -40px;
+        /* Position über dem Symbol */
         left: 50%;
         transform: translateX(-50%);
         white-space: normal;
         width: auto;
         max-width: 200px;
         text-align: center;
-        z-index: 99999;  /* Sehr hoher z-index */
-        background: rgba(17, 24, 39, 0.95);  /* Leicht transparent */
+        z-index: 99999;
+        /* Sehr hoher z-index */
+        background: rgba(17, 24, 39, 0.95);
+        /* Leicht transparent */
         backdrop-filter: blur(4px);
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
@@ -268,7 +276,8 @@
       .tooltip::after {
         content: '';
         position: absolute;
-        top: 100%;  /* Pfeil nach unten */
+        top: 100%;
+        /* Pfeil nach unten */
         left: 50%;
         transform: translateX(-50%);
         border-width: 4px;
@@ -277,7 +286,8 @@
       }
 
       .tooltip-container {
-        position: relative;  /* Zurück zu relative */
+        position: relative;
+        /* Zurück zu relative */
       }
 
       .tooltip-trigger {
@@ -290,6 +300,42 @@
       .allergens-container {
         position: relative;
       }
+    }
+
+    .sold-out {
+      filter: grayscale(0.6) opacity(0.9);
+      pointer-events: none;
+    }
+
+    .sold-out-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 50;
+      overflow: hidden;
+      border-radius: 24px;
+      pointer-events: none;
+    }
+
+    .sold-out-badge {
+      position: absolute;
+      top: 32px;
+      right: -60px;
+      background: rgba(255, 255, 255, 0.95);
+      color: #EF4444;
+      width: 200px;
+      text-align: center;
+      padding: 8px 0;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transform: rotate(45deg);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      border-bottom: 1px solid #FEE2E2;
+      border-top: 1px solid #FEE2E2;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
     }
   </style>
   <script>
@@ -324,7 +370,7 @@
       }
 
       const url = `https://api.studentenwerk-dresden.de/openmensa/v2/canteens/${selectedCanteenId}/days/${date}/meals`;
-      
+
       try {
         const response = await fetch(url);
         if (!response.ok) {
@@ -338,26 +384,48 @@
       }
     }
 
+    // Prüfen der Verfügbarkeit eines Gerichts
+    async function checkMealAvailability(canteenId, date, mealId) {
+      const url = `https://api.studentenwerk-dresden.de/openmensa/v2/canteens/${canteenId}/days/${date}/meals/${mealId}`;
+
+      try {
+        const response = await fetch(url);
+        if (response.status === 404) {
+          return false;
+        }
+        return true;
+      } catch (error) {
+        console.error(`Fehler beim Prüfen der Verfügbarkeit für ${mealId}:`, error);
+        return true; // Im Fehlerfall als verfügbar anzeigen
+      }
+    }
+
     // Erstellen einer Mahlzeitenkarte
-    function createMealCard(meal) {
+    function createMealCard(meal, date) {
       const card = document.createElement("div");
       card.classList.add("meal-card");
 
+      // Wrapper für den Inhalt erstellen, damit wir den Filter nur hierauf anwenden können
+      const contentWrapper = document.createElement("div");
+      contentWrapper.style.height = "100%";
+      contentWrapper.style.display = "flex";
+      contentWrapper.style.flexDirection = "column";
+
       const imageUrl = meal.image ? `https:${meal.image}` : 'placeholder-image-url.jpg';
       const price = meal.prices?.Studierende ? `${meal.prices.Studierende.toFixed(2)} €` : 'Preis nicht verfügbar';
-      
+
       // Neue Symbole für vegan/vegetarisch mit Font Awesome
-      const dietBadge = meal.notes?.includes("Menü ist vegan") 
+      const dietBadge = meal.notes?.includes("Menü ist vegan")
         ? `<div class="diet-badge">
             <i class="fa-solid fa-leaf"></i>
             <span>Vegan</span>
           </div>`
         : meal.notes?.includes("Menü ist vegetarisch")
-        ? `<div class="diet-badge">
+          ? `<div class="diet-badge">
             <i class="fa-solid fa-seedling"></i>
             <span>Vegetarisch</span>
           </div>`
-        : '';
+          : '';
 
       // Überarbeitetes Symbol-Mapping mit Font Awesome Icons
       const symbolMap = {
@@ -425,7 +493,7 @@
         })
         .join('') || '';
 
-      card.innerHTML = `
+      contentWrapper.innerHTML = `
         <div class="relative">
           <img src="${imageUrl}" 
                alt="${meal.name}" 
@@ -451,6 +519,25 @@
         </div>
       `;
 
+      card.appendChild(contentWrapper);
+
+      // Asynchron Verfügbarkeit prüfen
+      checkMealAvailability(selectedCanteenId, date, meal.id).then(isAvailable => {
+        if (!isAvailable) {
+          // Klasse nur dem Wrapper hinzufügen!
+          contentWrapper.classList.add('sold-out');
+
+          const overlay = document.createElement('div');
+          overlay.className = 'sold-out-overlay';
+          overlay.innerHTML = `
+            <div class="sold-out-badge">
+              Ausverkauft
+            </div>
+          `;
+          card.appendChild(overlay);
+        }
+      });
+
       // Tooltip Event Listener
       addTooltipListeners(card);
 
@@ -467,7 +554,7 @@
       const modal = document.createElement('div');
       modal.classList.add('modal-backdrop');
       modal.style.display = 'flex';
-      
+
       modal.innerHTML = `
         <div class="modal-content">
           <div class="modal-close">
@@ -479,12 +566,23 @@
         </div>
       `;
 
+      // Logik zum Schließen
+      const closeModal = () => {
+        modal.remove();
+        document.removeEventListener('keydown', onKeyDown);
+      };
+
+      const onKeyDown = (e) => {
+        if (e.key === 'Escape') closeModal();
+      };
+
       modal.addEventListener('click', (e) => {
         if (e.target === modal || e.target.closest('.modal-close')) {
-          modal.remove();
+          closeModal();
         }
       });
 
+      document.addEventListener('keydown', onKeyDown);
       document.body.appendChild(modal);
     }
 
@@ -495,10 +593,12 @@
       const meals = await fetchMeals(date);
       const dayContainer = document.createElement("div");
       dayContainer.classList.add("mb-12");
+      // ID für das Scrollen setzen
+      dayContainer.id = `day-${date}`;
 
       const dayHeader = document.createElement("h2");
       dayHeader.classList.add("text-2xl", "font-bold", "text-gray-900", "mb-6");
-      
+
       try {
         dayHeader.textContent = new Date(date).toLocaleDateString('de-DE', {
           weekday: 'long'
@@ -527,16 +627,16 @@
         "md:grid-cols-2",
         "lg:grid-cols-3"
       ];
-      
+
       // Füge die "md:hidden" Klasse nur hinzu, wenn mehr als 3 Gerichte vorhanden sind
       if (meals.length > 3) {
         gridClasses.push("md:hidden");
       }
-      
+
       mealsGrid.classList.add(...gridClasses);
 
       meals.forEach(meal => {
-        mealsGrid.appendChild(createMealCard(meal));
+        mealsGrid.appendChild(createMealCard(meal, date));
       });
 
       dayContainer.appendChild(mealsGrid);
@@ -549,14 +649,38 @@
         const carousel = document.createElement('div');
         carousel.classList.add('carousel');
 
-        // Dupliziere die ersten 3 Gerichte am Ende für den unendlichen Effekt
-        const allMeals = [...meals, ...meals.slice(0, 3)];
-        
-        allMeals.forEach(meal => {
-          const card = createMealCard(meal);
-          card.classList.add('w-1/3', 'flex-shrink-0');
-          carousel.appendChild(card);
+        // Wir brauchen Klone am Anfang und am Ende für das unendliche Carousel
+        // Sichtbar sind immer 3 items.
+        // Array Struktur: [CloneEnd3, CloneEnd2, CloneEnd1, Real1, ..., RealN, CloneStart1, CloneStart2, CloneStart3]
+
+        const itemsToShow = 3;
+        // Klone der letzten 3 items für den Anfang
+        const clonesStart = meals.slice(-itemsToShow).map(m => {
+          const c = createMealCard(m, date);
+          c.classList.add('w-1/3', 'flex-shrink-0');
+          c.dataset.clone = "start";
+          return c;
         });
+
+        // Klone der ersten 3 items für das Ende
+        const clonesEnd = meals.slice(0, itemsToShow).map(m => {
+          const c = createMealCard(m, date);
+          c.classList.add('w-1/3', 'flex-shrink-0');
+          c.dataset.clone = "end";
+          return c;
+        });
+
+        // Echte Items
+        const realItems = meals.map(m => {
+          const c = createMealCard(m, date);
+          c.classList.add('w-1/3', 'flex-shrink-0');
+          return c;
+        });
+
+        // Alle Items zusammenfügen
+        const allItems = [...clonesStart, ...realItems, ...clonesEnd];
+
+        allItems.forEach(card => carousel.appendChild(card));
 
         const prevBtn = document.createElement('button');
         prevBtn.classList.add('carousel-btn', 'prev');
@@ -574,18 +698,60 @@
           </svg>
         `;
 
-        let currentIndex = 0;
-        const slideWidth = 100 / 3;
+        // State für Carousel
+        let currentIndex = itemsToShow; // Start beim ersten echten Item (nach den Start-Klonen)
+        const slideWidth = 100 / itemsToShow; // 33.333%
+        let isAnimating = false;
+
+        // Initiale Position setzen (ohne Transition)
+        carousel.style.transition = 'none';
+        carousel.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
 
         function updateCarousel(direction) {
+          if (isAnimating) return;
+          isAnimating = true;
+
+          carousel.style.transition = 'transform 0.5s ease';
+
           if (direction === 'next') {
             currentIndex++;
           } else {
             currentIndex--;
           }
-          
-          carousel.style.transform = `translateX(-${(currentIndex % meals.length) * slideWidth}%)`;
+
+          carousel.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
         }
+
+        // Transition End Listener für den "Silent Jump"
+        carousel.addEventListener('transitionend', () => {
+          isAnimating = false;
+
+          // Wenn wir ans Ende gescrollt haben (auf die End-Klone)
+          if (currentIndex >= realItems.length + itemsToShow) {
+            carousel.style.transition = 'none';
+            currentIndex = itemsToShow; // Zurück zum Start der echten Items
+            carousel.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
+          }
+
+          // Wenn wir zum Anfang gescrollt haben (auf die Start-Klone)
+          if (currentIndex < itemsToShow) {
+            carousel.style.transition = 'none';
+            // Wenn currentIndex wird itemsToShow - 1 (also 2), dann sind wir auf letztem Start-Klon.
+            // Das entspricht dem letzten echten Item.
+            // Der Klon bei Index 2 (letzter StartKlon) ist eine Kopie vom letzten echten Item.
+            // Das letzte echte Item ist bei Index: itemsToShow + realItems.length - 1.
+            // Wenn wir von currentIndex (z.B. 2) zu diesem springen wollen,
+            // ist der neue Index: currentIndex + realItems.length.
+            // Bsp: Length=5. ItemsToShow=3.
+            // Indices: 0,1,2 (Klone) | 3,4,5,6,7 (Echt) | 8,9,10 (Klone).
+            // Wir sind bei 2. Das ist Clone von 7.
+            // Ziel ist 7.
+            // Formel: currentIndex (2) + realItems.length (5) = 7.
+
+            currentIndex = currentIndex + realItems.length;
+            carousel.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
+          }
+        });
 
         prevBtn.addEventListener('click', () => updateCarousel('prev'));
         nextBtn.addEventListener('click', () => updateCarousel('next'));
@@ -610,7 +776,7 @@
           weekContainer.appendChild(dayElement);
         }
       }
-      
+
       // Aktualisiere den Datumsbereich im Header
       updateDateRange(dates[0], dates[dates.length - 1]);
     }
@@ -620,11 +786,11 @@
       const dateRangeElement = document.getElementById("dateRange");
       const start = new Date(startDate);
       const end = new Date(endDate);
-      
+
       const formatOptions = { day: 'numeric', month: 'short' };
       const startStr = start.toLocaleDateString('de-DE', formatOptions);
       const endStr = end.toLocaleDateString('de-DE', formatOptions);
-      
+
       dateRangeElement.textContent = `${startStr} - ${endStr}`;
     }
 
@@ -680,14 +846,14 @@
     function addTooltipListeners(card) {
       card.querySelectorAll('.tooltip-trigger').forEach(trigger => {
         const tooltip = trigger.querySelector('.tooltip');
-        
+
         // Prüfe ob es ein Touch-Gerät ist
         if ('ontouchstart' in window) {
           // Touch Events
           trigger.addEventListener('click', (e) => {
             e.preventDefault();
             e.stopPropagation();
-            
+
             // Schließe alle anderen offenen Tooltips
             document.querySelectorAll('.tooltip').forEach(t => {
               if (t !== tooltip) {
@@ -695,7 +861,7 @@
                 t.style.opacity = '0';
               }
             });
-            
+
             // Toggle aktuellen Tooltip
             if (tooltip.style.visibility === 'visible') {
               tooltip.style.visibility = 'hidden';
@@ -705,7 +871,7 @@
               tooltip.style.opacity = '1';
             }
           });
-          
+
           // Schließe Tooltip wenn woanders hingeklickt wird
           document.addEventListener('click', (e) => {
             if (!trigger.contains(e.target)) {
@@ -719,7 +885,7 @@
             tooltip.style.visibility = 'visible';
             tooltip.style.opacity = '1';
           });
-          
+
           trigger.addEventListener('mouseleave', () => {
             tooltip.style.visibility = 'hidden';
             tooltip.style.opacity = '0';
@@ -734,6 +900,7 @@
     });
   </script>
 </head>
+
 <body class="p-6 md:p-8">
   <div class="max-w-7xl mx-auto">
     <header class="mb-12">
@@ -742,22 +909,22 @@
         <div class="flex items-center gap-4">
           <div class="filter-chip">
             <i class="fa-solid fa-school-flag text-gray-600"></i>
-            <select id="canteenDropdown" 
-                    class="bg-transparent border-none focus:outline-none focus:ring-0 text-gray-700 pr-8"
-                    onchange="changeCanteen(event)">
+            <select id="canteenDropdown"
+              class="bg-transparent border-none focus:outline-none focus:ring-0 text-gray-700 pr-8"
+              onchange="changeCanteen(event)">
             </select>
           </div>
         </div>
         <div class="date-nav">
           <button class="nav-btn" onclick="previousWeek()">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
             </svg>
           </button>
           <span class="text-base font-medium text-gray-900" id="dateRange"></span>
           <button class="nav-btn" onclick="nextWeek()">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
           </button>
         </div>
@@ -771,4 +938,5 @@
 
   </div>
 </body>
+
 </html>
