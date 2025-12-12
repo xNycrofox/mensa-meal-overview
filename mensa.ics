@@ -6,22 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20251211T110000Z
-DTEND:20251211T120000Z
-DTSTAMP:20251211T134625Z
-UID:2025-12-11-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Gemüselasagne mit Salat
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Fischstäbchen mit Zitronenecke, dazu Kartoffelpüree und Salat
-  (Stud: 3.69€, Ma: 6.71€)\n\n• Quarkkräppelchen
-  (Stud: 3.00€, Ma: 5.45€ | 🧀 Veg.)\n\n• Rote Linsen- Currysuppe
-  (Stud: 2.18€, Ma: 3.97€ | 🌱 Vegan)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20251212T110000Z
 DTEND:20251212T120000Z
-DTSTAMP:20251211T134625Z
+DTSTAMP:20251212T052833Z
 UID:2025-12-12-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Rucola-Süßkartoffelschnitte mit orientalischer Gemüse- Couscouspfanne, dazu fruchtige Currysoße
@@ -32,7 +19,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20251215T110000Z
 DTEND:20251215T120000Z
-DTSTAMP:20251211T134625Z
+DTSTAMP:20251212T052833Z
 UID:2025-12-15-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Crispy Nuggets aus Gemüse und Jackfrucht mit Sweet Chili , dazu gebackene Kartoffelecken und Salat
@@ -44,7 +31,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20251216T110000Z
 DTEND:20251216T120000Z
-DTSTAMP:20251211T134625Z
+DTSTAMP:20251212T052833Z
 UID:2025-12-16-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Maultaschen mit Rahmgemüse und Salat
@@ -56,7 +43,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20251217T110000Z
 DTEND:20251217T120000Z
-DTSTAMP:20251211T134625Z
+DTSTAMP:20251212T052833Z
 UID:2025-12-17-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Zucchini-Möhrenpakoras mit Kräuter-Dip und Kartoffel- Karottenstampf
@@ -68,7 +55,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20251218T110000Z
 DTEND:20251218T120000Z
-DTSTAMP:20251211T134625Z
+DTSTAMP:20251212T052833Z
 UID:2025-12-18-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Asiatisch gewürzter Gemüse-Reismix im Knuspermantel mit asiatischem Gemüse und Basmati Reis
@@ -79,7 +66,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20251219T110000Z
 DTEND:20251219T120000Z
-DTSTAMP:20251211T134625Z
+DTSTAMP:20251212T052834Z
 UID:2025-12-19-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Seitangulasch mit Spirelli
