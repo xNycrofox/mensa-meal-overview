@@ -6,22 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20251215T110000Z
-DTEND:20251215T120000Z
-DTSTAMP:20251215T053138Z
-UID:2025-12-15-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Crispy Nuggets aus Gemüse und Jackfrucht mit Sweet Chili , dazu gebackene Kartoffelecken und Salat
-  (Stud: 3.99€, Ma: 7.25€ | 🌱 Vegan)\n\n• Tagliatelle mit Lachs- Gemüse- Sahnesoße und Kirschtomaten
-  (Stud: 2.35€, Ma: 4.90€)\n\n• Hausgemachte Kartoffelpuffer mit Wurzelgemüse, dazu Kräuterquark
-  (Stud: 2.70€, Ma: 4.90€ | 🧀 Veg.)\n\n• Hackfleisch- Käse- Lauchtopf
-  (Stud: 2.18€, Ma: 3.97€)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20251216T110000Z
 DTEND:20251216T120000Z
-DTSTAMP:20251215T053138Z
+DTSTAMP:20251216T052901Z
 UID:2025-12-16-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Maultaschen mit Rahmgemüse und Salat
@@ -33,7 +20,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20251217T110000Z
 DTEND:20251217T120000Z
-DTSTAMP:20251215T053138Z
+DTSTAMP:20251216T052901Z
 UID:2025-12-17-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Zucchini-Möhrenpakoras mit Kräuter-Dip und Kartoffel- Karottenstampf
@@ -45,7 +32,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20251218T110000Z
 DTEND:20251218T120000Z
-DTSTAMP:20251215T053138Z
+DTSTAMP:20251216T052901Z
 UID:2025-12-18-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Asiatisch gewürzter Gemüse-Reismix im Knuspermantel mit asiatischem Gemüse und Basmati Reis
@@ -56,7 +43,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20251219T110000Z
 DTEND:20251219T120000Z
-DTSTAMP:20251215T053138Z
+DTSTAMP:20251216T052901Z
 UID:2025-12-19-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Seitangulasch mit Spirelli
