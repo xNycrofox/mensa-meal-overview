@@ -6,21 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20251216T110000Z
-DTEND:20251216T120000Z
-DTSTAMP:20251216T052901Z
-UID:2025-12-16-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Maultaschen mit Rahmgemüse und Salat
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Hirschgulasch mit Backpflaumen, dazu gebratene Haselnussspätzle mit Gemüsestreifen
-  (Stud: 3.99€, Ma: 7.25€)\n\n• Quarkkräppelchen
-  (Stud: 3.00€, Ma: 5.45€ | 🧀 Veg.)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20251217T110000Z
 DTEND:20251217T120000Z
-DTSTAMP:20251216T052901Z
+DTSTAMP:20251217T052932Z
 UID:2025-12-17-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Zucchini-Möhrenpakoras mit Kräuter-Dip und Kartoffel- Karottenstampf
@@ -32,7 +20,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20251218T110000Z
 DTEND:20251218T120000Z
-DTSTAMP:20251216T052901Z
+DTSTAMP:20251217T052932Z
 UID:2025-12-18-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Asiatisch gewürzter Gemüse-Reismix im Knuspermantel mit asiatischem Gemüse und Basmati Reis
@@ -43,7 +31,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20251219T110000Z
 DTEND:20251219T120000Z
-DTSTAMP:20251216T052901Z
+DTSTAMP:20251217T052932Z
 UID:2025-12-19-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Seitangulasch mit Spirelli
