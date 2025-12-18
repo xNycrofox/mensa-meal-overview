@@ -6,21 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20251217T110000Z
-DTEND:20251217T120000Z
-DTSTAMP:20251217T052932Z
-UID:2025-12-17-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Zucchini-Möhrenpakoras mit Kräuter-Dip und Kartoffel- Karottenstampf
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Gebackener Camembert mit Preiselbeersahne, Bratkartoffeln und Salat
-  (Stud: 4.12€, Ma: 7.49€ | 🧀 Veg.)\n\n• Goldgebackene Eierlikörwaffel mit Puderzucker
-  (Stud: 2.50€, Ma: 4.55€ | 🧀 Veg.)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20251218T110000Z
 DTEND:20251218T120000Z
-DTSTAMP:20251217T052932Z
+DTSTAMP:20251218T052944Z
 UID:2025-12-18-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Asiatisch gewürzter Gemüse-Reismix im Knuspermantel mit asiatischem Gemüse und Basmati Reis
@@ -31,7 +19,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20251219T110000Z
 DTEND:20251219T120000Z
-DTSTAMP:20251217T052932Z
+DTSTAMP:20251218T052945Z
 UID:2025-12-19-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Seitangulasch mit Spirelli
