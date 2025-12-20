@@ -5,15 +5,4 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
-BEGIN:VEVENT
-DTSTART:20251219T110000Z
-DTEND:20251219T120000Z
-DTSTAMP:20251219T052842Z
-UID:2025-12-19-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Seitangulasch mit Spirelli
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Spirelli mit ungarischem Wurstgulasch,dazu geriebener Gouda
-  (Stud: 3.00€, Ma: 5.45€)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
 END:VCALENDAR
