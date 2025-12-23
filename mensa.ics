@@ -5,4 +5,16 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+DTSTART:20260105T110000Z
+DTEND:20260105T120000Z
+DTSTAMP:20251223T053007Z
+UID:2026-01-05-mensa-johanna@mensa-meal-overview
+SUMMARY:🍽️ Mensa Johanna
+DESCRIPTION:• vegane sächsische Kartoffelsuppe mit Falafelbällchen, dazu Brötchen
+  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Spaghetti Bolognese, dazu geriebener Gouda
+  (Stud: 3.12€, Ma: 5.67€)\n\n• Blumenkohl-Broccoliauflauf mit Goudakäse gratiniert
+  (Stud: 2.90€, Ma: 5.27€ | 🧀 Veg.)
+LOCATION:Mensa Johanna, Dresden
+END:VEVENT
 END:VCALENDAR
