@@ -8,7 +8,7 @@ X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
 DTSTART:20260105T110000Z
 DTEND:20260105T120000Z
-DTSTAMP:20251225T053027Z
+DTSTAMP:20251226T052857Z
 UID:2026-01-05-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• vegane sächsische Kartoffelsuppe mit Falafelbällchen, dazu Brötchen
@@ -20,7 +20,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260106T110000Z
 DTEND:20260106T120000Z
-DTSTAMP:20251225T053027Z
+DTSTAMP:20251226T052857Z
 UID:2026-01-06-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tofuschnitzel mit Panko-Erdnusspanade, dazu Tomaten-Zucchiniragout und Couscous
@@ -32,13 +32,25 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260107T110000Z
 DTEND:20260107T120000Z
-DTSTAMP:20251225T053027Z
+DTSTAMP:20251226T052857Z
 UID:2026-01-07-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Burritos-Mexikanische Tortilla mit Sojachili gefüllt, dazu Salat
   (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Rindergeschnetzeltes mit Rote Bete, Gewürzgurken und Rotwein, dazu Eierspätzle
   (Stud: 3.99€, Ma: 7.25€)\n\n• Pizza Funghi mit Champignons und Zwiebel
   (Stud: 3.23€, Ma: 5.88€ | 🧀 Veg.)
+LOCATION:Mensa Johanna, Dresden
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260108T110000Z
+DTEND:20260108T120000Z
+DTSTAMP:20251226T052857Z
+UID:2026-01-08-mensa-johanna@mensa-meal-overview
+SUMMARY:🍽️ Mensa Johanna
+DESCRIPTION:• Seitan-Gyros mit Tsatsiki, Weißkrautsalat und Pommes frites
+  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Halloumi-Zucchiniburger mit Tomatenconfit, frischem Spinat und roten Zwiebeln, dazu Pommes frites
+  (Stud: 4.50€, Ma: 8.18€ | 🧀 Veg.)\n\n• Würzfleisch mit Zitrone und Toastbrot
+  (Stud: 3.00€, Ma: 5.45€)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 END:VCALENDAR
