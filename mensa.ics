@@ -8,7 +8,7 @@ X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
 DTSTART:20260105T110000Z
 DTEND:20260105T120000Z
-DTSTAMP:20251227T052746Z
+DTSTAMP:20251228T053038Z
 UID:2026-01-05-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• vegane sächsische Kartoffelsuppe mit Falafelbällchen, dazu Brötchen
@@ -20,7 +20,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260106T110000Z
 DTEND:20260106T120000Z
-DTSTAMP:20251227T052747Z
+DTSTAMP:20251228T053038Z
 UID:2026-01-06-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tofuschnitzel mit Panko-Erdnusspanade, dazu Tomaten-Zucchiniragout und Couscous
@@ -32,7 +32,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260107T110000Z
 DTEND:20260107T120000Z
-DTSTAMP:20251227T052747Z
+DTSTAMP:20251228T053039Z
 UID:2026-01-07-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Burritos-Mexikanische Tortilla mit Sojachili gefüllt, dazu Salat
@@ -44,7 +44,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260108T110000Z
 DTEND:20260108T120000Z
-DTSTAMP:20251227T052747Z
+DTSTAMP:20251228T053039Z
 UID:2026-01-08-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Seitan-Gyros mit Tsatsiki, Weißkrautsalat und Pommes frites
@@ -56,7 +56,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260109T110000Z
 DTEND:20260109T120000Z
-DTSTAMP:20251227T052747Z
+DTSTAMP:20251228T053039Z
 UID:2026-01-09-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Gemüse Chop Suey mit gebratenen Mie Nudeln
