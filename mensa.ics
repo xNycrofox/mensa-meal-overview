@@ -6,21 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260107T110000Z
-DTEND:20260107T120000Z
-DTSTAMP:20260107T053140Z
-UID:2026-01-07-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Burritos-Mexikanische Tortilla mit Sojachili gefüllt, dazu Salat
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Rindergeschnetzeltes mit Rote Bete, Gewürzgurken und Rotwein, dazu Eierspätzle
-  (Stud: 3.99€, Ma: 7.25€)\n\n• Pizza Funghi mit Champignons und Zwiebel
-  (Stud: 3.23€, Ma: 5.88€ | 🧀 Veg.)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260108T110000Z
 DTEND:20260108T120000Z
-DTSTAMP:20260107T053140Z
+DTSTAMP:20260108T053108Z
 UID:2026-01-08-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Seitan-Gyros mit Tsatsiki, Weißkrautsalat und Pommes frites
@@ -32,7 +20,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260109T110000Z
 DTEND:20260109T120000Z
-DTSTAMP:20260107T053140Z
+DTSTAMP:20260108T053108Z
 UID:2026-01-09-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Gemüse Chop Suey mit gebratenen Mie Nudeln
@@ -43,7 +31,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260112T110000Z
 DTEND:20260112T120000Z
-DTSTAMP:20260107T053140Z
+DTSTAMP:20260108T053109Z
 UID:2026-01-12-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Spirelli mit Soße von Champignons und getrockneten Tomaten, dazu Rucola- Topping
@@ -55,7 +43,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260113T110000Z
 DTEND:20260113T120000Z
-DTSTAMP:20260107T053141Z
+DTSTAMP:20260108T053109Z
 UID:2026-01-13-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tortelloni Auflauf mit Basilikumsoße und Salat
@@ -67,7 +55,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260114T110000Z
 DTEND:20260114T120000Z
-DTSTAMP:20260107T053141Z
+DTSTAMP:20260108T053109Z
 UID:2026-01-14-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Spinat mit Rührei oder vegane Alternative mit Falafelbällchen, dazu Petersilienkartoffeln
@@ -79,7 +67,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260115T110000Z
 DTEND:20260115T120000Z
-DTSTAMP:20260107T053141Z
+DTSTAMP:20260108T053109Z
 UID:2026-01-15-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Süßkartoffelschnitzel Apfel-Meerrettich-Dip, Kartoffelpüree und Salat
@@ -91,7 +79,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260116T110000Z
 DTEND:20260116T120000Z
-DTSTAMP:20260107T053141Z
+DTSTAMP:20260108T053109Z
 UID:2026-01-16-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Gnocchipfanne mit Broccoli, Zucchini, Tomaten und Karotten, dazu Basilikumsoße
