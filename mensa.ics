@@ -6,33 +6,22 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260114T110000Z
-DTEND:20260114T120000Z
-DTSTAMP:20260114T053145Z
-UID:2026-01-14-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Spinat mit Rührei oder vegane Alternative mit Falafelbällchen, dazu Petersilienkartoffeln
-  (Stud: 2.35€, Ma: 4.90€ | 🧀 Veg.)\n\n• Schweineschnitzel mit Tatarensoße und Bratkartoffeln
-  (Stud: 3.84€, Ma: 6.98€)\n\n• gefüllte Ofenkartoffeln mit Rahmgemüse und Goudakäse gratiniert, dazu Joghurt-Kressedip
-  (Stud: 3.00€, Ma: 5.45€ | 🧀 Veg.)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260115T110000Z
 DTEND:20260115T120000Z
-DTSTAMP:20260114T053145Z
+DTSTAMP:20260115T053228Z
 UID:2026-01-15-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Süßkartoffelschnitzel Apfel-Meerrettich-Dip, Kartoffelpüree und Salat
   (Stud: 2.35€, Ma: 4.90€ | 🧀 Veg.)\n\n• Bacon-Cheeseburger mit Rindfleisch, Bacon, Salat, Tomate, Gewürzgurke und Röstzwiebeln, dazu Pommes frites
   (Stud: 4.50€, Ma: 8.18€)\n\n• Fladenbrot mit Hirtenkäsecreme, Tomaten, Gurken, Oliven und Krautsalat, dazu Tomaten-Ajvar-Dip
-  (Stud: 3.99€, Ma: 7.25€ | 🧀 Veg.)
+  (Stud: 3.99€, Ma: 7.25€ | 🧀 Veg.)\n\n• Tomatensuppe mit Reiseinlage
+  (Stud: 2.18€, Ma: 3.97€ | 🌱 Vegan)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260116T110000Z
 DTEND:20260116T120000Z
-DTSTAMP:20260114T053145Z
+DTSTAMP:20260115T053228Z
 UID:2026-01-16-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Gnocchipfanne mit Broccoli, Zucchini, Tomaten und Karotten, dazu Basilikumsoße
@@ -43,7 +32,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260119T110000Z
 DTEND:20260119T120000Z
-DTSTAMP:20260114T053145Z
+DTSTAMP:20260115T053228Z
 UID:2026-01-19-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Chili sin carne mit gebackenen Kartoffelecken
@@ -55,7 +44,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260120T110000Z
 DTEND:20260120T120000Z
-DTSTAMP:20260114T053145Z
+DTSTAMP:20260115T053229Z
 UID:2026-01-20-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Seitan Rostbrätel mit gebratenen Zwiebeln Bratkartoffeln Salat Salatmarinade -(ergibt 25ltr.=500Port.) -*vegan
@@ -67,7 +56,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260121T110000Z
 DTEND:20260121T120000Z
-DTSTAMP:20260114T053146Z
+DTSTAMP:20260115T053229Z
 UID:2026-01-21-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Gegrillte Ofenkartoffel mit Kräutercreme und Ratatouillegemüse
@@ -79,7 +68,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260122T110000Z
 DTEND:20260122T120000Z
-DTSTAMP:20260114T053146Z
+DTSTAMP:20260115T053229Z
 UID:2026-01-22-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Sellerieschnitzel mit Kräuter- Cornflakespanade, dazu rote Bete-Hafer-Dip, Bechamelkartoffeln und Salat
@@ -91,7 +80,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260123T110000Z
 DTEND:20260123T120000Z
-DTSTAMP:20260114T053146Z
+DTSTAMP:20260115T053229Z
 UID:2026-01-23-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Karotten-Sesamstick auf cremigen Spinat, dazu Schwenkkartoffeln
