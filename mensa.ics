@@ -6,20 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260123T110000Z
-DTEND:20260123T120000Z
-DTSTAMP:20260123T053414Z
-UID:2026-01-23-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Karotten-Sesamstick auf cremigen Spinat, dazu Schwenkkartoffeln
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Kasslerkammbraten mit Spitzkohl in Kräuterrahm, dazu Kartoffelklöße oder Petersilienkartoffeln
-  (Stud: 3.89€, Ma: 7.07€)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260126T110000Z
 DTEND:20260126T120000Z
-DTSTAMP:20260123T053414Z
+DTSTAMP:20260124T052748Z
 UID:2026-01-26-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Spaghetti mit Tomatensoße , dazu Schnitzel aus Gemüse und Dinkel
@@ -31,7 +20,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260127T110000Z
 DTEND:20260127T120000Z
-DTSTAMP:20260123T053415Z
+DTSTAMP:20260124T052749Z
 UID:2026-01-27-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Reibekuchen mit Tomaten-Avocadosalsa und Salat
@@ -43,7 +32,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260128T110000Z
 DTEND:20260128T120000Z
-DTSTAMP:20260123T053415Z
+DTSTAMP:20260124T052749Z
 UID:2026-01-28-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tofuschnitzel mit Rahmgemüse und Schwenkkartoffeln
@@ -55,7 +44,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260129T110000Z
 DTEND:20260129T120000Z
-DTSTAMP:20260123T053415Z
+DTSTAMP:20260124T052749Z
 UID:2026-01-29-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Rosmarinkartoffeln mit Kräuter-Dip, dazu Ofengemüse
@@ -67,7 +56,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260130T110000Z
 DTEND:20260130T120000Z
-DTSTAMP:20260123T053415Z
+DTSTAMP:20260124T052749Z
 UID:2026-01-30-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Soja-Feuerfleisch mit Bohnengemüse und Kartoffelklöße
