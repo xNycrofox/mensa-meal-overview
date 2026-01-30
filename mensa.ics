@@ -6,21 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260129T110000Z
-DTEND:20260129T120000Z
-DTSTAMP:20260129T055035Z
-UID:2026-01-29-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Rosmarinkartoffeln mit Kräuter-Dip, dazu Ofengemüse
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Seelachs im Backteig mit Tatarensoße und Bratkartoffeln
-  (Stud: 3.99€, Ma: 7.25€)\n\n• Langos mit Sauerrahm und Schinken oder vegetarische Alternative Tomate und Rucola mit geriebenem Gouda
-  (Stud: 3.00€, Ma: 5.45€)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260130T110000Z
 DTEND:20260130T120000Z
-DTSTAMP:20260129T055035Z
+DTSTAMP:20260130T055238Z
 UID:2026-01-30-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Soja-Feuerfleisch mit Bohnengemüse und Kartoffelklöße
@@ -31,7 +19,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260202T110000Z
 DTEND:20260202T120000Z
-DTSTAMP:20260129T055035Z
+DTSTAMP:20260130T055238Z
 UID:2026-02-02-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Spaghetti mit Kürbiskern-Chili-Pesto und Cashewkern-Sesamtopping
@@ -43,7 +31,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260203T110000Z
 DTEND:20260203T120000Z
-DTSTAMP:20260129T055036Z
+DTSTAMP:20260130T055238Z
 UID:2026-02-03-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Veganer Green Oat-Burger mit Kartoffelspalten
@@ -55,7 +43,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260204T110000Z
 DTEND:20260204T120000Z
-DTSTAMP:20260129T055036Z
+DTSTAMP:20260130T055238Z
 UID:2026-02-04-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Panierte gebackene Champignons mit Kräuter-Sojadip und Bratkartoffeln
@@ -67,7 +55,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260205T110000Z
 DTEND:20260205T120000Z
-DTSTAMP:20260129T055036Z
+DTSTAMP:20260130T055238Z
 UID:2026-02-05-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Süßkartoffel-Kokoscurry mit gerösteten Kürbiskernen und Basmati Reis
@@ -79,7 +67,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260206T110000Z
 DTEND:20260206T120000Z
-DTSTAMP:20260129T055036Z
+DTSTAMP:20260130T055238Z
 UID:2026-02-06-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Zucchini-Paprika-Zwiebelgemüse mit Aioli-Soja Mayonnaise und Couscous
