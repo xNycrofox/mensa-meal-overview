@@ -6,22 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260202T110000Z
-DTEND:20260202T120000Z
-DTSTAMP:20260202T060612Z
-UID:2026-02-02-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Spaghetti mit Kürbiskern-Chili-Pesto und Cashewkern-Sesamtopping
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• XL Schweinskammschnitzel mit Zitrone und Pommes frites
-  (Stud: 3.99€, Ma: 7.25€)\n\n• Süßkartoffel-Kürbisgratin
-  (Stud: 2.90€, Ma: 5.27€ | 🧀 Veg.)\n\n• Kürbis- Ingwer-Kokossuppe
-  (Stud: 2.18€, Ma: 3.97€ | 🌱 Vegan)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260203T110000Z
 DTEND:20260203T120000Z
-DTSTAMP:20260202T060612Z
+DTSTAMP:20260203T055526Z
 UID:2026-02-03-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Veganer Green Oat-Burger mit Kartoffelspalten
@@ -33,7 +20,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260204T110000Z
 DTEND:20260204T120000Z
-DTSTAMP:20260202T060613Z
+DTSTAMP:20260203T055526Z
 UID:2026-02-04-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Panierte gebackene Champignons mit Kräuter-Sojadip und Bratkartoffeln
@@ -45,7 +32,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260205T110000Z
 DTEND:20260205T120000Z
-DTSTAMP:20260202T060613Z
+DTSTAMP:20260203T055526Z
 UID:2026-02-05-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Süßkartoffel-Kokoscurry mit gerösteten Kürbiskernen und Basmati Reis
@@ -57,12 +44,67 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260206T110000Z
 DTEND:20260206T120000Z
-DTSTAMP:20260202T060613Z
+DTSTAMP:20260203T055526Z
 UID:2026-02-06-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Zucchini-Paprika-Zwiebelgemüse mit Aioli-Soja Mayonnaise und Couscous
   (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Mit Käsecreme gefülltes Rinderhacksteak, Tsatsiki, Tomatenreis und Weißkrautsalat
   (Stud: 3.59€, Ma: 6.53€)
+LOCATION:Mensa Johanna, Dresden
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260209T110000Z
+DTEND:20260209T120000Z
+DTSTAMP:20260203T055526Z
+UID:2026-02-09-mensa-johanna@mensa-meal-overview
+SUMMARY:🍽️ Mensa Johanna
+DESCRIPTION:• Vegane Käsespätzle mit Röstzwiebeln, dazu Salat
+  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Szegediner Gulasch Bratkartoffeln
+  (Stud: 3.25€, Ma: 5.91€)
+LOCATION:Mensa Johanna, Dresden
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260210T110000Z
+DTEND:20260210T120000Z
+DTSTAMP:20260203T055527Z
+UID:2026-02-10-mensa-johanna@mensa-meal-overview
+SUMMARY:🍽️ Mensa Johanna
+DESCRIPTION:• Tandoori-Blumenkohl mit Linsen-Mangocurry und Basmati Reis
+  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Seelachs-Schlemmerfilet Bordelaise mit Kartoffelpüree und Karottensalat
+  (Stud: 3.78€, Ma: 6.88€)
+LOCATION:Mensa Johanna, Dresden
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260211T110000Z
+DTEND:20260211T120000Z
+DTSTAMP:20260203T055527Z
+UID:2026-02-11-mensa-johanna@mensa-meal-overview
+SUMMARY:🍽️ Mensa Johanna
+DESCRIPTION:• Planted Currywurst mit Currysoße und Pommes frites
+  (Stud: 3.49€, Ma: 6.35€ | 🌱 Vegan)\n\n• Krautnudeln mit Salami, dazu geriebener Gouda
+  (Stud: 2.35€, Ma: 4.90€)
+LOCATION:Mensa Johanna, Dresden
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260212T110000Z
+DTEND:20260212T120000Z
+DTSTAMP:20260203T055527Z
+UID:2026-02-12-mensa-johanna@mensa-meal-overview
+SUMMARY:🍽️ Mensa Johanna
+DESCRIPTION:• Broccoli-Nuss-Ecke mit Kräutersoße und Gemüsecouscous
+  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Pulled Pork Burger Barbecue mit Salat, Gewürzgurke und Krautsalat im Sesambrötchen, dazu Pommes frites
+  (Stud: 4.19€, Ma: 7.60€)
+LOCATION:Mensa Johanna, Dresden
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260213T110000Z
+DTEND:20260213T120000Z
+DTSTAMP:20260203T055527Z
+UID:2026-02-13-mensa-johanna@mensa-meal-overview
+SUMMARY:🍽️ Mensa Johanna
+DESCRIPTION:• frittierten Teigtaschen mit Curry-Gemüsefüllung, dazu Pastasotto,Sweet-Chilisoße und Blattsalat
+  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Hähnchenbrust in Parmesanpanade mit Geflügelsoße,buntes Gemüse und Petersilienkartoffeln
+  (Stud: 3.99€, Ma: 7.25€)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 END:VCALENDAR
