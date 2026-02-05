@@ -6,33 +6,22 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260204T110000Z
-DTEND:20260204T120000Z
-DTSTAMP:20260204T055439Z
-UID:2026-02-04-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Panierte gebackene Champignons mit Kräuter-Sojadip und Bratkartoffeln
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Lasagne Bolognese mit Salat
-  (Stud: 3.49€, Ma: 6.35€)\n\n• Pizza Caprese mit Tomaten, Basilikum und Mozzarella
-  (Stud: 3.23€, Ma: 5.88€ | 🧀 Veg.)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260205T110000Z
 DTEND:20260205T120000Z
-DTSTAMP:20260204T055439Z
+DTSTAMP:20260205T060025Z
 UID:2026-02-05-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Süßkartoffel-Kokoscurry mit gerösteten Kürbiskernen und Basmati Reis
   (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Bratwurst mit Bratensoße, Sauerkraut und Kartoffelpüree
   (Stud: 3.25€, Ma: 5.91€)\n\n• Süße Schupfnudeln mit Mandeln, Honig und Sauerkirschragout
-  (Stud: 2.70€, Ma: 4.90€ | 🧀 Veg.)
+  (Stud: 2.70€, Ma: 4.90€ | 🧀 Veg.)\n\n• Mediterane Tomatensuppe
+  (Stud: 2.18€, Ma: 3.97€ | 🧀 Veg.)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260206T110000Z
 DTEND:20260206T120000Z
-DTSTAMP:20260204T055440Z
+DTSTAMP:20260205T060025Z
 UID:2026-02-06-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Zucchini-Paprika-Zwiebelgemüse mit Aioli-Soja Mayonnaise und Couscous
@@ -43,7 +32,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260209T110000Z
 DTEND:20260209T120000Z
-DTSTAMP:20260204T055440Z
+DTSTAMP:20260205T060025Z
 UID:2026-02-09-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Vegane Käsespätzle mit Röstzwiebeln, dazu Salat
@@ -54,7 +43,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260210T110000Z
 DTEND:20260210T120000Z
-DTSTAMP:20260204T055440Z
+DTSTAMP:20260205T060026Z
 UID:2026-02-10-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tandoori-Blumenkohl mit Linsen-Mangocurry und Basmati Reis
@@ -65,7 +54,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260211T110000Z
 DTEND:20260211T120000Z
-DTSTAMP:20260204T055440Z
+DTSTAMP:20260205T060026Z
 UID:2026-02-11-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Planted Currywurst mit Currysoße und Pommes frites
@@ -76,7 +65,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260212T110000Z
 DTEND:20260212T120000Z
-DTSTAMP:20260204T055440Z
+DTSTAMP:20260205T060026Z
 UID:2026-02-12-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Broccoli-Nuss-Ecke mit Kräutersoße und Gemüsecouscous
@@ -87,7 +76,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260213T110000Z
 DTEND:20260213T120000Z
-DTSTAMP:20260204T055440Z
+DTSTAMP:20260205T060026Z
 UID:2026-02-13-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• frittierten Teigtaschen mit Curry-Gemüsefüllung, dazu Pastasotto,Sweet-Chilisoße und Blattsalat
