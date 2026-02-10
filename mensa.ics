@@ -6,43 +6,33 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260209T110000Z
-DTEND:20260209T120000Z
-DTSTAMP:20260209T060944Z
-UID:2026-02-09-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Vegane Käsespätzle mit Röstzwiebeln, dazu Salat
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Sahne- Gulasch vom Schwein mit Rotkraut und Bratkartoffeln
-  (Stud: 3.25€, Ma: 5.91€)\n\n• Deftiger Bauerntopf mit Kartoffelstückchen
-  (Stud: 2.18€, Ma: 3.97€)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260210T110000Z
 DTEND:20260210T120000Z
-DTSTAMP:20260209T060944Z
+DTSTAMP:20260210T061322Z
 UID:2026-02-10-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tandoori-Blumenkohl mit Linsen-Mangocurry und Basmati Reis
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Seelachs-Schlemmerfilet Bordelaise mit Kartoffelpüree und Karottensalat
-  (Stud: 3.78€, Ma: 6.88€)
+  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Seelachs-Schlemmerfilet Bordelaise mit Kartoffelpüree und Buttererbsen
+  (Stud: 3.78€, Ma: 6.88€)\n\n• Kichererbsensuppe
+  (Stud: 2.18€, Ma: 3.97€ | 🌱 Vegan)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260211T110000Z
 DTEND:20260211T120000Z
-DTSTAMP:20260209T060944Z
+DTSTAMP:20260210T061322Z
 UID:2026-02-11-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Planted Currywurst mit Currysoße und Pommes frites
   (Stud: 3.49€, Ma: 6.35€ | 🌱 Vegan)\n\n• Krautnudeln mit Salami, dazu geriebener Gouda
-  (Stud: 2.35€, Ma: 4.90€)
+  (Stud: 2.35€, Ma: 4.90€)\n\n• Zwei Eierkuchen mit Puderzucker und Bayrischcreme
+  (Stud: 2.90€, Ma: 5.27€)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260212T110000Z
 DTEND:20260212T120000Z
-DTSTAMP:20260209T060944Z
+DTSTAMP:20260210T061322Z
 UID:2026-02-12-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Broccoli-Nuss-Ecke mit Kräutersoße und Gemüsecouscous
@@ -53,7 +43,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260213T110000Z
 DTEND:20260213T120000Z
-DTSTAMP:20260209T060945Z
+DTSTAMP:20260210T061322Z
 UID:2026-02-13-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• frittierten Teigtaschen mit Curry-Gemüsefüllung, dazu Pastasotto,Sweet-Chilisoße und Blattsalat
@@ -64,7 +54,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260216T110000Z
 DTEND:20260216T120000Z
-DTSTAMP:20260209T060945Z
+DTSTAMP:20260210T061322Z
 UID:2026-02-16-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Arabisches Linsencurry, dazu Fladenbrot
@@ -75,7 +65,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260217T110000Z
 DTEND:20260217T120000Z
-DTSTAMP:20260209T060945Z
+DTSTAMP:20260210T061322Z
 UID:2026-02-17-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Blumenkohl und Wurzelgemüse in Kräutercreme, dazu Kartoffelrösti
@@ -86,7 +76,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260218T110000Z
 DTEND:20260218T120000Z
-DTSTAMP:20260209T060945Z
+DTSTAMP:20260210T061323Z
 UID:2026-02-18-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Veganer Burger aus Kidneybohnen und Kichererbsen im Sesambrötchen mit Tomate, roten Zwiebeln und Salat, scharfer Tomatensalsa und Pommes frites
@@ -97,7 +87,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260219T110000Z
 DTEND:20260219T120000Z
-DTSTAMP:20260209T060945Z
+DTSTAMP:20260210T061323Z
 UID:2026-02-19-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Gebratene Gemüse-Mie Nudeln mit Röstzwiebeln
@@ -108,7 +98,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260220T110000Z
 DTEND:20260220T120000Z
-DTSTAMP:20260209T060945Z
+DTSTAMP:20260210T061323Z
 UID:2026-02-20-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Veganes Kartoffel-Gemüsecurry Indische Art mit Falafelbällchen
