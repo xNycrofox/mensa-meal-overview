@@ -6,20 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260213T110000Z
-DTEND:20260213T120000Z
-DTSTAMP:20260213T060316Z
-UID:2026-02-13-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• frittierten Teigtaschen mit Curry-Gemüsefüllung, dazu Pastasotto, Sweet-Chilisoße und Blattsalat
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Hähnchenbrust in Parmesanpanade mit Geflügelsoße,buntes Gemüse und Petersilienkartoffeln
-  (Stud: 3.99€, Ma: 7.25€)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260216T110000Z
 DTEND:20260216T120000Z
-DTSTAMP:20260213T060316Z
+DTSTAMP:20260214T055054Z
 UID:2026-02-16-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Arabisches Linsencurry , dazu Fladenbrot
@@ -30,7 +19,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260217T110000Z
 DTEND:20260217T120000Z
-DTSTAMP:20260213T060316Z
+DTSTAMP:20260214T055054Z
 UID:2026-02-17-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Blumenkohl und Wurzelgemüse in Kräutercreme, dazu Kartoffelrösti
@@ -41,7 +30,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260218T110000Z
 DTEND:20260218T120000Z
-DTSTAMP:20260213T060316Z
+DTSTAMP:20260214T055054Z
 UID:2026-02-18-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Veganer Burger aus Kidneybohnen und Kichererbsen im Sesambrötchen mit Tomate, roten Zwiebeln und Salat, scharfer Tomatensalsa und Pommes frites
@@ -52,7 +41,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260219T110000Z
 DTEND:20260219T120000Z
-DTSTAMP:20260213T060316Z
+DTSTAMP:20260214T055054Z
 UID:2026-02-19-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Gebratene Gemüse-Mie Nudeln mit Röstzwiebeln
@@ -63,7 +52,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260220T110000Z
 DTEND:20260220T120000Z
-DTSTAMP:20260213T060317Z
+DTSTAMP:20260214T055054Z
 UID:2026-02-20-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Veganes Kartoffel-Gemüsecurry Indische Art mit Falafelbällchen
