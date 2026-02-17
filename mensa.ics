@@ -6,20 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260216T110000Z
-DTEND:20260216T120000Z
-DTSTAMP:20260216T060809Z
-UID:2026-02-16-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Arabisches Linsencurry , dazu Fladenbrot
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Bayrischer Fleischkäse mit süßem Senf, dazu Bratkartoffeln und Weißkraut-Möhrensalat
-  (Stud: 3.49€, Ma: 6.35€)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260217T110000Z
 DTEND:20260217T120000Z
-DTSTAMP:20260216T060809Z
+DTSTAMP:20260217T060027Z
 UID:2026-02-17-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Blumenkohl und Wurzelgemüse in Kräutercreme, dazu Kartoffelrösti
@@ -30,7 +19,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260218T110000Z
 DTEND:20260218T120000Z
-DTSTAMP:20260216T060809Z
+DTSTAMP:20260217T060027Z
 UID:2026-02-18-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Veganer Burger aus Kidneybohnen und Kichererbsen im Sesambrötchen mit Tomate, roten Zwiebeln und Salat, scharfer Tomatensalsa und Pommes frites
@@ -41,7 +30,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260219T110000Z
 DTEND:20260219T120000Z
-DTSTAMP:20260216T060809Z
+DTSTAMP:20260217T060027Z
 UID:2026-02-19-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Gebratene Gemüse-Mie Nudeln mit Röstzwiebeln
@@ -52,7 +41,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260220T110000Z
 DTEND:20260220T120000Z
-DTSTAMP:20260216T060810Z
+DTSTAMP:20260217T060027Z
 UID:2026-02-20-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Veganes Kartoffel-Gemüsecurry Indische Art mit Falafelbällchen
