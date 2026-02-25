@@ -6,20 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260224T110000Z
-DTEND:20260224T120000Z
-DTSTAMP:20260224T060314Z
-UID:2026-02-24-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Blumenkohl-Schnitzel mit Kräutersoße oder vegetarische Alternative Holländische Soße, dazu Petersilienkartoffeln
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Gebackene Briespitzen mit Waldbeersahne, Schwenkkartoffeln und Rotkohlsalat
-  (Stud: 4.25€, Ma: 7.73€ | 🧀 Veg.)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260225T110000Z
 DTEND:20260225T120000Z
-DTSTAMP:20260224T060315Z
+DTSTAMP:20260225T060542Z
 UID:2026-02-25-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Broccoli-Quiche mit getrockneten Tomaten, dazu Salat
@@ -30,7 +19,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260226T110000Z
 DTEND:20260226T120000Z
-DTSTAMP:20260224T060315Z
+DTSTAMP:20260225T060542Z
 UID:2026-02-26-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Crispy-Tomatenburger mit Rucola und Basilikumcreme, dazu Pommes frites
@@ -41,7 +30,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260227T110000Z
 DTEND:20260227T120000Z
-DTSTAMP:20260224T060315Z
+DTSTAMP:20260225T060542Z
 UID:2026-02-27-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Seitangulasch mit Sauerkraut und Miniklöße
@@ -52,7 +41,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260302T110000Z
 DTEND:20260302T120000Z
-DTSTAMP:20260224T060315Z
+DTSTAMP:20260225T060542Z
 UID:2026-03-02-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Spätzlepfanne mit Broccoli, Kirschtomaten, Erbsen und Karotten, dazu Basilikumsoße und Salat
@@ -63,7 +52,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260303T110000Z
 DTEND:20260303T120000Z
-DTSTAMP:20260224T060315Z
+DTSTAMP:20260225T060542Z
 UID:2026-03-03-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Arancini, gebackene Reisbällchen auf Asiagemüse, dazu Rotkohlsalat
@@ -74,7 +63,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260304T110000Z
 DTEND:20260304T120000Z
-DTSTAMP:20260224T060315Z
+DTSTAMP:20260225T060543Z
 UID:2026-03-04-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Gemüselasagne mit Blattsalat
@@ -85,7 +74,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260305T110000Z
 DTEND:20260305T120000Z
-DTSTAMP:20260224T060315Z
+DTSTAMP:20260225T060543Z
 UID:2026-03-05-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Gegrillte Kartoffel- und Süßkartoffelecken mit Radieschen-Schnittlauchdip,dazu Salat
@@ -96,7 +85,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260306T110000Z
 DTEND:20260306T120000Z
-DTSTAMP:20260224T060315Z
+DTSTAMP:20260225T060543Z
 UID:2026-03-06-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Auberginen im Haferflockenmantel mit Tomaten - Karottensoße und Gemüsecouscous
