@@ -6,20 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260226T110000Z
-DTEND:20260226T120000Z
-DTSTAMP:20260226T060207Z
-UID:2026-02-26-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Crispy-Tomatenburger mit Rucola und Basilikumcreme, dazu Pommes frites
-  (Stud: 4.50€, Ma: 8.18€ | 🌱 Vegan)\n\n• Indisches Hähnchencurry mit Kokos und Mango, , dazu Thaireis
-  (Stud: 2.35€, Ma: 4.90€)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260227T110000Z
 DTEND:20260227T120000Z
-DTSTAMP:20260226T060207Z
+DTSTAMP:20260227T055702Z
 UID:2026-02-27-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Seitangulasch mit Sauerkraut und Miniklöße
@@ -30,7 +19,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260302T110000Z
 DTEND:20260302T120000Z
-DTSTAMP:20260226T060207Z
+DTSTAMP:20260227T055702Z
 UID:2026-03-02-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Spätzlepfanne mit Broccoli, Kirschtomaten, Erbsen und Karotten, dazu Basilikumsoße und Salat
@@ -41,7 +30,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260303T110000Z
 DTEND:20260303T120000Z
-DTSTAMP:20260226T060207Z
+DTSTAMP:20260227T055702Z
 UID:2026-03-03-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Arancini, gebackene Reisbällchen auf Asiagemüse, dazu Rotkohlsalat
@@ -52,7 +41,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260304T110000Z
 DTEND:20260304T120000Z
-DTSTAMP:20260226T060207Z
+DTSTAMP:20260227T055702Z
 UID:2026-03-04-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Gemüselasagne mit Blattsalat
@@ -63,21 +52,21 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260305T110000Z
 DTEND:20260305T120000Z
-DTSTAMP:20260226T060208Z
+DTSTAMP:20260227T055702Z
 UID:2026-03-05-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Gegrillte Kartoffel- und Süßkartoffelecken mit Radieschen-Schnittlauchdip,dazu Salat
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Currybratwurst mit Currysoße , dazu Pommes frites und Weißkraut-Möhrensalat
+DESCRIPTION:• Gegrillte Kartoffel-und Süßkartoffelecken mit Radieschen-Schnittlauchdip, dazu Salat
+  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Currybratwurst mit Currysoße, dazu Pommes frites und Weißkraut-Möhrensalat
   (Stud: 3.95€, Ma: 7.18€)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260306T110000Z
 DTEND:20260306T120000Z
-DTSTAMP:20260226T060208Z
+DTSTAMP:20260227T055702Z
 UID:2026-03-06-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Auberginen im Haferflockenmantel mit Tomaten - Karottensoße und Gemüsecouscous
+DESCRIPTION:• Auberginen im Haferflockenmantel mit Tomaten-Karottensoße und Gemüsecouscous
   (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Jägerschnitzel (panierte Jagdwurst) mit Tomatensoße und Makkaroni
   (Stud: 3.50€, Ma: 6.36€)
 LOCATION:Mensa Johanna, Dresden
