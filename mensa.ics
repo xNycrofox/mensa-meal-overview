@@ -6,20 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260305T110000Z
-DTEND:20260305T120000Z
-DTSTAMP:20260305T055401Z
-UID:2026-03-05-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Gegrillte Kartoffel-und Süßkartoffelecken mit Radieschen-Schnittlauchdip, dazu Salat
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Currybratwurst mit Currysoße, dazu Pommes frites und Weißkraut-Möhrensalat
-  (Stud: 3.95€, Ma: 7.18€)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260306T110000Z
 DTEND:20260306T120000Z
-DTSTAMP:20260305T055401Z
+DTSTAMP:20260306T055126Z
 UID:2026-03-06-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Auberginen im Haferflockenmantel mit Tomaten-Karottensoße und Gemüsecouscous
@@ -30,7 +19,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260309T110000Z
 DTEND:20260309T120000Z
-DTSTAMP:20260305T055401Z
+DTSTAMP:20260306T055126Z
 UID:2026-03-09-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Maultaschen auf Rahmgemüse, dazu Salat
@@ -41,7 +30,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260310T110000Z
 DTEND:20260310T120000Z
-DTSTAMP:20260305T055401Z
+DTSTAMP:20260306T055126Z
 UID:2026-03-10-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Pulled Planted Burger mit Cole Slaw-amerikanischer Weißkohlsalat, Tomate und Gewürzgurke, dazu Pommes frites
@@ -52,7 +41,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260311T110000Z
 DTEND:20260311T120000Z
-DTSTAMP:20260305T055402Z
+DTSTAMP:20260306T055127Z
 UID:2026-03-11-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Karotten- Kürbis- Ofengemüse mit Rote Bete- Haferdip und Maisgrieß-Polenta
@@ -63,7 +52,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260312T110000Z
 DTEND:20260312T120000Z
-DTSTAMP:20260305T055402Z
+DTSTAMP:20260306T055127Z
 UID:2026-03-12-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Schnitzel aus Gemüse und Dinkel mit fruchtiger Currysoße, dazu Basmati Reis und Salat
@@ -74,7 +63,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260313T110000Z
 DTEND:20260313T120000Z
-DTSTAMP:20260305T055402Z
+DTSTAMP:20260306T055127Z
 UID:2026-03-13-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Asiatische Gemüsepfanne mit Tofu und Glasnudeln
