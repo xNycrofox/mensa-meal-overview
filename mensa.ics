@@ -6,21 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260312T110000Z
-DTEND:20260312T120000Z
-DTSTAMP:20260312T055620Z
-UID:2026-03-12-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Schnitzel aus Gemüse und Dinkel mit fruchtiger Currysoße, dazu Basmati Reis und Salat
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Grillteller mit Kasslersteak, Grillwürstchen, Hähnchensteak und Frikadelle, dazu Grillbutter, Pommes frites und Salat
-  (Stud: 4.22€, Ma: 7.67€)\n\n• Kürbis-Karotten-Ingwersuppe
-  (Stud: 2.18€, Ma: 3.97€ | 🌱 Vegan)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260313T110000Z
 DTEND:20260313T120000Z
-DTSTAMP:20260312T055620Z
+DTSTAMP:20260313T055459Z
 UID:2026-03-13-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Asiatische Gemüsepfanne mit Tofu und Glasnudeln
@@ -31,7 +19,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260316T110000Z
 DTEND:20260316T120000Z
-DTSTAMP:20260312T055620Z
+DTSTAMP:20260313T055459Z
 UID:2026-03-16-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tortelloni mit cremiger Spinatsoße, getrockneten Tomaten und gerösteten Sonnenblumenkernen, vegetarische Alternative mit Reibekäse
@@ -44,7 +32,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260317T110000Z
 DTEND:20260317T120000Z
-DTSTAMP:20260312T055621Z
+DTSTAMP:20260313T055459Z
 UID:2026-03-17-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Seitan-Gyros mit Tsatsiki, dazu Weißkrautsalat und Pommes frites
@@ -57,7 +45,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260318T110000Z
 DTEND:20260318T120000Z
-DTSTAMP:20260312T055621Z
+DTSTAMP:20260313T055500Z
 UID:2026-03-18-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Vegane Spinatlasagne mit Salat
@@ -71,7 +59,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260319T110000Z
 DTEND:20260319T120000Z
-DTSTAMP:20260312T055621Z
+DTSTAMP:20260313T055500Z
 UID:2026-03-19-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Kichererbsen-Bohnenfrikadelle mit Tomatensalsa und Bratkartoffeln
@@ -84,7 +72,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260320T110000Z
 DTEND:20260320T120000Z
-DTSTAMP:20260312T055621Z
+DTSTAMP:20260313T055500Z
 UID:2026-03-20-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Älpler Makkaroni mit Goudakäse und Salat
