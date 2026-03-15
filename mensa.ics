@@ -8,7 +8,7 @@ X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
 DTSTART:20260316T110000Z
 DTEND:20260316T120000Z
-DTSTAMP:20260314T055203Z
+DTSTAMP:20260315T060647Z
 UID:2026-03-16-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tortelloni mit cremiger Spinatsoße, getrockneten Tomaten und gerösteten Sonnenblumenkernen, vegetarische Alternative mit Reibekäse
@@ -21,7 +21,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260317T110000Z
 DTEND:20260317T120000Z
-DTSTAMP:20260314T055203Z
+DTSTAMP:20260315T060648Z
 UID:2026-03-17-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Seitan-Gyros mit Tsatsiki, dazu Weißkrautsalat und Pommes frites
@@ -34,7 +34,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260318T110000Z
 DTEND:20260318T120000Z
-DTSTAMP:20260314T055204Z
+DTSTAMP:20260315T060648Z
 UID:2026-03-18-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Vegane Spinatlasagne mit Salat
@@ -48,7 +48,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260319T110000Z
 DTEND:20260319T120000Z
-DTSTAMP:20260314T055204Z
+DTSTAMP:20260315T060648Z
 UID:2026-03-19-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Kichererbsen-Bohnenfrikadelle mit Tomatensalsa und Bratkartoffeln
@@ -61,7 +61,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260320T110000Z
 DTEND:20260320T120000Z
-DTSTAMP:20260314T055204Z
+DTSTAMP:20260315T060648Z
 UID:2026-03-20-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Älpler Makkaroni mit Goudakäse und Salat
