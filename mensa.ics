@@ -8,20 +8,21 @@ X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
 DTSTART:20260316T110000Z
 DTEND:20260316T120000Z
-DTSTAMP:20260315T060647Z
+DTSTAMP:20260316T062103Z
 UID:2026-03-16-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tortelloni mit cremiger Spinatsoße, getrockneten Tomaten und gerösteten Sonnenblumenkernen, vegetarische Alternative mit Reibekäse
   (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Griechische Hackfleischpfanne mit Reisformnudeln
   (Stud: 3.58€, Ma: 6.51€)\n\n• Mozzarellasticks mit Preiselbeersahne und Schwenkkartoffeln
   (Stud: 3.99€, Ma: 7.25€ | 🧀 Veg.)\n\n• Germknödel mit Heidelbeerfüllung, dazu Puddingsoße Vanillegeschmack
-  (Stud: 2.70€, Ma: 4.90€ | 🧀 Veg.)
+  (Stud: 2.70€, Ma: 4.90€ | 🧀 Veg.)\n\n• Soljanka
+  (Stud: 2.18€, Ma: 3.97€)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260317T110000Z
 DTEND:20260317T120000Z
-DTSTAMP:20260315T060648Z
+DTSTAMP:20260316T062103Z
 UID:2026-03-17-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Seitan-Gyros mit Tsatsiki, dazu Weißkrautsalat und Pommes frites
@@ -34,7 +35,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260318T110000Z
 DTEND:20260318T120000Z
-DTSTAMP:20260315T060648Z
+DTSTAMP:20260316T062103Z
 UID:2026-03-18-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Vegane Spinatlasagne mit Salat
@@ -48,7 +49,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260319T110000Z
 DTEND:20260319T120000Z
-DTSTAMP:20260315T060648Z
+DTSTAMP:20260316T062103Z
 UID:2026-03-19-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Kichererbsen-Bohnenfrikadelle mit Tomatensalsa und Bratkartoffeln
@@ -61,7 +62,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260320T110000Z
 DTEND:20260320T120000Z
-DTSTAMP:20260315T060648Z
+DTSTAMP:20260316T062103Z
 UID:2026-03-20-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Älpler Makkaroni mit Goudakäse und Salat
