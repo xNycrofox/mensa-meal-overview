@@ -6,34 +6,22 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260319T110000Z
-DTEND:20260319T120000Z
-DTSTAMP:20260319T060136Z
-UID:2026-03-19-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Kichererbsen-Bohnenfrikadelle mit Tomatensalsa und Bratkartoffeln
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Feuerfleisch vom Schwein mit Pommes frites und Salat
-  (Stud: 3.50€, Ma: 6.36€)\n\n• Hausgemachte Semmelklöße mit Sahnepilzen und italienischem Hartkäse
-  (Stud: 3.00€, Ma: 5.45€)\n\n• Pide mit Hirtenkäse und Blattspinat
-  (Stud: 3.23€, Ma: 5.88€ | 🧀 Veg.)\n\n• Kürbis- Karotten- Ingwersuppe
-  (Stud: 2.18€, Ma: 3.97€ | 🌱 Vegan)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260320T110000Z
 DTEND:20260320T120000Z
-DTSTAMP:20260319T060136Z
+DTSTAMP:20260320T055703Z
 UID:2026-03-20-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Asiatische Gemüsesuppe mit roten Curry und kleinen Frühlingsrollen
   (Stud: 2.99€, Ma: 5.44€ | 🌱 Vegan)\n\n• Älpler Makkaroni mit Goudakäse und Salat
-  (Stud: 2.35€, Ma: 4.90€ | 🧀 Veg.)
+  (Stud: 2.35€, Ma: 4.90€ | 🧀 Veg.)\n\n• 2 Grillwürstchen mit Letscho und Pommes frites
+  (Stud: 3.50€, Ma: 6.36€)\n\n• Blumenkohlcremesuppe
+  (Stud: 2.18€, Ma: 3.97€ | 🧀 Veg.)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260323T110000Z
 DTEND:20260323T120000Z
-DTSTAMP:20260319T060136Z
+DTSTAMP:20260320T055704Z
 UID:2026-03-23-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Gemüsekroketten aus Blumenkohl, Lauch, Sellerie und Erbsen, dazu Rahmspinat und Kartoffeln
@@ -46,7 +34,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260324T110000Z
 DTEND:20260324T120000Z
-DTSTAMP:20260319T060136Z
+DTSTAMP:20260320T055704Z
 UID:2026-03-24-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Hausgemachte Kartoffelpuffer Gärtnerin mit Wurzelgemüse, dazu Rahmgemüse
@@ -59,7 +47,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260325T110000Z
 DTEND:20260325T120000Z
-DTSTAMP:20260319T060136Z
+DTSTAMP:20260320T055704Z
 UID:2026-03-25-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Kleine Gemüseplatte mit Schnittlauchsoße und Kartoffelrösti
@@ -72,7 +60,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260326T110000Z
 DTEND:20260326T120000Z
-DTSTAMP:20260319T060137Z
+DTSTAMP:20260320T055704Z
 UID:2026-03-26-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Mediterrane Kartoffelpfanne mit Kirschtomaten und Rucola, vegetarische Alternative mit Hirtenkäse, dazu Salat
@@ -85,7 +73,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260327T110000Z
 DTEND:20260327T120000Z
-DTSTAMP:20260319T060137Z
+DTSTAMP:20260320T055704Z
 UID:2026-03-27-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Zucchini-Möhrenpakoras mit Kräuter-Dip und Kartoffel- Karottenstampf
