@@ -8,7 +8,7 @@ X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
 DTSTART:20260323T110000Z
 DTEND:20260323T120000Z
-DTSTAMP:20260321T054740Z
+DTSTAMP:20260322T055718Z
 UID:2026-03-23-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Gemüsekroketten aus Blumenkohl, Lauch, Sellerie und Erbsen, dazu Rahmspinat und Kartoffeln
@@ -21,7 +21,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260324T110000Z
 DTEND:20260324T120000Z
-DTSTAMP:20260321T054740Z
+DTSTAMP:20260322T055718Z
 UID:2026-03-24-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Hausgemachte Kartoffelpuffer Gärtnerin mit Wurzelgemüse, dazu Rahmgemüse
@@ -34,7 +34,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260325T110000Z
 DTEND:20260325T120000Z
-DTSTAMP:20260321T054740Z
+DTSTAMP:20260322T055718Z
 UID:2026-03-25-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Kleine Gemüseplatte mit Schnittlauchsoße und Kartoffelrösti
@@ -47,7 +47,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260326T110000Z
 DTEND:20260326T120000Z
-DTSTAMP:20260321T054740Z
+DTSTAMP:20260322T055718Z
 UID:2026-03-26-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Mediterrane Kartoffelpfanne mit Kirschtomaten und Rucola, vegetarische Alternative mit Hirtenkäse, dazu Salat
@@ -60,7 +60,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260327T110000Z
 DTEND:20260327T120000Z
-DTSTAMP:20260321T054740Z
+DTSTAMP:20260322T055718Z
 UID:2026-03-27-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Zucchini-Möhrenpakoras mit Kräuter-Dip und Kartoffel- Karottenstampf
