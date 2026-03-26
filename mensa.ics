@@ -6,22 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260325T110000Z
-DTEND:20260325T120000Z
-DTSTAMP:20260325T060445Z
-UID:2026-03-25-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Kleine Gemüseplatte mit Schnittlauchsoße und Kartoffelrösti
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Rostbrätl vom Schweinerücken mit braunen Zwiebeln, Bratkartoffeln und Weißkrautsalat
-  (Stud: 3.43€, Ma: 6.32€)\n\n• Süße Kartoffelknödel mit Aprikose gefüllt, dazu Pflaumenragout
-  (Stud: 2.90€, Ma: 5.27€ | 🧀 Veg.)\n\n• Ofenkartoffel gefüllt mit Rahmgemüse und Goudakäse gratiniert, dazu Kräuter-Quark-Dip
-  (Stud: 2.90€, Ma: 5.27€ | 🧀 Veg.)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260326T110000Z
 DTEND:20260326T120000Z
-DTSTAMP:20260325T060445Z
+DTSTAMP:20260326T061356Z
 UID:2026-03-26-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Mediterrane Kartoffelpfanne mit Kirschtomaten und Rucola, vegetarische Alternative mit Hirtenkäse, dazu Salat
@@ -34,7 +21,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260327T110000Z
 DTEND:20260327T120000Z
-DTSTAMP:20260325T060445Z
+DTSTAMP:20260326T061356Z
 UID:2026-03-27-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Zucchini-Möhrenpakoras mit Kräuter-Dip und Kartoffel- Karottenstampf
@@ -46,7 +33,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260330T110000Z
 DTEND:20260330T120000Z
-DTSTAMP:20260325T060446Z
+DTSTAMP:20260326T061356Z
 UID:2026-03-30-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Gnocchipfanne mit Broccoli, Zucchini und Tomaten, dazu Karotten-Basilikumsoße
@@ -59,7 +46,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260331T110000Z
 DTEND:20260331T120000Z
-DTSTAMP:20260325T060446Z
+DTSTAMP:20260326T061356Z
 UID:2026-03-31-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Karotten-Sesamstick mit Mandelbroccoli und Rote-Bete-Risotto
@@ -72,7 +59,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260401T110000Z
 DTEND:20260401T120000Z
-DTSTAMP:20260325T060446Z
+DTSTAMP:20260326T061356Z
 UID:2026-04-01-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Seitan Rostbrätel mit Zwiebelsoße, dazu Bratkartoffeln und Salat
@@ -85,7 +72,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260402T110000Z
 DTEND:20260402T120000Z
-DTSTAMP:20260325T060446Z
+DTSTAMP:20260326T061357Z
 UID:2026-04-02-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Falafel-Burger mit scharfer Tomatensalsa Sojakräutercreme und einem Mix aus Pommes frites und Süßkartoffel
