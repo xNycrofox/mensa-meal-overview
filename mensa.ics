@@ -6,34 +6,22 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260326T110000Z
-DTEND:20260326T120000Z
-DTSTAMP:20260326T061356Z
-UID:2026-03-26-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Mediterrane Kartoffelpfanne mit Kirschtomaten und Rucola, vegetarische Alternative mit Hirtenkäse, dazu Salat
-  (Stud: 2.35€, Ma: 4.90€ | 🧀 Veg.)\n\n• Hähnchenschnitzel mit Blumenkohl , Kräuterhollandaise und Petersilienkartoffeln
-  (Stud: 3.99€, Ma: 7.25€)\n\n• Französisches Kartoffelgratin mit Camembert und Hirtenkäse, dazu Ratatouillegemüse
-  (Stud: 3.57€, Ma: 6.49€ | 🧀 Veg.)\n\n• Hausgemachte sächsische Quarkkäulchen mit Apfelmus
-  (Stud: 2.90€, Ma: 5.27€ | 🧀 Veg.)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260327T110000Z
 DTEND:20260327T120000Z
-DTSTAMP:20260326T061356Z
+DTSTAMP:20260327T061432Z
 UID:2026-03-27-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Zucchini-Möhrenpakoras mit Kräuter-Dip und Kartoffel- Karottenstampf
   (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Schweineroulade Hausfrauen Art, Bohnengemüse und Kartoffelklöße oder Kartoffeln
   (Stud: 3.99€, Ma: 7.25€)\n\n• Drei Kartoffeltaschen mit Frischkäsefüllung, Rahmgemüse und Salat
-  (Stud: 3.53€, Ma: 6.42€ | 🧀 Veg.)
+  (Stud: 3.53€, Ma: 6.42€ | 🧀 Veg.)\n\n• Spargelcremesuppe
+  (Stud: 2.18€, Ma: 3.97€ | 🧀 Veg.)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260330T110000Z
 DTEND:20260330T120000Z
-DTSTAMP:20260326T061356Z
+DTSTAMP:20260327T061432Z
 UID:2026-03-30-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Gnocchipfanne mit Broccoli, Zucchini und Tomaten, dazu Karotten-Basilikumsoße
@@ -46,7 +34,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260331T110000Z
 DTEND:20260331T120000Z
-DTSTAMP:20260326T061356Z
+DTSTAMP:20260327T061432Z
 UID:2026-03-31-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Karotten-Sesamstick mit Mandelbroccoli und Rote-Bete-Risotto
@@ -59,7 +47,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260401T110000Z
 DTEND:20260401T120000Z
-DTSTAMP:20260326T061356Z
+DTSTAMP:20260327T061432Z
 UID:2026-04-01-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Seitan Rostbrätel mit Zwiebelsoße, dazu Bratkartoffeln und Salat
@@ -72,7 +60,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260402T110000Z
 DTEND:20260402T120000Z
-DTSTAMP:20260326T061357Z
+DTSTAMP:20260327T061432Z
 UID:2026-04-02-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Falafel-Burger mit scharfer Tomatensalsa Sojakräutercreme und einem Mix aus Pommes frites und Süßkartoffel
