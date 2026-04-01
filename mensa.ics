@@ -6,23 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260331T110000Z
-DTEND:20260331T120000Z
-DTSTAMP:20260331T061801Z
-UID:2026-03-31-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Karotten-Sesamstick mit Mandelbroccoli und Rote-Bete-Risotto
-  (Stud: 3.22€, Ma: 5.85€ | 🌱 Vegan)\n\n• Saltimbocca vom Buntbarsch mit Buttermöhren und grünem Erbspüree
-  (Stud: 3.99€, Ma: 7.25€)\n\n• Schafskäse Ozmir mit Kräutersoße, dazu Kartoffelrösti
-  (Stud: 3.68€, Ma: 6.69€ | 🧀 Veg.)\n\n• Böhmische Liwanzen (Hefeeierkuchen) mit Himbeer-Sauerkirschragout
-  (Stud: 2.35€, Ma: 4.90€ | 🧀 Veg.)\n\n• Karottencremesuppe
-  (Stud: 2.18€, Ma: 3.97€ | 🌱 Vegan)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260401T110000Z
 DTEND:20260401T120000Z
-DTSTAMP:20260331T061802Z
+DTSTAMP:20260401T064851Z
 UID:2026-04-01-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Seitan Rostbrätel mit Zwiebelsoße, dazu Bratkartoffeln und Salat
@@ -35,7 +21,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260402T110000Z
 DTEND:20260402T120000Z
-DTSTAMP:20260331T061802Z
+DTSTAMP:20260401T064851Z
 UID:2026-04-02-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Falafel-Burger mit scharfer Tomatensalsa Sojakräutercreme und einem Mix aus Pommes frites und Süßkartoffel
@@ -47,7 +33,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260407T110000Z
 DTEND:20260407T120000Z
-DTSTAMP:20260331T061802Z
+DTSTAMP:20260401T064852Z
 UID:2026-04-07-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Spaghetti Aglio e Olio e peperoncino mit Cashewkern-Sesamtopping
@@ -60,7 +46,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260408T110000Z
 DTEND:20260408T120000Z
-DTSTAMP:20260331T061802Z
+DTSTAMP:20260401T064852Z
 UID:2026-04-08-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Vegane Kräuter-Bratwurst mit Bratensoße, Sauerkraut und Kartoffeln
@@ -73,7 +59,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260409T110000Z
 DTEND:20260409T120000Z
-DTSTAMP:20260331T061803Z
+DTSTAMP:20260401T064852Z
 UID:2026-04-09-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tibetische Pilzpfanne mit Glasnudeln, Ingwer und Basmati Reis
@@ -86,7 +72,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260410T110000Z
 DTEND:20260410T120000Z
-DTSTAMP:20260331T061803Z
+DTSTAMP:20260401T064852Z
 UID:2026-04-10-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Kürbis-Chili mit Mais und Kidneybohnen , dazu Couscous
