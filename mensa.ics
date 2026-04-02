@@ -6,22 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260401T110000Z
-DTEND:20260401T120000Z
-DTSTAMP:20260401T064851Z
-UID:2026-04-01-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Seitan Rostbrätel mit Zwiebelsoße, dazu Bratkartoffeln und Salat
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Ungarische Hähnchenpfanne mit Eierspätzle
-  (Stud: 3.30€, Ma: 6.00€)\n\n• Valess Schnitzel mit Goudafüllung, dazu Curry-Nudelsalat mit Paprika und Ananas und Salat
-  (Stud: 3.05€, Ma: 5.55€ | 🧀 Veg.)\n\n• Pizza Caprese mit Tomaten, Basilikum und Mozzarella
-  (Stud: 3.23€, Ma: 5.88€ | 🧀 Veg.)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260402T110000Z
 DTEND:20260402T120000Z
-DTSTAMP:20260401T064851Z
+DTSTAMP:20260402T061408Z
 UID:2026-04-02-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Falafel-Burger mit scharfer Tomatensalsa Sojakräutercreme und einem Mix aus Pommes frites und Süßkartoffel
@@ -33,7 +20,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260407T110000Z
 DTEND:20260407T120000Z
-DTSTAMP:20260401T064852Z
+DTSTAMP:20260402T061408Z
 UID:2026-04-07-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Spaghetti Aglio e Olio e peperoncino mit Cashewkern-Sesamtopping
@@ -46,7 +33,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260408T110000Z
 DTEND:20260408T120000Z
-DTSTAMP:20260401T064852Z
+DTSTAMP:20260402T061408Z
 UID:2026-04-08-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Vegane Kräuter-Bratwurst mit Bratensoße, Sauerkraut und Kartoffeln
@@ -59,7 +46,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260409T110000Z
 DTEND:20260409T120000Z
-DTSTAMP:20260401T064852Z
+DTSTAMP:20260402T061409Z
 UID:2026-04-09-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tibetische Pilzpfanne mit Glasnudeln, Ingwer und Basmati Reis
@@ -72,7 +59,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260410T110000Z
 DTEND:20260410T120000Z
-DTSTAMP:20260401T064852Z
+DTSTAMP:20260402T061409Z
 UID:2026-04-10-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Kürbis-Chili mit Mais und Kidneybohnen , dazu Couscous
