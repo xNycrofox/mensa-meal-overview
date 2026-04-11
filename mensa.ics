@@ -6,21 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260410T110000Z
-DTEND:20260410T120000Z
-DTSTAMP:20260410T065456Z
-UID:2026-04-10-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Kürbis-Chili mit Mais und Kidneybohnen , dazu Couscous
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Provenzalisches Rinderragout mit Spätzle
-  (Stud: 3.99€, Ma: 7.25€)\n\n• Polentatasche Florentiner Art Tomatensoße und Schwenkkartoffeln
-  (Stud: 3.26€, Ma: 5.92€ | 🧀 Veg.)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260413T110000Z
 DTEND:20260413T120000Z
-DTSTAMP:20260410T065456Z
+DTSTAMP:20260411T060405Z
 UID:2026-04-13-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Crispy Nuggets aus Gemüse und Jackfrucht mit Sweet-Chili-Dip , dazu Pommes frites und Salat
@@ -32,7 +20,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260414T110000Z
 DTEND:20260414T120000Z
-DTSTAMP:20260410T065456Z
+DTSTAMP:20260411T060406Z
 UID:2026-04-14-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tandoori-Blumenkohl mit Linsen-Mangocurry und Basmati Reis
@@ -44,7 +32,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260415T110000Z
 DTEND:20260415T120000Z
-DTSTAMP:20260410T065456Z
+DTSTAMP:20260411T060406Z
 UID:2026-04-15-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tofuschnitzel mit Panko-Erdnusspanade, Kräuter-Dip, gebackene Kartoffelecken und Salat
@@ -56,7 +44,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260416T110000Z
 DTEND:20260416T120000Z
-DTSTAMP:20260410T065456Z
+DTSTAMP:20260411T060406Z
 UID:2026-04-16-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Vegane Käsespätzle mit Röstzwiebeln und Salat
@@ -68,7 +56,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260417T110000Z
 DTEND:20260417T120000Z
-DTSTAMP:20260410T065456Z
+DTSTAMP:20260411T060406Z
 UID:2026-04-17-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Samosa spicy (frittierte Teigtaschen mit Curry-Gemüsefüllung), Graupenrisotto und Cashewkern-Sesamtopping
