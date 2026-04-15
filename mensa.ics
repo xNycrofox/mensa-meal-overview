@@ -6,35 +6,23 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260414T110000Z
-DTEND:20260414T120000Z
-DTSTAMP:20260414T065440Z
-UID:2026-04-14-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Tandoori-Blumenkohl mit Linsen-Mangocurry und Basmati Reis
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Schweineschnitzel Luzern mit Schinken und Käse gefüllt, Cremechampignons und Kartoffelkroketten
-  (Stud: 3.99€, Ma: 7.25€)\n\n• Blätterteigtasche mit Blattspinat und Hirtenkäse gefüllt, Paprikasoße und Couscous
-  (Stud: 2.96€, Ma: 5.39€ | 🧀 Veg.)\n\n• Hausgebackener Karottenkuchen mit Nüssen und Frischkäsecreme
-  (Stud: 1.95€, Ma: 2.10€ | 🧀 Veg.)\n\n• Karottencremesuppe
-  (Stud: 2.18€, Ma: 3.97€ | 🧀 Veg.)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260415T110000Z
 DTEND:20260415T120000Z
-DTSTAMP:20260414T065440Z
+DTSTAMP:20260415T065617Z
 UID:2026-04-15-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tofuschnitzel mit Panko-Erdnusspanade, Kräuter-Dip, gebackene Kartoffelecken und Salat
   (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Seelachsfilet im Weinteig mit Tomatensoße und Kräuterreis
   (Stud: 3.50€, Ma: 6.36€)\n\n• Bauernomelette (Bratkartoffeln mit Ei) mit Gewürzgurke und buntem Bohnensalat
-  (Stud: 3.09€, Ma: 5.62€ | 🧀 Veg.)
+  (Stud: 3.09€, Ma: 5.62€ | 🧀 Veg.)\n\n• Hausgebackener Streuselkuchen mit Mohn
+  (Stud: 1.95€, Ma: 2.10€ | 🧀 Veg.)\n\n• Karottencremesuppe
+  (Stud: 2.18€, Ma: 3.97€ | 🧀 Veg.)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260416T110000Z
 DTEND:20260416T120000Z
-DTSTAMP:20260414T065440Z
+DTSTAMP:20260415T065617Z
 UID:2026-04-16-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Vegane Käsespätzle mit Röstzwiebeln und Salat
@@ -46,7 +34,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260417T110000Z
 DTEND:20260417T120000Z
-DTSTAMP:20260414T065440Z
+DTSTAMP:20260415T065617Z
 UID:2026-04-17-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Samosa spicy (frittierte Teigtaschen mit Curry-Gemüsefüllung), Graupenrisotto und Cashewkern-Sesamtopping
@@ -58,7 +46,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260420T110000Z
 DTEND:20260420T120000Z
-DTSTAMP:20260414T065441Z
+DTSTAMP:20260415T065618Z
 UID:2026-04-20-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Spaghetti mit Bärlauchpesto und Walnüssen- Topping
@@ -71,7 +59,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260421T110000Z
 DTEND:20260421T120000Z
-DTSTAMP:20260414T065441Z
+DTSTAMP:20260415T065618Z
 UID:2026-04-21-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Burritos-Mexikanische Tortilla mit Sojachili gefüllt, dazu Salat
@@ -84,7 +72,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260422T110000Z
 DTEND:20260422T120000Z
-DTSTAMP:20260414T065441Z
+DTSTAMP:20260415T065618Z
 UID:2026-04-22-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Green Oat-Burger mit Pommes frites
@@ -97,7 +85,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260423T110000Z
 DTEND:20260423T120000Z
-DTSTAMP:20260414T065441Z
+DTSTAMP:20260415T065618Z
 UID:2026-04-23-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Kichererbsen-Lasagne mit Salat
@@ -110,7 +98,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260424T110000Z
 DTEND:20260424T120000Z
-DTSTAMP:20260414T065441Z
+DTSTAMP:20260415T065618Z
 UID:2026-04-24-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Kross gebratene Curry-Tofuwürfel mit Kartoffel- Zucchinipfanne und Salat
