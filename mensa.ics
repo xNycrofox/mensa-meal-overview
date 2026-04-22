@@ -6,35 +6,23 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260421T110000Z
-DTEND:20260421T120000Z
-DTSTAMP:20260421T065935Z
-UID:2026-04-21-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Burritos-Mexikanische Tortilla mit Sojachili gefüllt, dazu Salat
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Ungarischer Kesselgulasch mit Brötchen
-  (Stud: 3.24€, Ma: 5.89€)\n\n• Gebackener Camembert mit Preiselbeersahne,Bratkartoffeln und Salat
-  (Stud: 4.22€, Ma: 7.67€ | 🧀 Veg.)\n\n• Pizza Bel Paese mit Tomaten, Basilikum und Hirtenkäse
-  (Stud: 3.23€, Ma: 5.88€ | 🧀 Veg.)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260422T110000Z
 DTEND:20260422T120000Z
-DTSTAMP:20260421T065935Z
+DTSTAMP:20260422T065846Z
 UID:2026-04-22-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Green Oat-Burger mit Pommes frites
   (Stud: 4.50€, Ma: 8.18€ | 🌱 Vegan)\n\n• Krautnudeln mit Salami, dazu geriebener Goudakäse
   (Stud: 2.35€, Ma: 4.90€)\n\n• Schweinesteak Strindberg mit Broccoligemüse und Bechamelkartoffeln
   (Stud: 3.99€, Ma: 7.25€)\n\n• Hausgemachte Buchteln mit Puddingsoße Vanillegeschmack
-  (Stud: 2.90€, Ma: 5.27€ | 🧀 Veg.)
+  (Stud: 2.90€, Ma: 5.27€ | 🧀 Veg.)\n\n• Gräupchensuppe mit Gemüse
+  (Stud: 2.18€, Ma: 3.97€ | 🌱 Vegan)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260423T110000Z
 DTEND:20260423T120000Z
-DTSTAMP:20260421T065936Z
+DTSTAMP:20260422T065847Z
 UID:2026-04-23-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Kichererbsen-Lasagne mit Salat
@@ -47,7 +35,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260424T110000Z
 DTEND:20260424T120000Z
-DTSTAMP:20260421T065936Z
+DTSTAMP:20260422T065847Z
 UID:2026-04-24-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Kross gebratene Curry-Tofuwürfel mit Kartoffel- Zucchinipfanne und Salat
