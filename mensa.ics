@@ -6,22 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260424T110000Z
-DTEND:20260424T120000Z
-DTSTAMP:20260424T070536Z
-UID:2026-04-24-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Kross gebratene Curry-Tofuwürfel mit Kartoffel- Zucchinipfanne und Salat
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Coq au vin mit Hähnchenbrust, dazu Buttermöhren und Kartoffelkroketten
-  (Stud: 4.10€, Ma: 7.45€)\n\n• Rosmarinkartoffeln mit Kräuter-Dip und Ofengemüse
-  (Stud: 3.99€, Ma: 7.25€ | 🌱 Vegan)\n\n• Kürbis- Karotten- Ingwersuppe
-  (Stud: 2.18€, Ma: 3.97€ | 🌱 Vegan)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260427T110000Z
 DTEND:20260427T120000Z
-DTSTAMP:20260424T070536Z
+DTSTAMP:20260425T062130Z
 UID:2026-04-27-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Arabisches Linsencurry mit Fladenbrot
@@ -34,7 +21,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260428T110000Z
 DTEND:20260428T120000Z
-DTSTAMP:20260424T070536Z
+DTSTAMP:20260425T062130Z
 UID:2026-04-28-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Falafel mit Couscous, Tortilla-Chip und Hafer- Dip, dazu Salat
@@ -47,7 +34,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260429T110000Z
 DTEND:20260429T120000Z
-DTSTAMP:20260424T070536Z
+DTSTAMP:20260425T062130Z
 UID:2026-04-29-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Käsespätzle mit Goudakäse und Röstzwiebeln, dazu Salat
@@ -60,7 +47,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260430T110000Z
 DTEND:20260430T120000Z
-DTSTAMP:20260424T070536Z
+DTSTAMP:20260425T062130Z
 UID:2026-04-30-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Blumenkohl-Pakoras mit Curry-Dip und Erbsen- Kartoffelstampf
