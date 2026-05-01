@@ -6,21 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260430T110000Z
-DTEND:20260430T120000Z
-DTSTAMP:20260430T073040Z
-UID:2026-04-30-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Blumenkohl-Pakoras mit Curry-Dip und Erbsen- Kartoffelstampf
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Balkan-Burger mit Rindfleisch, Bacon, Eisberg, Tomate, Hirtenkäse und Ajvarcreme, dazu Pommes frites
-  (Stud: 4.50€, Ma: 8.18€)\n\n• Broccoli Nuggets mit feuriger Käsesoße, dazu Couscous und Tomatensalat
-  (Stud: 3.68€, Ma: 6.69€ | 🧀 Veg.)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260504T110000Z
 DTEND:20260504T120000Z
-DTSTAMP:20260430T073041Z
+DTSTAMP:20260501T072820Z
 UID:2026-05-04-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Ungarischer Seitangulasch mit Bratkartoffeln und Gurken-Bohnensalat
@@ -33,7 +21,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260505T110000Z
 DTEND:20260505T120000Z
-DTSTAMP:20260430T073041Z
+DTSTAMP:20260501T072820Z
 UID:2026-05-05-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Burritos-Mexikanische Tortilla mit Sojachili gefüllt, dazu Salat
@@ -46,7 +34,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260506T110000Z
 DTEND:20260506T120000Z
-DTSTAMP:20260430T073041Z
+DTSTAMP:20260501T072820Z
 UID:2026-05-06-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Blumenkohl-Knuspermedaillon mit Kräutersoße, Kartoffeln und Rotkohlsalat
@@ -60,7 +48,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260507T110000Z
 DTEND:20260507T120000Z
-DTSTAMP:20260430T073041Z
+DTSTAMP:20260501T072820Z
 UID:2026-05-07-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Brew Bites Lasagne Bolognese mit Salat
@@ -73,7 +61,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260508T110000Z
 DTEND:20260508T120000Z
-DTSTAMP:20260430T073041Z
+DTSTAMP:20260501T072820Z
 UID:2026-05-08-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tortelloni Auflauf mit Basilikumsoße und Salat
