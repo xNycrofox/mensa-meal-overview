@@ -6,50 +6,36 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260504T110000Z
-DTEND:20260504T120000Z
-DTSTAMP:20260504T074947Z
-UID:2026-05-04-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Ungarischer Seitangulasch mit Bratkartoffeln und Gurken-Bohnensalat
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Chili con carne mit gebackenen Kartoffelecken
-  (Stud: 3.68€, Ma: 6.69€)\n\n• Blumenkohl-Broccoliauflauf mit Kräutersoße und Petersilienkartoffeln
-  (Stud: 3.50€, Ma: 6.36€ | 🧀 Veg.)\n\n• Focaccia mit Tomaten, Mozzarella und Basilikumcreme
-  (Stud: 2.90€, Ma: 5.27€ | 🧀 Veg.)\n\n• Kesselgulasch
-  (Stud: 2.18€, Ma: 3.97€)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260505T110000Z
 DTEND:20260505T120000Z
-DTSTAMP:20260504T074947Z
+DTSTAMP:20260505T072043Z
 UID:2026-05-05-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Burritos-Mexikanische Tortilla mit Sojachili gefüllt, dazu Salat
   (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Gebratenes Seelachsfilet auf Tomatensoße , dazu Broccoli und Reis
   (Stud: 3.99€, Ma: 7.25€)\n\n• Gefüllte Paprikaschote mit Gemüse und Käse gratiniert, dazu Paprikasoße und Bratkartoffeln
   (Stud: 3.66€, Ma: 6.66€ | 🧀 Veg.)\n\n• Milchgrieß mit Butter, Zucker und Zimt, dazu Erdbeerragout
-  (Stud: 2.70€, Ma: 4.90€ | 🧀 Veg.)
+  (Stud: 2.70€, Ma: 4.90€ | 🧀 Veg.)\n\n• Mexikanische Hackfleischsuppe mit Kartoffeln
+  (Stud: 2.18€, Ma: 3.97€)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260506T110000Z
 DTEND:20260506T120000Z
-DTSTAMP:20260504T074947Z
+DTSTAMP:20260505T072043Z
 UID:2026-05-06-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Blumenkohl-Knuspermedaillon mit Kräutersoße, Kartoffeln und Rotkohlsalat
   (Stud: 3.30€, Ma: 6.00€ | 🌱 Vegan)\n\n• Putensteak mit Broccolirahmsoße, Buttermöhren und Kräuterkartoffeln
   (Stud: 4.12€, Ma: 7.49€)\n\n• Couscous-Karottenfrikadelle mit Rahmporee und bunter Blattsalat
   (Stud: 2.35€, Ma: 4.90€ | 🧀 Veg.)\n\n• Vegane Plinsen mit Puderzucker und Apfelmus
-  (Stud: 2.90€, Ma: 5.27€ | 🌱 Vegan)\n\n• Vegane Plinsen mit Puderzucker und Apfelmus
   (Stud: 2.90€, Ma: 5.27€ | 🌱 Vegan)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260507T110000Z
 DTEND:20260507T120000Z
-DTSTAMP:20260504T074947Z
+DTSTAMP:20260505T072043Z
 UID:2026-05-07-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Brew Bites Lasagne Bolognese mit Salat
@@ -62,7 +48,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260508T110000Z
 DTEND:20260508T120000Z
-DTSTAMP:20260504T074947Z
+DTSTAMP:20260505T072044Z
 UID:2026-05-08-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tortelloni Auflauf mit Basilikumsoße und Salat
@@ -74,7 +60,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260511T110000Z
 DTEND:20260511T120000Z
-DTSTAMP:20260504T074948Z
+DTSTAMP:20260505T072044Z
 UID:2026-05-11-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Soja- Feuerfleisch mit Bohnengemüse und Kartoffelklöße
@@ -86,7 +72,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260512T110000Z
 DTEND:20260512T120000Z
-DTSTAMP:20260504T074948Z
+DTSTAMP:20260505T072044Z
 UID:2026-05-12-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Krautnudeln mit Hack Brew Bites, dazu geriebener veganer Mozzarella Flavour
@@ -98,7 +84,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260513T110000Z
 DTEND:20260513T120000Z
-DTSTAMP:20260504T074948Z
+DTSTAMP:20260505T072044Z
 UID:2026-05-13-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Süßkartoffel-Kokoscurry mit gerösteten Kürbiskernen und Basmati Reis
