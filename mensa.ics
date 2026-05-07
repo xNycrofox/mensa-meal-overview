@@ -6,36 +6,23 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260506T110000Z
-DTEND:20260506T120000Z
-DTSTAMP:20260506T073736Z
-UID:2026-05-06-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Blumenkohl-Knuspermedaillon mit Kräutersoße, Kartoffeln und Rotkohlsalat
-  (Stud: 3.30€, Ma: 6.00€ | 🌱 Vegan)\n\n• Putensteak mit Broccolirahmsoße, Buttermöhren und Kräuterkartoffeln
-  (Stud: 4.12€, Ma: 7.49€)\n\n• Couscous-Karottenfrikadelle mit Rahmporee und bunter Blattsalat
-  (Stud: 2.35€, Ma: 4.90€ | 🧀 Veg.)\n\n• Plinsen mit Puderzucker und Apfelmus
-  (Stud: 2.90€, Ma: 5.27€ | 🌱 Vegan)\n\n• Fischtopf mit Gemüse und Kartoffeln
-  (Stud: 2.18€, Ma: 3.97€)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260507T110000Z
 DTEND:20260507T120000Z
-DTSTAMP:20260506T073736Z
+DTSTAMP:20260507T074451Z
 UID:2026-05-07-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Brew Bites Lasagne Bolognese mit Salat
   (Stud: 3.66€, Ma: 6.66€ | 🌱 Vegan)\n\n• Schweinesteak au four mit Würzfleisch und Käse gratiniert, dazu Buttererbsen und Pommes frites
   (Stud: 4.22€, Ma: 7.67€)\n\n• Bratkartoffeln mit Tomate und Mozzarella, dazu Rotkohlsalat
   (Stud: 2.35€, Ma: 4.90€ | 🧀 Veg.)\n\n• Pizza Kapstadt mit Wiener, Gewürzgurke, Röstzwiebeln und Remoulade
-  (Stud: 3.23€, Ma: 5.88€)
+  (Stud: 3.23€, Ma: 5.88€)\n\n• Kürbis- Chilisuppe mit Mais und Kidneybohnen
+  (Stud: 2.18€, Ma: 3.97€ | 🌱 Vegan)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260508T110000Z
 DTEND:20260508T120000Z
-DTSTAMP:20260506T073736Z
+DTSTAMP:20260507T074451Z
 UID:2026-05-08-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tortelloni Auflauf mit Basilikumsoße und Salat
@@ -47,7 +34,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260511T110000Z
 DTEND:20260511T120000Z
-DTSTAMP:20260506T073736Z
+DTSTAMP:20260507T074451Z
 UID:2026-05-11-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Soja- Feuerfleisch mit Bohnengemüse und Kartoffelklöße
@@ -59,7 +46,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260512T110000Z
 DTEND:20260512T120000Z
-DTSTAMP:20260506T073737Z
+DTSTAMP:20260507T074451Z
 UID:2026-05-12-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Krautnudeln mit Hack Brew Bites, dazu geriebener veganer Mozzarella Flavour
@@ -71,7 +58,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260513T110000Z
 DTEND:20260513T120000Z
-DTSTAMP:20260506T073737Z
+DTSTAMP:20260507T074452Z
 UID:2026-05-13-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Süßkartoffel-Kokoscurry mit gerösteten Kürbiskernen und Basmati Reis
