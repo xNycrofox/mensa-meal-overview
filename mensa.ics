@@ -6,21 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260513T110000Z
-DTEND:20260513T120000Z
-DTSTAMP:20260513T075338Z
-UID:2026-05-13-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Süßkartoffel-Kokoscurry mit gerösteten Kürbiskernen und Basmati Reis
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Spinatknödel mit Sahnepilzen und geriebenem Gouda, dazu Salat
-  (Stud: 3.60€, Ma: 6.55€ | 🧀 Veg.)\n\n• Grillteller mit Kasslersteak, Grillwürstchen, Hähnchenbrust, Frikadelle, Grillbutter, Kroketten und Salat
-  (Stud: 4.22€, Ma: 7.67€)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260518T110000Z
 DTEND:20260518T120000Z
-DTSTAMP:20260513T075338Z
+DTSTAMP:20260514T074715Z
 UID:2026-05-18-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Seitan-Gyros mit Tsatsiki, Weißkrautsalat und Kartoffelspalten
@@ -32,7 +20,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260519T110000Z
 DTEND:20260519T120000Z
-DTSTAMP:20260513T075338Z
+DTSTAMP:20260514T074715Z
 UID:2026-05-19-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Spaghetti mit Gemüsebolognese, dazu Rucola-Topping
@@ -44,7 +32,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260520T110000Z
 DTEND:20260520T120000Z
-DTSTAMP:20260513T075339Z
+DTSTAMP:20260514T074715Z
 UID:2026-05-20-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Broccoli-Nuss-Ecke mit Dillsoße, dazu Kohlrabi-Möhrengemüse und Petersilienkartoffeln
@@ -56,7 +44,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260521T110000Z
 DTEND:20260521T120000Z
-DTSTAMP:20260513T075339Z
+DTSTAMP:20260514T074715Z
 UID:2026-05-21-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Maultaschen mit Rahmgemüse und Salat
@@ -68,7 +56,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260522T110000Z
 DTEND:20260522T120000Z
-DTSTAMP:20260513T075339Z
+DTSTAMP:20260514T074715Z
 UID:2026-05-22-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Soja-Feuerfleisch mit Bohnengemüse und Kartoffelklöße
