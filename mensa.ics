@@ -6,34 +6,23 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260520T110000Z
-DTEND:20260520T120000Z
-DTSTAMP:20260520T083008Z
-UID:2026-05-20-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Broccoli-Nuss-Ecke mit Dillsoße, dazu Kohlrabi-Möhrengemüse und Petersilienkartoffeln
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Kasslersteak mit Honig-Meerrettichkruste, Bratensoße, Butterbohnen und Kartoffelkroketten
-  (Stud: 3.67€, Ma: 6.67€)\n\n• Edamer Käseschnitzel mit Remouladensoße und Bratkartoffeln
-  (Stud: 4.22€, Ma: 7.67€ | 🧀 Veg.)\n\n• Kürbis-Chili-Topf mit Kidneybohnen und Mais
-  (Stud: 2.18€, Ma: 3.97€ | 🌱 Vegan)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260521T110000Z
 DTEND:20260521T120000Z
-DTSTAMP:20260520T083008Z
+DTSTAMP:20260521T083724Z
 UID:2026-05-21-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Maultaschen mit Rahmgemüse und Salat
   (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Cheeseburger mit Pommes frites
   (Stud: 4.46€, Ma: 8.11€)\n\n• Marinierter Hering Hausfrauen Art, dazu Kartoffeln
-  (Stud: 3.99€, Ma: 7.25€ | 🧀 Veg.)
+  (Stud: 3.99€, Ma: 7.25€ | 🧀 Veg.)\n\n• Hausgebackener Schmand-Kirschkuchen
+  (Stud: 1.95€, Ma: 2.06€ | 🧀 Veg.)\n\n• Sächsische Kartoffelsuppe mit Würstchenstreifen
+  (Stud: 2.18€, Ma: 3.97€)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260522T110000Z
 DTEND:20260522T120000Z
-DTSTAMP:20260520T083008Z
+DTSTAMP:20260521T083724Z
 UID:2026-05-22-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Soja-Feuerfleisch mit Bohnengemüse und Kartoffelklöße
@@ -45,7 +34,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260526T110000Z
 DTEND:20260526T120000Z
-DTSTAMP:20260520T083009Z
+DTSTAMP:20260521T083725Z
 UID:2026-05-26-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Rucola-Süßkartoffelschnitte mit Ratatouillegemüse und Basmati Reis
@@ -57,7 +46,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260527T110000Z
 DTEND:20260527T120000Z
-DTSTAMP:20260520T083009Z
+DTSTAMP:20260521T083725Z
 UID:2026-05-27-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Soja-Schnitzel mit Rahmgemüse und Petersilienkartoffeln
@@ -69,7 +58,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260528T110000Z
 DTEND:20260528T120000Z
-DTSTAMP:20260520T083009Z
+DTSTAMP:20260521T083725Z
 UID:2026-05-28-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Kichererbsen-Bohnenfrikadelle mit Tomatensalsa und Bratkartoffeln
@@ -81,7 +70,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260529T110000Z
 DTEND:20260529T120000Z
-DTSTAMP:20260520T083009Z
+DTSTAMP:20260521T083725Z
 UID:2026-05-29-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Gebratene Gemüse-Mie Nudeln mit Röstzwiebeln
