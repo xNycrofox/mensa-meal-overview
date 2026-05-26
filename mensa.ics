@@ -8,19 +8,20 @@ X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
 DTSTART:20260526T110000Z
 DTEND:20260526T120000Z
-DTSTAMP:20260525T090137Z
+DTSTAMP:20260526T083515Z
 UID:2026-05-26-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Rucola-Süßkartoffelschnitte mit Ratatouillegemüse und Basmati Reis
   (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Bratwurst mit Bratensoße, Sauerkraut und Kartoffelpüree
   (Stud: 3.71€, Ma: 6.75€)\n\n• Backfischstücke mit Tatarensoße, gebackenen Kartoffelecken und Salat
-  (Stud: 4.22€, Ma: 7.67€)
+  (Stud: 4.22€, Ma: 7.67€)\n\n• Süßkartoffel- Kokossuppe
+  (Stud: 2.18€, Ma: 3.97€ | 🌱 Vegan)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260527T110000Z
 DTEND:20260527T120000Z
-DTSTAMP:20260525T090138Z
+DTSTAMP:20260526T083515Z
 UID:2026-05-27-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Soja-Schnitzel mit Rahmgemüse und Petersilienkartoffeln
@@ -32,7 +33,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260528T110000Z
 DTEND:20260528T120000Z
-DTSTAMP:20260525T090138Z
+DTSTAMP:20260526T083515Z
 UID:2026-05-28-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Kichererbsen-Bohnenfrikadelle mit Tomatensalsa und Bratkartoffeln
@@ -44,13 +45,77 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260529T110000Z
 DTEND:20260529T120000Z
-DTSTAMP:20260525T090138Z
+DTSTAMP:20260526T083516Z
 UID:2026-05-29-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Gebratene Gemüse-Mie Nudeln mit Röstzwiebeln
   (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Dresdener Sauerbraten mit Apfelrotkohl und Hefeknödel
   (Stud: 4.47€, Ma: 8.13€)\n\n• Hacksteak vom Schwein mit Zwiebelsoße , buntes Gemüse und Petersilienkartoffeln
   (Stud: 3.35€, Ma: 6.09€)
+LOCATION:Mensa Johanna, Dresden
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260601T110000Z
+DTEND:20260601T120000Z
+DTSTAMP:20260526T083516Z
+UID:2026-06-01-mensa-johanna@mensa-meal-overview
+SUMMARY:🍽️ Mensa Johanna
+DESCRIPTION:• Kleine Gemüseplatte Schnittlauchsoße Kartoffelrösti
+  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Erbseneintopf Brötchen
+  (Stud: 3.00€, Ma: 5.45€)\n\n• Hausgemachte Sächsische Kartoffelpuffer Apfelmus
+  (Stud: 2.90€, Ma: 5.27€ | 🧀 Veg.)\n\n• Flammkuchen mit Schmand, Bauchspeck und Lauch
+  (Stud: 2.90€, Ma: 5.27€)
+LOCATION:Mensa Johanna, Dresden
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260602T110000Z
+DTEND:20260602T120000Z
+DTSTAMP:20260526T083516Z
+UID:2026-06-02-mensa-johanna@mensa-meal-overview
+SUMMARY:🍽️ Mensa Johanna
+DESCRIPTION:• Avocado-Quinoa-Burger scharfe Tomatensalsa Kräuter-Dip Pommes frites
+  (Stud: 4.40€, Ma: 8.00€ | 🌱 Vegan)\n\n• Makkaroni mit Wurstgulasch ungarischer Art, dazu geriebener Gouda
+  (Stud: 2.35€, Ma: 4.90€)\n\n• Schweineschnitzel mit Zitrone Butterspargel Hollandaise Petersilienkartoffeln
+  (Stud: 4.41€, Ma: 8.02€)\n\n• Haferflocken- Bananen- Eierkuchen mit Apfelmus
+  (Stud: 2.70€, Ma: 4.90€ | 🧀 Veg.)
+LOCATION:Mensa Johanna, Dresden
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260603T110000Z
+DTEND:20260603T120000Z
+DTSTAMP:20260526T083516Z
+UID:2026-06-03-mensa-johanna@mensa-meal-overview
+SUMMARY:🍽️ Mensa Johanna
+DESCRIPTION:• Valess Schnitzel mit Goudafüllung Tomaten-Avocadosalsa mediterraner Nudelsalat
+  (Stud: 2.35€, Ma: 4.90€ | 🧀 Veg.)\n\n• Indisches Hähnchencurry aus dem Wok Thaireis
+  (Stud: 3.99€, Ma: 7.25€)\n\n• Frühlingsrollen mit asiatischem Gemüse und Reisbandnudeln
+  (Stud: 3.99€, Ma: 7.25€ | 🌱 Vegan)\n\n• Calzone gefüllt mit Pizza mit gegrilltem Gemüse
+  (Stud: 3.23€, Ma: 5.88€ | 🌱 Vegan)
+LOCATION:Mensa Johanna, Dresden
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260604T110000Z
+DTEND:20260604T120000Z
+DTSTAMP:20260526T083516Z
+UID:2026-06-04-mensa-johanna@mensa-meal-overview
+SUMMARY:🍽️ Mensa Johanna
+DESCRIPTION:• Hausgemachte Kartoffelpuffer mit Wurzelgemüse Tomaten-Zucchiniragout
+  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Seelachs-Fischsticks Kartoffel-Gurkensalat
+  (Stud: 3.75€, Ma: 6.82€)\n\n• Gegrillter Halloumi Mango-Dip gebackene Kartoffelecken Salat Salatmarinade -(ergibt 25ltr.=500Port.) -*vegan
+  (Stud: 4.22€, Ma: 7.67€ | 🧀 Veg.)\n\n• Mit Gemüse und Käse gefüllte Ofenkartoffeln, dazu Joghurt-Kräuterdip
+  (Stud: 2.90€, Ma: 5.27€ | 🧀 Veg.)
+LOCATION:Mensa Johanna, Dresden
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260605T110000Z
+DTEND:20260605T120000Z
+DTSTAMP:20260526T083516Z
+UID:2026-06-05-mensa-johanna@mensa-meal-overview
+SUMMARY:🍽️ Mensa Johanna
+DESCRIPTION:• Karotten-Sesamsticks Rahmspinat Schwenkkartoffeln
+  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Böhmischer Sahnegulasch mit Apfelrotkohl und hausgemachten böhmischen Hefeknödel
+  (Stud: 4.16€, Ma: 7.56€)\n\n• Moussaka Gurkensalat
+  (Stud: 3.50€, Ma: 6.36€ | 🧀 Veg.)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 END:VCALENDAR
