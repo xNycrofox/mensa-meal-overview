@@ -6,21 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260527T110000Z
-DTEND:20260527T120000Z
-DTSTAMP:20260527T084120Z
-UID:2026-05-27-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Soja-Schnitzel mit Rahmgemüse und Petersilienkartoffeln
-  (Stud: 3.15€, Ma: 5.73€ | 🌱 Vegan)\n\n• Kochklops mit Dill- Kapernsoße, Buttermöhren und Kräuterreis
-  (Stud: 2.35€, Ma: 4.90€)\n\n• Schafskäse Ozmir mit Kräutersoße und Kartoffelrösti
-  (Stud: 3.61€, Ma: 6.56€ | 🧀 Veg.)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260528T110000Z
 DTEND:20260528T120000Z
-DTSTAMP:20260527T084120Z
+DTSTAMP:20260528T084743Z
 UID:2026-05-28-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Kichererbsen-Bohnenfrikadelle mit Tomatensalsa und Bratkartoffeln
@@ -32,7 +20,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260529T110000Z
 DTEND:20260529T120000Z
-DTSTAMP:20260527T084120Z
+DTSTAMP:20260528T084743Z
 UID:2026-05-29-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Gebratene Gemüse-Mie Nudeln mit Röstzwiebeln
@@ -44,7 +32,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260601T110000Z
 DTEND:20260601T120000Z
-DTSTAMP:20260527T084121Z
+DTSTAMP:20260528T084744Z
 UID:2026-06-01-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Kleine Gemüseplatte Schnittlauchsoße Kartoffelrösti
@@ -57,7 +45,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260602T110000Z
 DTEND:20260602T120000Z
-DTSTAMP:20260527T084121Z
+DTSTAMP:20260528T084744Z
 UID:2026-06-02-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Avocado-Quinoa-Burger scharfe Tomatensalsa Kräuter-Dip Pommes frites
@@ -70,7 +58,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260603T110000Z
 DTEND:20260603T120000Z
-DTSTAMP:20260527T084121Z
+DTSTAMP:20260528T084744Z
 UID:2026-06-03-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Valess Schnitzel mit Goudafüllung Tomaten-Avocadosalsa mediterraner Nudelsalat
@@ -83,7 +71,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260604T110000Z
 DTEND:20260604T120000Z
-DTSTAMP:20260527T084121Z
+DTSTAMP:20260528T084744Z
 UID:2026-06-04-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Hausgemachte Kartoffelpuffer mit Wurzelgemüse Tomaten-Zucchiniragout
@@ -96,7 +84,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260605T110000Z
 DTEND:20260605T120000Z
-DTSTAMP:20260527T084121Z
+DTSTAMP:20260528T084744Z
 UID:2026-06-05-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Karotten-Sesamsticks Rahmspinat Schwenkkartoffeln
