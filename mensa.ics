@@ -6,37 +6,25 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260528T110000Z
-DTEND:20260528T120000Z
-DTSTAMP:20260528T084743Z
-UID:2026-05-28-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Kichererbsen-Bohnenfrikadelle mit Tomatensalsa und Bratkartoffeln
-  (Stud: 2.75€, Ma: 5.00€ | 🌱 Vegan)\n\n• Hähnchenbrust mit Blattspinat und Hirtenkäse gratiniert auf Tomatenspaghetti
-  (Stud: 3.94€, Ma: 7.16€)\n\n• Gekochte Eier mit Senfsoße, Buttermöhren und Petersilienkartoffeln
-  (Stud: 2.35€, Ma: 4.90€ | 🧀 Veg.)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260529T110000Z
 DTEND:20260529T120000Z
-DTSTAMP:20260528T084743Z
+DTSTAMP:20260529T084539Z
 UID:2026-05-29-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Gebratene Gemüse-Mie Nudeln mit Röstzwiebeln
   (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Dresdener Sauerbraten mit Apfelrotkohl und Hefeknödel
-  (Stud: 4.47€, Ma: 8.13€)\n\n• Hacksteak vom Schwein mit Zwiebelsoße , Sauerkraut und Petersilienkartoffeln
+  (Stud: 4.22€, Ma: 7.67€)\n\n• Hacksteak vom Schwein mit Zwiebelsoße , Sauerkraut und Petersilienkartoffeln
   (Stud: 3.35€, Ma: 6.09€)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260601T110000Z
 DTEND:20260601T120000Z
-DTSTAMP:20260528T084744Z
+DTSTAMP:20260529T084539Z
 UID:2026-06-01-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Kleine Gemüseplatte Schnittlauchsoße Kartoffelrösti
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Erbseneintopf Brötchen
+  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Erbseneintopf mit Knacker oder Bockwurst, dazu Brötchen
   (Stud: 3.00€, Ma: 5.45€)\n\n• Hausgemachte Sächsische Kartoffelpuffer Apfelmus
   (Stud: 2.90€, Ma: 5.27€ | 🧀 Veg.)\n\n• Flammkuchen mit Schmand, Bauchspeck und Lauch
   (Stud: 2.90€, Ma: 5.27€)
@@ -45,7 +33,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260602T110000Z
 DTEND:20260602T120000Z
-DTSTAMP:20260528T084744Z
+DTSTAMP:20260529T084540Z
 UID:2026-06-02-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Avocado-Quinoa-Burger scharfe Tomatensalsa Kräuter-Dip Pommes frites
@@ -58,7 +46,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260603T110000Z
 DTEND:20260603T120000Z
-DTSTAMP:20260528T084744Z
+DTSTAMP:20260529T084540Z
 UID:2026-06-03-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Valess Schnitzel mit Goudafüllung Tomaten-Avocadosalsa mediterraner Nudelsalat
@@ -71,7 +59,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260604T110000Z
 DTEND:20260604T120000Z
-DTSTAMP:20260528T084744Z
+DTSTAMP:20260529T084540Z
 UID:2026-06-04-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Hausgemachte Kartoffelpuffer mit Wurzelgemüse Tomaten-Zucchiniragout
@@ -84,7 +72,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260605T110000Z
 DTEND:20260605T120000Z
-DTSTAMP:20260528T084744Z
+DTSTAMP:20260529T084540Z
 UID:2026-06-05-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Karotten-Sesamsticks Rahmspinat Schwenkkartoffeln
