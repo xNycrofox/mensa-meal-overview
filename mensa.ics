@@ -6,21 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260529T110000Z
-DTEND:20260529T120000Z
-DTSTAMP:20260529T084539Z
-UID:2026-05-29-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Gebratene Gemüse-Mie Nudeln mit Röstzwiebeln
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Dresdener Sauerbraten mit Apfelrotkohl und Hefeknödel
-  (Stud: 4.22€, Ma: 7.67€)\n\n• Hacksteak vom Schwein mit Zwiebelsoße , Sauerkraut und Petersilienkartoffeln
-  (Stud: 3.35€, Ma: 6.09€)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260601T110000Z
 DTEND:20260601T120000Z
-DTSTAMP:20260529T084539Z
+DTSTAMP:20260530T074318Z
 UID:2026-06-01-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Kleine Gemüseplatte Schnittlauchsoße Kartoffelrösti
@@ -33,7 +21,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260602T110000Z
 DTEND:20260602T120000Z
-DTSTAMP:20260529T084540Z
+DTSTAMP:20260530T074318Z
 UID:2026-06-02-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Avocado-Quinoa-Burger scharfe Tomatensalsa Kräuter-Dip Pommes frites
@@ -46,7 +34,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260603T110000Z
 DTEND:20260603T120000Z
-DTSTAMP:20260529T084540Z
+DTSTAMP:20260530T074319Z
 UID:2026-06-03-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Valess Schnitzel mit Goudafüllung Tomaten-Avocadosalsa mediterraner Nudelsalat
@@ -59,7 +47,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260604T110000Z
 DTEND:20260604T120000Z
-DTSTAMP:20260529T084540Z
+DTSTAMP:20260530T074319Z
 UID:2026-06-04-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Hausgemachte Kartoffelpuffer mit Wurzelgemüse Tomaten-Zucchiniragout
@@ -72,7 +60,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260605T110000Z
 DTEND:20260605T120000Z
-DTSTAMP:20260529T084540Z
+DTSTAMP:20260530T074319Z
 UID:2026-06-05-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Karotten-Sesamsticks Rahmspinat Schwenkkartoffeln
