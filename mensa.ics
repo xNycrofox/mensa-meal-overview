@@ -6,36 +6,23 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260602T110000Z
-DTEND:20260602T120000Z
-DTSTAMP:20260602T091354Z
-UID:2026-06-02-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Avocado-Quinoa-Burger scharfe Tomatensalsa Kräuter-Dip Pommes frites
-  (Stud: 4.40€, Ma: 8.00€ | 🌱 Vegan)\n\n• Makkaroni mit Wurstgulasch ungarischer Art, dazu geriebener Gouda
-  (Stud: 2.35€, Ma: 4.90€)\n\n• Schweineschnitzel mit Zitrone, Butterspargel, Hollandaise und Petersilienkartoffeln
-  (Stud: 4.41€, Ma: 8.02€)\n\n• Haferflocken- Bananen- Eierkuchen mit Apfelmus
-  (Stud: 2.70€, Ma: 4.90€ | 🧀 Veg.)\n\n• Kartoffelsuppe mit Bockwurststreifen
-  (Stud: 2.18€, Ma: 3.97€)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260603T110000Z
 DTEND:20260603T120000Z
-DTSTAMP:20260602T091354Z
+DTSTAMP:20260603T095805Z
 UID:2026-06-03-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Valess Schnitzel mit Goudafüllung Tomaten-Avocadosalsa mediterraner Nudelsalat
-  (Stud: 2.35€, Ma: 4.90€ | 🧀 Veg.)\n\n• Indisches Hähnchencurry aus dem Wok Thaireis
+DESCRIPTION:• Valess Schnitzel mit Goudafüllung ,Tomaten-Avocadosalsa und mediterraner Nudelsalat
+  (Stud: 2.35€, Ma: 4.90€ | 🧀 Veg.)\n\n• Indisches Hähnchencurry mit Thaireis
   (Stud: 3.99€, Ma: 7.25€)\n\n• Frühlingsrollen mit asiatischem Gemüse und Reisbandnudeln
-  (Stud: 3.99€, Ma: 7.25€ | 🌱 Vegan)\n\n• Calzone gefüllt mit Pizza mit gegrilltem Gemüse
-  (Stud: 3.23€, Ma: 5.88€ | 🌱 Vegan)
+  (Stud: 3.99€, Ma: 7.25€ | 🌱 Vegan)\n\n• Burrito mit Soja- Kräutercreme, Seitan, Eisberg, Zwiebel, Mozzarella Flavour und Tomate
+  (Stud: 2.90€, Ma: 5.27€ | 🌱 Vegan)\n\n• Spargelcremesuppe
+  (Stud: 2.18€, Ma: 3.97€ | 🧀 Veg.)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260604T110000Z
 DTEND:20260604T120000Z
-DTSTAMP:20260602T091354Z
+DTSTAMP:20260603T095805Z
 UID:2026-06-04-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Hausgemachte Kartoffelpuffer mit Wurzelgemüse Tomaten-Zucchiniragout
@@ -48,7 +35,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260605T110000Z
 DTEND:20260605T120000Z
-DTSTAMP:20260602T091354Z
+DTSTAMP:20260603T095805Z
 UID:2026-06-05-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Karotten-Sesamsticks Rahmspinat Schwenkkartoffeln
@@ -60,7 +47,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260608T110000Z
 DTEND:20260608T120000Z
-DTSTAMP:20260602T091354Z
+DTSTAMP:20260603T095805Z
 UID:2026-06-08-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Gnocchipfanne mit Broccoli, Zucchini, Tomaten und Karotten, dazu Basilikumsoße
@@ -73,7 +60,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260609T110000Z
 DTEND:20260609T120000Z
-DTSTAMP:20260602T091354Z
+DTSTAMP:20260603T095806Z
 UID:2026-06-09-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Planted Currywurst mit Currysoße und Pommes frites
@@ -86,7 +73,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260610T110000Z
 DTEND:20260610T120000Z
-DTSTAMP:20260602T091354Z
+DTSTAMP:20260603T095806Z
 UID:2026-06-10-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Spaghetti mit Tomatenpesto mit Cashewkerntopping oder vegetarische Alternative geriebener Gouda
@@ -99,7 +86,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260611T110000Z
 DTEND:20260611T120000Z
-DTSTAMP:20260602T091355Z
+DTSTAMP:20260603T095806Z
 UID:2026-06-11-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tandoori-Blumenkohl mit Linsen-Mangocurry und Basmati Reis
@@ -112,7 +99,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260612T110000Z
 DTEND:20260612T120000Z
-DTSTAMP:20260602T091355Z
+DTSTAMP:20260603T095806Z
 UID:2026-06-12-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Süßkartoffelschnitzel Apfel-Meerrettich-Dip, Kartoffelpüree und Salat
