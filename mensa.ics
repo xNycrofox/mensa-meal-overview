@@ -6,22 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260610T110000Z
-DTEND:20260610T120000Z
-DTSTAMP:20260610T085409Z
-UID:2026-06-10-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Spaghetti mit Tomatenpesto mit Cashewkerntopping oder vegetarische Alternative geriebener Gouda
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Mit Tomate und Mozzarella gratiniertes Hähnchenbrustfilet, dazu Basilikumsoße, Broccoli und Reis
-  (Stud: 3.99€, Ma: 7.25€)\n\n• Stangenspargel mit Hollandaise und Petersilienkartoffeln
-  (Stud: 3.50€, Ma: 6.36€ | 🧀 Veg.)\n\n• Flammkuchen mit Tomate, Käse und roten Zwiebeln
-  (Stud: 2.90€, Ma: 5.27€ | 🧀 Veg.)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260611T110000Z
 DTEND:20260611T120000Z
-DTSTAMP:20260610T085409Z
+DTSTAMP:20260611T091513Z
 UID:2026-06-11-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tandoori-Blumenkohl mit Linsen-Mangocurry und Basmati Reis
@@ -34,7 +21,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260612T110000Z
 DTEND:20260612T120000Z
-DTSTAMP:20260610T085410Z
+DTSTAMP:20260611T091513Z
 UID:2026-06-12-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Süßkartoffelschnitzel Apfel-Meerrettich-Dip, Kartoffelpüree und Salat
@@ -46,12 +33,12 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260615T110000Z
 DTEND:20260615T120000Z
-DTSTAMP:20260610T085410Z
+DTSTAMP:20260611T091513Z
 UID:2026-06-15-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Soja Chili sin carne mit Kräuterreis
   (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Putenschnitzel mit Cremechampignons und Kartoffeln
-  (Stud: 3.77€, Ma: 6.85€)\n\n• Polentatasche Florentiner Art mit Tomatensoße und Schwenkkartoffeln
+  (Stud: 3.77€, Ma: 6.85€)\n\n• Polentatasche Florentiner Art mit Tomaten- Basilikumsoße und Schwenkkartoffeln
   (Stud: 3.21€, Ma: 5.84€ | 🧀 Veg.)\n\n• Canneloni mit Spinatfüllung in Tomatensoße und Goudakäse gratiniert
   (Stud: 3.00€, Ma: 5.45€ | 🧀 Veg.)
 LOCATION:Mensa Johanna, Dresden
@@ -59,7 +46,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260616T110000Z
 DTEND:20260616T120000Z
-DTSTAMP:20260610T085410Z
+DTSTAMP:20260611T091513Z
 UID:2026-06-16-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Spirelli mit Champignons und getrockneten Tomaten in Rahm,dazu Reibeschmelz
@@ -72,7 +59,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260617T110000Z
 DTEND:20260617T120000Z
-DTSTAMP:20260610T085410Z
+DTSTAMP:20260611T091513Z
 UID:2026-06-17-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Zucchini-Paprika-Zwiebelgemüse mit Kräuter-Dip und Couscous
@@ -85,7 +72,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260618T110000Z
 DTEND:20260618T120000Z
-DTSTAMP:20260610T085410Z
+DTSTAMP:20260611T091514Z
 UID:2026-06-18-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Seitangulasch mit Erbsen- Karottengemüse und Petersilienkartoffeln
@@ -98,7 +85,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260619T110000Z
 DTEND:20260619T120000Z
-DTSTAMP:20260610T085410Z
+DTSTAMP:20260611T091514Z
 UID:2026-06-19-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Ratatouillegemüse mit Salbeipolenta und Salat
