@@ -8,21 +8,21 @@ X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
 DTSTART:20260615T110000Z
 DTEND:20260615T120000Z
-DTSTAMP:20260614T084259Z
+DTSTAMP:20260615T111815Z
 UID:2026-06-15-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Soja Chili sin carne mit Kräuterreis
   (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Putenschnitzel mit Cremechampignons und Kartoffeln
   (Stud: 3.77€, Ma: 6.85€)\n\n• Polentatasche Florentiner Art mit Tomaten- Basilikumsoße und Schwenkkartoffeln
   (Stud: 3.21€, Ma: 5.84€ | 🧀 Veg.)\n\n• Canneloni mit Spinatfüllung in Tomatensoße und Goudakäse gratiniert
-  (Stud: 3.00€, Ma: 5.45€ | 🧀 Veg.)\n\n• Erbseneintopf mit Knackerscheiben
+  (Stud: 3.00€, Ma: 5.45€ | 🧀 Veg.)\n\n• Gelbe Erbsensuppe mit Knackwurstscheiben
   (Stud: 2.18€, Ma: 3.97€)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260616T110000Z
 DTEND:20260616T120000Z
-DTSTAMP:20260614T084300Z
+DTSTAMP:20260615T111815Z
 UID:2026-06-16-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Spirelli mit Champignons und getrockneten Tomaten in Rahm,dazu Reibeschmelz
@@ -35,7 +35,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260617T110000Z
 DTEND:20260617T120000Z
-DTSTAMP:20260614T084300Z
+DTSTAMP:20260615T111815Z
 UID:2026-06-17-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Zucchini-Paprika-Zwiebelgemüse mit Kräuter-Dip und Couscous
@@ -48,7 +48,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260618T110000Z
 DTEND:20260618T120000Z
-DTSTAMP:20260614T084300Z
+DTSTAMP:20260615T111816Z
 UID:2026-06-18-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Seitangulasch mit Erbsen- Karottengemüse und Petersilienkartoffeln
@@ -61,7 +61,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260619T110000Z
 DTEND:20260619T120000Z
-DTSTAMP:20260614T084300Z
+DTSTAMP:20260615T111816Z
 UID:2026-06-19-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Ratatouillegemüse mit Salbeipolenta und Salat
