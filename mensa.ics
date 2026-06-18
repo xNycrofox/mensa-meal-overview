@@ -6,36 +6,23 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260617T110000Z
-DTEND:20260617T120000Z
-DTSTAMP:20260617T095404Z
-UID:2026-06-17-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Zucchini-Paprika-Zwiebelgemüse mit Kräuter-Dip und Couscous
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Gebackenes Schollenfilet mit Kartoffelpüree und Rotkohlsalat
-  (Stud: 3.84€, Ma: 6.99€)\n\n• Chicken Crossies mit Sweet-Chilidip, Pommes frites und Salat
-  (Stud: 4.25€, Ma: 7.73€)\n\n• Focaccia mit Tomaten, Mozzarella und Basilikumcreme
-  (Stud: 2.90€, Ma: 5.27€)\n\n• Paprikasuppe mit Reiseinlage
-  (Stud: 2.18€, Ma: 3.97€ | 🧀 Veg.)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260618T110000Z
 DTEND:20260618T120000Z
-DTSTAMP:20260617T095405Z
+DTSTAMP:20260618T091943Z
 UID:2026-06-18-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Seitangulasch mit Erbsen- Karottengemüse und Petersilienkartoffeln
+DESCRIPTION:• Seitangulasch mit Erbsen- Karottengemüse und Petersilienkartoffeln oder Reis
   (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Balkan-Burger mit Rindfleisch, Bacon, Salat, Tomate, Hirtenkäse, Ajvarcreme, dazu Pommes frites
   (Stud: 4.50€, Ma: 8.18€)\n\n• Gebackener Camembert mit Preiselbeersahne, Bratkartoffeln und Salat
   (Stud: 4.22€, Ma: 7.67€ | 🧀 Veg.)\n\n• Hausgemachte sächsische Quarkkäulchen mit Apfelmus
-  (Stud: 2.90€, Ma: 5.27€ | 🧀 Veg.)
+  (Stud: 2.90€, Ma: 5.27€ | 🧀 Veg.)\n\n• Sauerkirschen- Orangen- Kaltschale
+  (Stud: 2.18€, Ma: 3.97€ | 🌱 Vegan)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260619T110000Z
 DTEND:20260619T120000Z
-DTSTAMP:20260617T095405Z
+DTSTAMP:20260618T091943Z
 UID:2026-06-19-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Ratatouillegemüse mit Salbeipolenta und Salat
@@ -47,7 +34,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260622T110000Z
 DTEND:20260622T120000Z
-DTSTAMP:20260617T095405Z
+DTSTAMP:20260618T091944Z
 UID:2026-06-22-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Crispy Nuggets aus Gemüse und Jackfrucht mit Curry-Ananasdip, gebackenen Kartoffelecken und Salat
@@ -59,7 +46,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260623T110000Z
 DTEND:20260623T120000Z
-DTSTAMP:20260617T095405Z
+DTSTAMP:20260618T091944Z
 UID:2026-06-23-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tofuschnitzel mit Panko-Erdnusspanade, dazu Tomatenragout und Couscous
@@ -71,7 +58,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260624T110000Z
 DTEND:20260624T120000Z
-DTSTAMP:20260617T095405Z
+DTSTAMP:20260618T091944Z
 UID:2026-06-24-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Rote Linsenlasagne mit Salat
@@ -84,7 +71,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260625T110000Z
 DTEND:20260625T120000Z
-DTSTAMP:20260617T095406Z
+DTSTAMP:20260618T091944Z
 UID:2026-06-25-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Käsespätzle mit Reibeschmelz und Salat
@@ -96,7 +83,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260626T110000Z
 DTEND:20260626T120000Z
-DTSTAMP:20260617T095406Z
+DTSTAMP:20260618T091944Z
 UID:2026-06-26-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Rückensteak vom Schwein mit deftiger Paprika-Wurstsoße, Erbsen und Kartoffelkroketten
