@@ -6,22 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260619T110000Z
-DTEND:20260619T120000Z
-DTSTAMP:20260619T094710Z
-UID:2026-06-19-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Ratatouillegemüse mit Salbeipolenta und Salat
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Sächsische Kartoffelsuppe mit Wiener Würstchen und Brötchen
-  (Stud: 3.00€, Ma: 5.46€)\n\n• Seußlitzer Kasslerkammbraten mit Sauerkraut und Hefeknödel)
-  (Stud: 3.91€, Ma: 7.11€)\n\n• Sauerkirschen- Orangen- Kaltschale
-  (Stud: 2.18€, Ma: 3.97€ | 🌱 Vegan)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260622T110000Z
 DTEND:20260622T120000Z
-DTSTAMP:20260619T094710Z
+DTSTAMP:20260620T082323Z
 UID:2026-06-22-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Crispy Nuggets aus Gemüse und Jackfrucht mit Curry-Ananasdip, gebackenen Kartoffelecken und Salat
@@ -33,7 +20,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260623T110000Z
 DTEND:20260623T120000Z
-DTSTAMP:20260619T094710Z
+DTSTAMP:20260620T082324Z
 UID:2026-06-23-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tofuschnitzel mit Panko-Erdnusspanade, dazu Tomatenragout und Couscous
@@ -45,7 +32,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260624T110000Z
 DTEND:20260624T120000Z
-DTSTAMP:20260619T094711Z
+DTSTAMP:20260620T082324Z
 UID:2026-06-24-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Rote Linsenlasagne mit Salat
@@ -58,7 +45,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260625T110000Z
 DTEND:20260625T120000Z
-DTSTAMP:20260619T094711Z
+DTSTAMP:20260620T082324Z
 UID:2026-06-25-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Käsespätzle mit Reibeschmelz und Salat
@@ -70,7 +57,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260626T110000Z
 DTEND:20260626T120000Z
-DTSTAMP:20260619T094711Z
+DTSTAMP:20260620T082324Z
 UID:2026-06-26-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Rückensteak vom Schwein mit deftiger Paprika-Wurstsoße, Erbsen und Kartoffelkroketten
