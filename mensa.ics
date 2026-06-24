@@ -6,37 +6,26 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260623T110000Z
-DTEND:20260623T120000Z
-DTSTAMP:20260623T083142Z
-UID:2026-06-23-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Tofuschnitzel mit Panko-Erdnusspanade, dazu Ratatouillegemüse, Couscous oder Polenta
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Spirelli mit feuriger Salami-Frischkäsesoße und Goudakäse
-  (Stud: 3.20€, Ma: 5.82€)\n\n• Herzhaft gefüllte Eierkuchen mit Chili sin carne
-  (Stud: 3.00€, Ma: 5.45€ | 🧀 Veg.)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260624T110000Z
 DTEND:20260624T120000Z
-DTSTAMP:20260623T083142Z
+DTSTAMP:20260624T082602Z
 UID:2026-06-24-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Rote Linsenlasagne mit Salat
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Green Oat-Burger mit Salat, Tomate und Röstzwiebel, dazu Pommes frites
-  (Stud: 4.33€, Ma: 7.88€ | 🌱 Vegan)\n\n• Hähnchenbrust in Parmesanpanade mit Buttergemüse und Kartoffelpüree
+  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Hähnchenbrust in Parmesanpanade mit Buttergemüse und Kartoffelpüree
   (Stud: 3.99€, Ma: 7.25€)\n\n• Panierte gebackene Mozzarellaschnitzel mit Tatarensoße, Bratkartoffeln und Salat
-  (Stud: 3.99€, Ma: 7.25€ | 🧀 Veg.)
+  (Stud: 3.99€, Ma: 7.25€ | 🧀 Veg.)\n\n• Gurken- Joghurt- Kaltschale
+  (Stud: 2.18€, Ma: 3.97€ | 🧀 Veg.)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260625T110000Z
 DTEND:20260625T120000Z
-DTSTAMP:20260623T083142Z
+DTSTAMP:20260624T082603Z
 UID:2026-06-25-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Käsespätzle mit Reibeschmelz und Salat
+DESCRIPTION:• Green Oat-Burger mit Salat, Tomate und Röstzwiebel, dazu Pommes frites
+  (Stud: 4.33€, Ma: 7.88€ | 🌱 Vegan)\n\n• Käsespätzle mit Reibeschmelz und Salat
   (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Debreciner Gulasch mit Bohnengemüse und Kartoffelklößen
   (Stud: 3.99€, Ma: 7.25€)\n\n• Gemüseschmarrn mit Kräuterquark
   (Stud: 2.35€, Ma: 4.90€ | 🧀 Veg.)
@@ -45,7 +34,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260626T110000Z
 DTEND:20260626T120000Z
-DTSTAMP:20260623T083142Z
+DTSTAMP:20260624T082603Z
 UID:2026-06-26-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Rückensteak vom Schwein mit deftiger Paprika-Wurstsoße, Erbsen und Kartoffelkroketten
@@ -56,7 +45,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260629T110000Z
 DTEND:20260629T120000Z
-DTSTAMP:20260623T083143Z
+DTSTAMP:20260624T082603Z
 UID:2026-06-29-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Frittierte Teigtaschen mit Curry-Gemüsefüllung, Rote-Bete-Risotto und Salat
@@ -68,7 +57,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260630T110000Z
 DTEND:20260630T120000Z
-DTSTAMP:20260623T083143Z
+DTSTAMP:20260624T082603Z
 UID:2026-06-30-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Auberginen im Haferflockenmantel mit Tomatenragout und Gemüsebulgur
@@ -80,7 +69,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260701T110000Z
 DTEND:20260701T120000Z
-DTSTAMP:20260623T083143Z
+DTSTAMP:20260624T082603Z
 UID:2026-07-01-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Champignon-Bohnenpfanne mit kleinen Kartoffelklößen und Salat
@@ -92,7 +81,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260702T110000Z
 DTEND:20260702T120000Z
-DTSTAMP:20260623T083143Z
+DTSTAMP:20260624T082604Z
 UID:2026-07-02-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Pulled Planted Burger mit Cole Slaw und Pommes frites
@@ -104,7 +93,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260703T110000Z
 DTEND:20260703T120000Z
-DTSTAMP:20260623T083143Z
+DTSTAMP:20260624T082604Z
 UID:2026-07-03-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Frühlingsrolle gefüllt mit buntem Gemüse und Mungosprossen, Asiagemüse und Mie Nudeln
