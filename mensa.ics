@@ -6,21 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260626T110000Z
-DTEND:20260626T120000Z
-DTSTAMP:20260626T083241Z
-UID:2026-06-26-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Käsespätzle mit Reibeschmelz und Röstzwiebeln und Gurkensalat
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Rückensteak vom Schwein mit deftiger Paprika-Wurstsoße, Erbsen und Kartoffelkroketten
-  (Stud: 3.81€, Ma: 6.93€)\n\n• Spinatknödel mit Sahnepilzen, geriebenem Gouda und Salat
-  (Stud: 3.61€, Ma: 6.57€ | 🧀 Veg.)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260629T110000Z
 DTEND:20260629T120000Z
-DTSTAMP:20260626T083241Z
+DTSTAMP:20260627T075216Z
 UID:2026-06-29-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Frittierte Teigtaschen mit Curry-Gemüsefüllung, Rote-Bete-Risotto und Salat
@@ -32,7 +20,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260630T110000Z
 DTEND:20260630T120000Z
-DTSTAMP:20260626T083241Z
+DTSTAMP:20260627T075216Z
 UID:2026-06-30-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Auberginen im Haferflockenmantel mit Tomatenragout und Gemüsebulgur
@@ -44,7 +32,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260701T110000Z
 DTEND:20260701T120000Z
-DTSTAMP:20260626T083242Z
+DTSTAMP:20260627T075216Z
 UID:2026-07-01-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Champignon-Bohnenpfanne mit kleinen Kartoffelklößen und Salat
@@ -56,7 +44,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260702T110000Z
 DTEND:20260702T120000Z
-DTSTAMP:20260626T083242Z
+DTSTAMP:20260627T075216Z
 UID:2026-07-02-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Pulled Planted Burger mit Cole Slaw und Pommes frites
@@ -68,7 +56,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260703T110000Z
 DTEND:20260703T120000Z
-DTSTAMP:20260626T083242Z
+DTSTAMP:20260627T075216Z
 UID:2026-07-03-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Frühlingsrolle gefüllt mit buntem Gemüse und Mungosprossen, Asiagemüse und Mie Nudeln
