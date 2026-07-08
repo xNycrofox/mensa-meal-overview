@@ -6,34 +6,22 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260707T110000Z
-DTEND:20260707T120000Z
-DTSTAMP:20260707T082726Z
-UID:2026-07-07-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Spätzlepfanne mit Broccoli, Zucchini, Tomaten und Karotten, dazu Basilikumsoße
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Hähnchenbruststeak mit Kokos-Currysoße , dazu Broccoli und Basmati Reis
-  (Stud: 3.99€, Ma: 7.25€)\n\n• Gyros- Auflauf mit Reisformnudeln, Gemüse und Gouda- Hirtenkäse- Mix
-  (Stud: 2.70€, Ma: 4.90€)\n\n• Soljanka
-  (Stud: 2.18€, Ma: 3.97€)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260708T110000Z
 DTEND:20260708T120000Z
-DTSTAMP:20260707T082726Z
+DTSTAMP:20260708T073255Z
 UID:2026-07-08-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tofu im Cornflakesmantel mit Tomatenragout und Kartoffelpüree
   (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Fischstäbchen mit Zitronenecke, dazu Kartoffel-Gurkensalat
   (Stud: 3.75€, Ma: 6.82€)\n\n• Focaccia mit Tomaten, Mozzarella und Basilikumcreme
-  (Stud: 2.70€, Ma: 4.90€ | 🧀 Veg.)
+  (Stud: 2.70€, Ma: 4.90€ | 🧀 Veg.)\n\n• Karottencremesuppe
+  (Stud: 2.18€, Ma: 3.97€ | 🧀 Veg.)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260709T110000Z
 DTEND:20260709T120000Z
-DTSTAMP:20260707T082726Z
+DTSTAMP:20260708T073255Z
 UID:2026-07-09-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Arabisches Linsencurry, dazu Naan-Brot
@@ -45,7 +33,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260710T110000Z
 DTEND:20260710T120000Z
-DTSTAMP:20260707T082727Z
+DTSTAMP:20260708T073255Z
 UID:2026-07-10-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Chop Suey mit Reisbandnudeln
