@@ -6,26 +6,69 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260709T110000Z
-DTEND:20260709T120000Z
-DTSTAMP:20260709T083216Z
-UID:2026-07-09-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Arabisches Linsencurry, dazu Naan-Brot
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Currywurstpfanne mit Pommes frites
-  (Stud: 3.99€, Ma: 7.25€)\n\n• Hefeklöße mit Puddingsoße Vanillegeschmack
-  (Stud: 2.40€, Ma: 4.36€ | 🧀 Veg.)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260710T110000Z
 DTEND:20260710T120000Z
-DTSTAMP:20260709T083216Z
+DTSTAMP:20260710T082655Z
 UID:2026-07-10-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Chop Suey mit Reisbandnudeln
   (Stud: 3.99€, Ma: 7.25€ | 🌱 Vegan)\n\n• Szegediner Gulasch mit hausgemachten böhmische Hefeknödel
   (Stud: 2.35€, Ma: 4.90€)
+LOCATION:Mensa Johanna, Dresden
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260713T110000Z
+DTEND:20260713T120000Z
+DTSTAMP:20260710T082655Z
+UID:2026-07-13-mensa-johanna@mensa-meal-overview
+SUMMARY:🍽️ Mensa Johanna
+DESCRIPTION:• Szegediner Tofugulasch mit Bratkartoffeln
+  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Hähnchenbrust im Knuspermantel mit Geflügelsoße,dazu Buttermöhren und Herzoginkartoffeln
+  (Stud: 3.93€, Ma: 7.14€)
+LOCATION:Mensa Johanna, Dresden
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260714T110000Z
+DTEND:20260714T120000Z
+DTSTAMP:20260710T082656Z
+UID:2026-07-14-mensa-johanna@mensa-meal-overview
+SUMMARY:🍽️ Mensa Johanna
+DESCRIPTION:• Asiatisch gewürzter Gemüse-Reismix im Knuspermantel mit asiatischem Gemüse und Basmati Reis
+  (Stud: 3.97€, Ma: 7.22€ | 🌱 Vegan)\n\n• Makkaroni mit Gulaschsoße ,dazu geriebener Gouda
+  (Stud: 2.35€, Ma: 4.90€)
+LOCATION:Mensa Johanna, Dresden
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260715T110000Z
+DTEND:20260715T120000Z
+DTSTAMP:20260710T082656Z
+UID:2026-07-15-mensa-johanna@mensa-meal-overview
+SUMMARY:🍽️ Mensa Johanna
+DESCRIPTION:• Seitan-Gyros mit Tsatsiki, Weißkrautsalat und Pommes frites
+  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Ei im Hackfleischmantel auf Rahmporree, dazu Petersilienkartoffeln
+  (Stud: 3.10€, Ma: 5.64€)
+LOCATION:Mensa Johanna, Dresden
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260716T110000Z
+DTEND:20260716T120000Z
+DTSTAMP:20260710T082656Z
+UID:2026-07-16-mensa-johanna@mensa-meal-overview
+SUMMARY:🍽️ Mensa Johanna
+DESCRIPTION:• Gemüselasagne mit Salat
+  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Gebratenes Seelachsfilet mit Kräuterbutter, dazu Bratkartoffeln und Gurkensalat
+  (Stud: 3.99€, Ma: 7.25€)
+LOCATION:Mensa Johanna, Dresden
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260717T110000Z
+DTEND:20260717T120000Z
+DTSTAMP:20260710T082656Z
+UID:2026-07-17-mensa-johanna@mensa-meal-overview
+SUMMARY:🍽️ Mensa Johanna
+DESCRIPTION:• Tortelloni Mediterrano mit Tomaten- Basilikumsoße und gerösteten Sonnenblumenkernen
+  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Seußlitzer Kasslerkammbraten mit Sauerkraut und Kartoffelklöße
+  (Stud: 3.65€, Ma: 6.64€)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 END:VCALENDAR
