@@ -6,20 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260710T110000Z
-DTEND:20260710T120000Z
-DTSTAMP:20260710T082655Z
-UID:2026-07-10-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Chop Suey mit Reisbandnudeln
-  (Stud: 3.99€, Ma: 7.25€ | 🌱 Vegan)\n\n• Szegediner Gulasch mit hausgemachten böhmische Hefeknödel
-  (Stud: 2.35€, Ma: 4.90€)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260713T110000Z
 DTEND:20260713T120000Z
-DTSTAMP:20260710T082655Z
+DTSTAMP:20260711T071452Z
 UID:2026-07-13-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Szegediner Tofugulasch mit Bratkartoffeln
@@ -30,7 +19,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260714T110000Z
 DTEND:20260714T120000Z
-DTSTAMP:20260710T082656Z
+DTSTAMP:20260711T071452Z
 UID:2026-07-14-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Asiatisch gewürzter Gemüse-Reismix im Knuspermantel mit asiatischem Gemüse und Basmati Reis
@@ -41,7 +30,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260715T110000Z
 DTEND:20260715T120000Z
-DTSTAMP:20260710T082656Z
+DTSTAMP:20260711T071452Z
 UID:2026-07-15-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Seitan-Gyros mit Tsatsiki, Weißkrautsalat und Pommes frites
@@ -52,7 +41,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260716T110000Z
 DTEND:20260716T120000Z
-DTSTAMP:20260710T082656Z
+DTSTAMP:20260711T071452Z
 UID:2026-07-16-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Gemüselasagne mit Salat
@@ -63,7 +52,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260717T110000Z
 DTEND:20260717T120000Z
-DTSTAMP:20260710T082656Z
+DTSTAMP:20260711T071452Z
 UID:2026-07-17-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tortelloni Mediterrano mit Tomaten- Basilikumsoße und gerösteten Sonnenblumenkernen
