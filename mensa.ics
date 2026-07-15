@@ -6,20 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260714T110000Z
-DTEND:20260714T120000Z
-DTSTAMP:20260714T071314Z
-UID:2026-07-14-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Asiatisch gewürzter Gemüse-Reismix im Knuspermantel mit asiatischem Gemüse und Basmati Reis
-  (Stud: 3.97€, Ma: 7.22€ | 🌱 Vegan)\n\n• Makkaroni mit Salami- Frischkäsesoße ,dazu geriebener Gouda
-  (Stud: 2.35€, Ma: 4.90€)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260715T110000Z
 DTEND:20260715T120000Z
-DTSTAMP:20260714T071314Z
+DTSTAMP:20260715T071837Z
 UID:2026-07-15-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Seitan-Gyros mit Tsatsiki, Weißkrautsalat und Pommes frites
@@ -30,7 +19,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260716T110000Z
 DTEND:20260716T120000Z
-DTSTAMP:20260714T071314Z
+DTSTAMP:20260715T071837Z
 UID:2026-07-16-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Gemüselasagne mit Salat
@@ -41,7 +30,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260717T110000Z
 DTEND:20260717T120000Z
-DTSTAMP:20260714T071314Z
+DTSTAMP:20260715T071837Z
 UID:2026-07-17-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tortelloni Mediterrano mit Tomaten- Basilikumsoße und gerösteten Sonnenblumenkernen
