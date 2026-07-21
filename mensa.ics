@@ -6,20 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260720T110000Z
-DTEND:20260720T120000Z
-DTSTAMP:20260720T081026Z
-UID:2026-07-20-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Gegrillte Ofenkartoffel mit Rahmgemüse und Salat
-  (Stud: 3.00€, Ma: 5.45€ | 🌱 Vegan)\n\n• Spirelli mit ungarischem Wurstgulasch,dazu Goudakäse
-  (Stud: 2.35€, Ma: 4.90€)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260721T110000Z
 DTEND:20260721T120000Z
-DTSTAMP:20260720T081027Z
+DTSTAMP:20260721T073525Z
 UID:2026-07-21-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Blumenkohl-Schnitzel mit Kräutersoße oder vegetarischer Alternative mit Hollandaise,dazu Petersilienkartoffeln
@@ -30,7 +19,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260722T110000Z
 DTEND:20260722T120000Z
-DTSTAMP:20260720T081027Z
+DTSTAMP:20260721T073525Z
 UID:2026-07-22-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Burrito mit Soja, Peperoni, Kidneybohen,Paprika, Mais, dazu Salat
@@ -41,7 +30,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260723T110000Z
 DTEND:20260723T120000Z
-DTSTAMP:20260720T081027Z
+DTSTAMP:20260721T073525Z
 UID:2026-07-23-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Sellerieschnitzel mit Rote Bete-Hafer-Dip, Bratkartoffeln und Salat
@@ -52,7 +41,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260724T110000Z
 DTEND:20260724T120000Z
-DTSTAMP:20260720T081027Z
+DTSTAMP:20260721T073525Z
 UID:2026-07-24-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Süßkartoffel-Kokos-Curry mit Basmati Reis
@@ -63,7 +52,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260727T110000Z
 DTEND:20260727T120000Z
-DTSTAMP:20260720T081027Z
+DTSTAMP:20260721T073526Z
 UID:2026-07-27-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Spaghetti mit Tomatenpesto, dazu Cashewkern-Topping oder vegetarische Alternative geriebener Gouda
@@ -74,7 +63,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260728T110000Z
 DTEND:20260728T120000Z
-DTSTAMP:20260720T081028Z
+DTSTAMP:20260721T073526Z
 UID:2026-07-28-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• gegrillte Kartoffel und Süßkartoffelecken mit Radieschen-Kressedip und Salat
@@ -85,7 +74,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260729T110000Z
 DTEND:20260729T120000Z
-DTSTAMP:20260720T081028Z
+DTSTAMP:20260721T073526Z
 UID:2026-07-29-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tandoori-Blumenkohl mit Linsen-Mangocurry und Basmati Reis
@@ -96,7 +85,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260730T110000Z
 DTEND:20260730T120000Z
-DTSTAMP:20260720T081028Z
+DTSTAMP:20260721T073526Z
 UID:2026-07-30-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Gemüsekroketten aus Blumenkohl, Lauch, Sellerie und Erbsen mit Kartoffel-Gurkensalat
@@ -107,7 +96,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260731T110000Z
 DTEND:20260731T120000Z
-DTSTAMP:20260720T081028Z
+DTSTAMP:20260721T073526Z
 UID:2026-07-31-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Süßkartoffelpuffer mit Ratatouillegemüse und Gurkensalat
