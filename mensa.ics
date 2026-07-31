@@ -6,31 +6,20 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260730T110000Z
-DTEND:20260730T120000Z
-DTSTAMP:20260730T073708Z
-UID:2026-07-30-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Gemüsekroketten aus Blumenkohl, Lauch, Sellerie und Erbsen mit Kartoffel-Gurkensalat
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Hähnchenbrust in Parmesanpanade, dazu gebratene Spätzle mit Gemüsestreifen und Käsesoße
-  (Stud: 4.22€, Ma: 7.67€)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260731T110000Z
 DTEND:20260731T120000Z
-DTSTAMP:20260730T073708Z
+DTSTAMP:20260731T075422Z
 UID:2026-07-31-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Süßkartoffelpuffer mit Ratatouillegemüse und Gurkensalat
-  (Stud: 2.35€, Ma: 4.90€ | 🧀 Veg.)\n\n• Rinderroulade nach Hausfrauenart, dazu buntes Gemüse und Petersilienkartoffeln
+  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Rinderroulade nach Hausfrauenart, dazu buntes Gemüse und Petersilienkartoffeln
   (Stud: 4.50€, Ma: 8.18€)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260803T110000Z
 DTEND:20260803T120000Z
-DTSTAMP:20260730T073708Z
+DTSTAMP:20260731T075422Z
 UID:2026-08-03-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Kleine bunte Gemüseplatte mit Schnittlauchsoße und Kartoffelrösti
@@ -41,7 +30,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260804T110000Z
 DTEND:20260804T120000Z
-DTSTAMP:20260730T073708Z
+DTSTAMP:20260731T075422Z
 UID:2026-08-04-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Frischer Blumenkohl mit Kräutersoße oder vegetarische Alternative mit Hollandaise, dazu Petersilienkartoffeln
@@ -52,7 +41,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260805T110000Z
 DTEND:20260805T120000Z
-DTSTAMP:20260730T073709Z
+DTSTAMP:20260731T075422Z
 UID:2026-08-05-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Soja-Schnitzel mit Champignons in Cremesoße, und Pommes frites
@@ -63,7 +52,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260806T110000Z
 DTEND:20260806T120000Z
-DTSTAMP:20260730T073709Z
+DTSTAMP:20260731T075423Z
 UID:2026-08-06-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Zucchini- Karotten-Pakoras mit Soja-Kräuter-Dip und Süßkartoffelstampf
@@ -74,7 +63,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260807T110000Z
 DTEND:20260807T120000Z
-DTSTAMP:20260730T073709Z
+DTSTAMP:20260731T075423Z
 UID:2026-08-07-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Sojageschnetzeltes Chili mit buntem Gemüse und Kartoffelklöße
