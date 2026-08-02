@@ -8,7 +8,7 @@ X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
 DTSTART:20260803T110000Z
 DTEND:20260803T120000Z
-DTSTAMP:20260801T073037Z
+DTSTAMP:20260802T073420Z
 UID:2026-08-03-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Kleine bunte Gemüseplatte mit Schnittlauchsoße und Kartoffelrösti
@@ -19,7 +19,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260804T110000Z
 DTEND:20260804T120000Z
-DTSTAMP:20260801T073037Z
+DTSTAMP:20260802T073420Z
 UID:2026-08-04-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Frischer Blumenkohl mit Kräutersoße oder vegetarische Alternative mit Hollandaise, dazu Petersilienkartoffeln
@@ -30,7 +30,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260805T110000Z
 DTEND:20260805T120000Z
-DTSTAMP:20260801T073038Z
+DTSTAMP:20260802T073420Z
 UID:2026-08-05-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Soja-Schnitzel mit Champignons in Cremesoße, und Pommes frites
@@ -41,7 +41,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260806T110000Z
 DTEND:20260806T120000Z
-DTSTAMP:20260801T073038Z
+DTSTAMP:20260802T073420Z
 UID:2026-08-06-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Zucchini- Karotten-Pakoras mit Soja-Kräuter-Dip und Süßkartoffelstampf
@@ -52,7 +52,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260807T110000Z
 DTEND:20260807T120000Z
-DTSTAMP:20260801T073038Z
+DTSTAMP:20260802T073420Z
 UID:2026-08-07-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Sojageschnetzeltes Chili mit buntem Gemüse und Kartoffelklöße
