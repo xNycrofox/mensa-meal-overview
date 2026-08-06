@@ -6,32 +6,21 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260805T110000Z
-DTEND:20260805T120000Z
-DTSTAMP:20260805T074358Z
-UID:2026-08-05-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Soja-Schnitzel mit Champignons in Cremesoße und Pommes frites
-  (Stud: 3.68€, Ma: 6.69€ | 🌱 Vegan)\n\n• Hackbraten Schweizer Art mit buntem Gemüse und Petersilienkartoffeln
-  (Stud: 2.35€, Ma: 4.90€)\n\n• Zwei Eierkuchen mit Puderzucker und Apfelmus
-  (Stud: 2.70€, Ma: 4.90€ | 🧀 Veg.)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260806T110000Z
 DTEND:20260806T120000Z
-DTSTAMP:20260805T074358Z
+DTSTAMP:20260806T074332Z
 UID:2026-08-06-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Zucchini- Karotten-Pakoras mit Soja-Kräuter-Dip und Süßkartoffelstampf
   (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Schweineschnitzel Luzern mit Schinken und Käse gefüllt, dazu Pommes frites und Tomatensalat
-  (Stud: 4.22€, Ma: 7.67€)
+  (Stud: 4.22€, Ma: 7.67€)\n\n• Preiselbeer- Sahnekuchen
+  (Stud: 1.95€, Ma: 2.10€ | 🧀 Veg.)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260807T110000Z
 DTEND:20260807T120000Z
-DTSTAMP:20260805T074358Z
+DTSTAMP:20260806T074333Z
 UID:2026-08-07-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Sojageschnetzeltes Chili mit buntem Gemüse und Kartoffelklöße
@@ -42,7 +31,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260810T110000Z
 DTEND:20260810T120000Z
-DTSTAMP:20260805T074359Z
+DTSTAMP:20260806T074333Z
 UID:2026-08-10-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Rahmspinat mit Gemüsekroketten aus Blumenkohl, Lauch, Sellerie und Erbsen, dazu Kartoffeln
@@ -53,7 +42,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260811T110000Z
 DTEND:20260811T120000Z
-DTSTAMP:20260805T074359Z
+DTSTAMP:20260806T074333Z
 UID:2026-08-11-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Rosmarinkartoffeln mit Kräuter-Dip und Ofengemüse
@@ -64,7 +53,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260812T110000Z
 DTEND:20260812T120000Z
-DTSTAMP:20260805T074359Z
+DTSTAMP:20260806T074333Z
 UID:2026-08-12-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Semmelklöße mit Champignons in Kräutercreme,dazu Salat
@@ -75,7 +64,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260813T110000Z
 DTEND:20260813T120000Z
-DTSTAMP:20260805T074359Z
+DTSTAMP:20260806T074333Z
 UID:2026-08-13-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Kichererbsen-Bohnenfrikadelle mit Tomatensalsa und Bratkartoffeln
@@ -86,7 +75,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260814T110000Z
 DTEND:20260814T120000Z
-DTSTAMP:20260805T074359Z
+DTSTAMP:20260806T074333Z
 UID:2026-08-14-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Mediterrane Kartoffelpfanne Gyros Art mit Kirschtomaten und Rucola vegetarische Alternative mit Hirtenkäse, dazu Gurkensalat
