@@ -6,20 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260807T110000Z
-DTEND:20260807T120000Z
-DTSTAMP:20260807T061109Z
-UID:2026-08-07-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Sojageschnetzeltes Chili mit buntem Gemüse und Kartoffelklöße
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Käsespätzle mit Röstzwiebeln und Gouda, dazu Salat
-  (Stud: 3.00€, Ma: 5.45€ | 🧀 Veg.)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260810T110000Z
 DTEND:20260810T120000Z
-DTSTAMP:20260807T061109Z
+DTSTAMP:20260808T054557Z
 UID:2026-08-10-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Rahmspinat mit Gemüsekroketten aus Blumenkohl, Lauch, Sellerie und Erbsen, dazu Kartoffeln
@@ -30,7 +19,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260811T110000Z
 DTEND:20260811T120000Z
-DTSTAMP:20260807T061109Z
+DTSTAMP:20260808T054557Z
 UID:2026-08-11-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Rosmarinkartoffeln mit Kräuter-Dip und Ofengemüse
@@ -41,7 +30,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260812T110000Z
 DTEND:20260812T120000Z
-DTSTAMP:20260807T061109Z
+DTSTAMP:20260808T054558Z
 UID:2026-08-12-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Semmelklöße mit Champignons in Kräutercreme,dazu Salat
@@ -52,7 +41,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260813T110000Z
 DTEND:20260813T120000Z
-DTSTAMP:20260807T061109Z
+DTSTAMP:20260808T054558Z
 UID:2026-08-13-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Kichererbsen-Bohnenfrikadelle mit Tomatensalsa und Bratkartoffeln
@@ -63,7 +52,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260814T110000Z
 DTEND:20260814T120000Z
-DTSTAMP:20260807T061110Z
+DTSTAMP:20260808T054558Z
 UID:2026-08-14-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Mediterrane Kartoffelpfanne Gyros Art mit Kirschtomaten und Rucola vegetarische Alternative mit Hirtenkäse, dazu Gurkensalat
