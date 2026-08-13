@@ -6,21 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260812T110000Z
-DTEND:20260812T120000Z
-DTSTAMP:20260812T061827Z
-UID:2026-08-12-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Semmelklöße mit Champignons in Kräutercreme,dazu Salat
-  (Stud: 3.99€, Ma: 7.25€ | 🌱 Vegan)\n\n• Gekochte Eier in Senfsoße, dazu Buttermöhren und Petersilienkartoffeln
-  (Stud: 2.35€, Ma: 4.90€)\n\n• Hausgemachter Aprikosen- Streuselkuchen
-  (Stud: 1.95€, Ma: 2.10€ | 🧀 Veg.)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260813T110000Z
 DTEND:20260813T120000Z
-DTSTAMP:20260812T061827Z
+DTSTAMP:20260813T062003Z
 UID:2026-08-13-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Kichererbsen-Bohnenfrikadelle mit Tomatensalsa und Bratkartoffeln
@@ -31,7 +19,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260814T110000Z
 DTEND:20260814T120000Z
-DTSTAMP:20260812T061827Z
+DTSTAMP:20260813T062003Z
 UID:2026-08-14-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Mediterrane Kartoffelpfanne Gyros Art mit Kirschtomaten und Rucola vegetarische Alternative mit Hirtenkäse, dazu Gurkensalat
@@ -42,7 +30,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260817T110000Z
 DTEND:20260817T120000Z
-DTSTAMP:20260812T061828Z
+DTSTAMP:20260813T062003Z
 UID:2026-08-17-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Gebratene Gemüse-Mie Nudeln mit Röstzwiebeln
@@ -53,7 +41,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260818T110000Z
 DTEND:20260818T120000Z
-DTSTAMP:20260812T061828Z
+DTSTAMP:20260813T062003Z
 UID:2026-08-18-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Falafelbällchen mit Kartoffel-Kürbis-Karottenpfanne und Minz-Dip
@@ -64,7 +52,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260819T110000Z
 DTEND:20260819T120000Z
-DTSTAMP:20260812T061828Z
+DTSTAMP:20260813T062004Z
 UID:2026-08-19-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tortelloni Mediterrano mit Petersilienpesto , dazu Karottencremesoße
@@ -75,7 +63,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260820T110000Z
 DTEND:20260820T120000Z
-DTSTAMP:20260812T061828Z
+DTSTAMP:20260813T062004Z
 UID:2026-08-20-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Lasagne Brew Bites, dazu Blattsalat
@@ -86,7 +74,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260821T110000Z
 DTEND:20260821T120000Z
-DTSTAMP:20260812T061828Z
+DTSTAMP:20260813T062004Z
 UID:2026-08-21-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Seitangeschnetzeltes mit Champignons, dazu buntes Gemüse und Kräuterreis
