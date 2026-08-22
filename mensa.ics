@@ -6,20 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260821T110000Z
-DTEND:20260821T120000Z
-DTSTAMP:20260821T053710Z
-UID:2026-08-21-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Seitangeschnetzeltes mit Champignons, dazu buntes Gemüse und Kräuterreis
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Sauerbratenragout mit Apfelrotkohl und Petersilienkartoffeln
-  (Stud: 4.46€, Ma: 8.11€)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260824T110000Z
 DTEND:20260824T120000Z
-DTSTAMP:20260821T053710Z
+DTSTAMP:20260822T053210Z
 UID:2026-08-24-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Schnitzel aus Gemüse und Dinkel mit Sojagemüse und Petersilienkartoffeln
@@ -30,7 +19,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260825T110000Z
 DTEND:20260825T120000Z
-DTSTAMP:20260821T053710Z
+DTSTAMP:20260822T053210Z
 UID:2026-08-25-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Rotes Linsencurry mit Basmati Reis
@@ -42,7 +31,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260826T110000Z
 DTEND:20260826T120000Z
-DTSTAMP:20260821T053710Z
+DTSTAMP:20260822T053210Z
 UID:2026-08-26-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Krautnudeln mit Hack Brew Bites, dazu geriebener Mozzarella Flavour
@@ -53,7 +42,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260827T110000Z
 DTEND:20260827T120000Z
-DTSTAMP:20260821T053711Z
+DTSTAMP:20260822T053210Z
 UID:2026-08-27-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Taxi-Teller mit pflanzlichem Kebab, Planted Currywurst , Currywurstsoße, Pommes frites , dazu Gurken-Knoblauch-Dip und Weißkrautsalat
@@ -64,7 +53,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260828T110000Z
 DTEND:20260828T120000Z
-DTSTAMP:20260821T053711Z
+DTSTAMP:20260822T053211Z
 UID:2026-08-28-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Falafel mit Couscous, Tortilla-Chip und Haferjoghurt- Dip, dazu Salat
@@ -75,7 +64,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260831T110000Z
 DTEND:20260831T120000Z
-DTSTAMP:20260821T053711Z
+DTSTAMP:20260822T053211Z
 UID:2026-08-31-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Blumenkohl-Knuspermedaillon mit Kräutersoße und Petersilienkartoffeln
@@ -86,7 +75,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260901T110000Z
 DTEND:20260901T120000Z
-DTSTAMP:20260821T053711Z
+DTSTAMP:20260822T053211Z
 UID:2026-09-01-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Spicy Planted Pulled mit Zwiebeln und Paprika, dazu Pommes frites und Salat
@@ -97,7 +86,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260902T110000Z
 DTEND:20260902T120000Z
-DTSTAMP:20260821T053711Z
+DTSTAMP:20260822T053211Z
 UID:2026-09-02-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Griechische Seitanpfanne mit Aubergine und Zucchini, dazu Reisformnudeln und Rucola , vegetarische Alternative mit Hirtenkäse
@@ -108,12 +97,23 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260903T110000Z
 DTEND:20260903T120000Z
-DTSTAMP:20260821T053711Z
+DTSTAMP:20260822T053211Z
 UID:2026-09-03-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Brew Bites Geschnetzeltes Zürcher Art mit Erbsen-Karottengemüse und Kartoffeln
   (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Schweinesteak au four mit Buttererbsen und Pommes frites
   (Stud: 4.22€, Ma: 7.67€)
+LOCATION:Mensa Johanna, Dresden
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260904T110000Z
+DTEND:20260904T120000Z
+DTSTAMP:20260822T053212Z
+UID:2026-09-04-mensa-johanna@mensa-meal-overview
+SUMMARY:🍽️ Mensa Johanna
+DESCRIPTION:• Mac & Cheese mit Salat
+  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Kasslerkammbraten mit Bayrischkraut und Böhmischen Hefeknödeln oder Kartoffeln
+  (Stud: 3.33€, Ma: 6.05€)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 END:VCALENDAR
