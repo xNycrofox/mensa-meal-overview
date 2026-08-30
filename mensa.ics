@@ -8,7 +8,7 @@ X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
 DTSTART:20260831T110000Z
 DTEND:20260831T120000Z
-DTSTAMP:20260829T113214Z
+DTSTAMP:20260830T102446Z
 UID:2026-08-31-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Blumenkohl-Knuspermedaillon mit Kräutersoße und Petersilienkartoffeln
@@ -19,7 +19,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260901T110000Z
 DTEND:20260901T120000Z
-DTSTAMP:20260829T113214Z
+DTSTAMP:20260830T102446Z
 UID:2026-09-01-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Spicy Planted Pulled mit Zwiebeln und Paprika, dazu Pommes frites und Salat
@@ -31,7 +31,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260902T110000Z
 DTEND:20260902T120000Z
-DTSTAMP:20260829T113215Z
+DTSTAMP:20260830T102446Z
 UID:2026-09-02-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Griechische Seitanpfanne mit Aubergine und Zucchini, dazu Reisformnudeln und Rucola , vegetarische Alternative mit Hirtenkäse
@@ -42,7 +42,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260903T110000Z
 DTEND:20260903T120000Z
-DTSTAMP:20260829T113215Z
+DTSTAMP:20260830T102446Z
 UID:2026-09-03-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Brew Bites Geschnetzeltes Zürcher Art mit Erbsen-Karottengemüse und Kartoffeln
@@ -53,7 +53,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260904T110000Z
 DTEND:20260904T120000Z
-DTSTAMP:20260829T113215Z
+DTSTAMP:20260830T102446Z
 UID:2026-09-04-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Mac & Cheese mit Salat
@@ -64,7 +64,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260907T110000Z
 DTEND:20260907T120000Z
-DTSTAMP:20260829T113215Z
+DTSTAMP:20260830T102447Z
 UID:2026-09-07-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Falafelbällchen mit Rahmspinat und Kartoffeln
@@ -75,7 +75,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260908T110000Z
 DTEND:20260908T120000Z
-DTSTAMP:20260829T113215Z
+DTSTAMP:20260830T102447Z
 UID:2026-09-08-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Panierte Champignons mit Kräuter-Dip, Gemüsecouscous und Salat
@@ -86,7 +86,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260909T110000Z
 DTEND:20260909T120000Z
-DTSTAMP:20260829T113215Z
+DTSTAMP:20260830T102447Z
 UID:2026-09-09-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Reibekuchen mit Tomaten-Avocadosalsa und Salat
@@ -97,7 +97,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260910T110000Z
 DTEND:20260910T120000Z
-DTSTAMP:20260829T113216Z
+DTSTAMP:20260830T102447Z
 UID:2026-09-10-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• frittierte Teigtaschen mit Curry-Gemüsefüllung, dazu Pastasotto und Sweet-Chillidip
@@ -108,7 +108,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260911T110000Z
 DTEND:20260911T120000Z
-DTSTAMP:20260829T113216Z
+DTSTAMP:20260830T102447Z
 UID:2026-09-11-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Broccoli-Nuss-Ecke mit Dillrahmsoße, Möhrengemüse und Petersilienkartoffeln
