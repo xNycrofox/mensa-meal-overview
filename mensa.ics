@@ -6,32 +6,20 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260901T110000Z
-DTEND:20260901T120000Z
-DTSTAMP:20260901T095134Z
-UID:2026-09-01-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Spicy Planted Pulled mit Zwiebeln und Paprika, dazu Pommes frites und Salat
-  (Stud: 4.22€, Ma: 7.67€ | 🌱 Vegan)\n\n• Buttermilchplinsen mit Puderzucker und Apfelmus
-  (Stud: 2.35€, Ma: 4.90€ | 🧀 Veg.)\n\n• Tortelloni - Auflauf mit Gemüse und Hackfleisch, dazu Salat
-  (Stud: 3.44€, Ma: 6.26€)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260902T110000Z
 DTEND:20260902T120000Z
-DTSTAMP:20260901T095135Z
+DTSTAMP:20260902T092323Z
 UID:2026-09-02-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Griechische Seitanpfanne mit Aubergine und Zucchini, dazu Reisformnudeln und Rucola , vegetarische Alternative mit Hirtenkäse
-  (Stud: 2.35€, Ma: 4.90€ | 🧀 Veg.)\n\n• Gebratene Hähnchenbrust im Baconmantel mit Tomaten-Zucchiniragout und Reis
+DESCRIPTION:• Griechische Seitanpfanne mit Aubergine und Zucchini, dazu Reisformnudeln und Rucola, vegetarische Alternative mit Hirtenkäse
+  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Gebratene Hähnchenbrust im Baconmantel mit Tomaten-Zucchiniragout und Reis
   (Stud: 3.82€, Ma: 6.95€)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260903T110000Z
 DTEND:20260903T120000Z
-DTSTAMP:20260901T095135Z
+DTSTAMP:20260902T092323Z
 UID:2026-09-03-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Brew Bites Geschnetzeltes Zürcher Art mit Erbsen-Karottengemüse und Kartoffeln
@@ -42,7 +30,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260904T110000Z
 DTEND:20260904T120000Z
-DTSTAMP:20260901T095135Z
+DTSTAMP:20260902T092323Z
 UID:2026-09-04-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Mac & Cheese mit Salat
@@ -53,7 +41,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260907T110000Z
 DTEND:20260907T120000Z
-DTSTAMP:20260901T095135Z
+DTSTAMP:20260902T092324Z
 UID:2026-09-07-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Falafelbällchen mit Rahmspinat und Kartoffeln
@@ -64,7 +52,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260908T110000Z
 DTEND:20260908T120000Z
-DTSTAMP:20260901T095135Z
+DTSTAMP:20260902T092324Z
 UID:2026-09-08-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Panierte Champignons mit Kräuter-Dip, Gemüsecouscous und Salat
@@ -75,7 +63,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260909T110000Z
 DTEND:20260909T120000Z
-DTSTAMP:20260901T095136Z
+DTSTAMP:20260902T092324Z
 UID:2026-09-09-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Reibekuchen mit Tomaten-Avocadosalsa und Salat
@@ -86,7 +74,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260910T110000Z
 DTEND:20260910T120000Z
-DTSTAMP:20260901T095136Z
+DTSTAMP:20260902T092324Z
 UID:2026-09-10-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• frittierte Teigtaschen mit Curry-Gemüsefüllung, dazu Pastasotto und Sweet-Chillidip
@@ -97,7 +85,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260911T110000Z
 DTEND:20260911T120000Z
-DTSTAMP:20260901T095136Z
+DTSTAMP:20260902T092324Z
 UID:2026-09-11-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Broccoli-Nuss-Ecke mit Dillrahmsoße, Möhrengemüse und Petersilienkartoffeln
@@ -108,12 +96,23 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260914T110000Z
 DTEND:20260914T120000Z
-DTSTAMP:20260901T095136Z
+DTSTAMP:20260902T092324Z
 UID:2026-09-14-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Frühlingsrolle, dazu asiatischer Glasnudelsalat mit Paprika, Ingwer,Mu err Pilzen, Sesamöl und Sweet-Chillisoße
   (Stud: 3.99€, Ma: 7.25€ | 🌱 Vegan)\n\n• Chili con carne mit Kräuterreis
   (Stud: 2.35€, Ma: 4.90€)
+LOCATION:Mensa Johanna, Dresden
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260915T110000Z
+DTEND:20260915T120000Z
+DTSTAMP:20260902T092325Z
+UID:2026-09-15-mensa-johanna@mensa-meal-overview
+SUMMARY:🍽️ Mensa Johanna
+DESCRIPTION:• Gnocchipfanne mit Broccoli, Zucchini, Tomaten und Karotten, dazu Tomaten- Karottensoße und Rotkohlsalat
+  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Seelachs-Schlemmerfilet Bordelaise mit Kartoffelpüree und Gurkensalat
+  (Stud: 3.99€, Ma: 7.25€)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 END:VCALENDAR
