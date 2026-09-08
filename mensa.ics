@@ -6,20 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260907T110000Z
-DTEND:20260907T120000Z
-DTSTAMP:20260907T100323Z
-UID:2026-09-07-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Falafelbällchen mit Rahmspinat und Kartoffeln
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Bayrischer Fleischkäse mit süßem Senf, dazu Bratkartoffeln und Rotkohlsalat
-  (Stud: 3.58€, Ma: 6.51€)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260908T110000Z
 DTEND:20260908T120000Z
-DTSTAMP:20260907T100323Z
+DTSTAMP:20260908T092759Z
 UID:2026-09-08-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Panierte Champignons mit Kräuter-Dip, Gemüsecouscous und Salat
@@ -30,7 +19,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260909T110000Z
 DTEND:20260909T120000Z
-DTSTAMP:20260907T100323Z
+DTSTAMP:20260908T092759Z
 UID:2026-09-09-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Reibekuchen mit Tomaten-Avocadosalsa und Salat
@@ -41,7 +30,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260910T110000Z
 DTEND:20260910T120000Z
-DTSTAMP:20260907T100324Z
+DTSTAMP:20260908T092759Z
 UID:2026-09-10-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• frittierte Teigtaschen mit Curry-Gemüsefüllung, dazu Pastasotto und Sweet-Chillidip
@@ -52,7 +41,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260911T110000Z
 DTEND:20260911T120000Z
-DTSTAMP:20260907T100324Z
+DTSTAMP:20260908T092759Z
 UID:2026-09-11-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Broccoli-Nuss-Ecke mit Dillrahmsoße, Möhrengemüse und Petersilienkartoffeln
@@ -63,7 +52,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260914T110000Z
 DTEND:20260914T120000Z
-DTSTAMP:20260907T100324Z
+DTSTAMP:20260908T092759Z
 UID:2026-09-14-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Frühlingsrolle, dazu asiatischer Glasnudelsalat mit Paprika, Ingwer,Mu err Pilzen, Sesamöl und Sweet-Chillisoße
@@ -74,7 +63,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260915T110000Z
 DTEND:20260915T120000Z
-DTSTAMP:20260907T100324Z
+DTSTAMP:20260908T092800Z
 UID:2026-09-15-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Gnocchipfanne mit Broccoli, Zucchini, Tomaten und Karotten, dazu Tomaten- Karottensoße und Rotkohlsalat
@@ -85,7 +74,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260916T110000Z
 DTEND:20260916T120000Z
-DTSTAMP:20260907T100324Z
+DTSTAMP:20260908T092800Z
 UID:2026-09-16-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Planted-Schnitzel oder vegetarisch Valess Schnitzel mit Goudafüllung, dazu Tomatensalsa und mediterraner Nudelsalat
@@ -96,7 +85,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260917T110000Z
 DTEND:20260917T120000Z
-DTSTAMP:20260907T100324Z
+DTSTAMP:20260908T092800Z
 UID:2026-09-17-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Spirelli mit Grünkern-Bolognese und Mozzarella- Flavour
@@ -107,7 +96,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260918T110000Z
 DTEND:20260918T120000Z
-DTSTAMP:20260907T100324Z
+DTSTAMP:20260908T092800Z
 UID:2026-09-18-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Süßkartoffel- Kokos- Curry mit gerösteten Sonnenblumenkernen, dazu Basmati Reis
