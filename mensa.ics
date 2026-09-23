@@ -6,21 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260922T110000Z
-DTEND:20260922T120000Z
-DTSTAMP:20260922T094543Z
-UID:2026-09-22-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Seitan-Gyros mit Tsatsiki, dazu Weißkrautsalat und Pommes frites
-  (Stud: 3.15€, Ma: 5.73€ | 🌱 Vegan)\n\n• Hackfleischbällchen in Dill-Kapernsoße mit Buttermöhren und Kräuterreis
-  (Stud: 3.05€, Ma: 5.55€)\n\n• Buttermilchplinsen mit Puderzucker und Apfelmus
-  (Stud: 2.35€, Ma: 4.90€ | 🧀 Veg.)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260923T110000Z
 DTEND:20260923T120000Z
-DTSTAMP:20260922T094543Z
+DTSTAMP:20260923T095005Z
 UID:2026-09-23-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Südafrikanische Gemüsepfanne mit Banane, Paprika und Kokosmilch, dazu Erdnuss- Quinoa
@@ -32,7 +20,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260924T110000Z
 DTEND:20260924T120000Z
-DTSTAMP:20260922T094543Z
+DTSTAMP:20260923T095005Z
 UID:2026-09-24-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Kichererbsen-Lasagne, dazu Salat
@@ -44,12 +32,71 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260925T110000Z
 DTEND:20260925T120000Z
-DTSTAMP:20260922T094544Z
+DTSTAMP:20260923T095005Z
 UID:2026-09-25-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Maultaschen mit Kräutersoße und buntes Gemüse
   (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Kohlroulade in deftiger Kraut-Bratensoße und Petersilienkartoffeln
   (Stud: 3.65€, Ma: 6.64€)
+LOCATION:Mensa Johanna, Dresden
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260928T110000Z
+DTEND:20260928T120000Z
+DTSTAMP:20260923T095005Z
+UID:2026-09-28-mensa-johanna@mensa-meal-overview
+SUMMARY:🍽️ Mensa Johanna
+DESCRIPTION:• Gemüselasagne mit Salat
+  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Tagliatelle mit Lachs- Gemüse- Sahnesoße und Kirschtomaten
+  (Stud: 3.20€, Ma: 5.82€)\n\n• Blumenkohl-Broccoliauflauf
+  (Stud: 2.90€, Ma: 5.27€ | 🧀 Veg.)
+LOCATION:Mensa Johanna, Dresden
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260929T110000Z
+DTEND:20260929T120000Z
+DTSTAMP:20260923T095005Z
+UID:2026-09-29-mensa-johanna@mensa-meal-overview
+SUMMARY:🍽️ Mensa Johanna
+DESCRIPTION:• Planted Currywurst mit Currysoße und Pommes frites
+  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Lasagne Bolognese mit Salat
+  (Stud: 3.73€, Ma: 6.78€)\n\n• Pizza Funghi mit Champignons und Zwiebel
+  (Stud: 3.23€, Ma: 5.88€ | 🧀 Veg.)
+LOCATION:Mensa Johanna, Dresden
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260930T110000Z
+DTEND:20260930T120000Z
+DTSTAMP:20260923T095006Z
+UID:2026-09-30-mensa-johanna@mensa-meal-overview
+SUMMARY:🍽️ Mensa Johanna
+DESCRIPTION:• Blumenkohl-Schnitzel mit Kräutersoße oder vegetarische Alternative mit Kräuterhollandaise und Petersilienkartoffeln
+  (Stud: 2.35€, Ma: 4.90€ | 🧀 Veg.)\n\n• Mit Tomate und Mozzarella gratiniertes Hähnchenbrustfilet, dazu Basilikumsoße, Broccoli und Reis
+  (Stud: 4.22€, Ma: 7.67€)\n\n• Hausgemachte sächsische Quarkkäulchen mit Apfelmus
+  (Stud: 2.90€, Ma: 5.27€ | 🧀 Veg.)
+LOCATION:Mensa Johanna, Dresden
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20261001T110000Z
+DTEND:20261001T120000Z
+DTSTAMP:20260923T095006Z
+UID:2026-10-01-mensa-johanna@mensa-meal-overview
+SUMMARY:🍽️ Mensa Johanna
+DESCRIPTION:• Quinoa-Kürbisfrikadelle mit Rahmgemüse und Salat
+  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Rahmspinat mit Rührei und Kartoffeln
+  (Stud: 2.98€, Ma: 5.42€ | 🧀 Veg.)\n\n• Mit Gemüse und Käse gefüllte Ofenkartoffeln, dazu Joghurt-Kräuterdip
+  (Stud: 2.90€, Ma: 5.27€ | 🧀 Veg.)
+LOCATION:Mensa Johanna, Dresden
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20261002T110000Z
+DTEND:20261002T120000Z
+DTSTAMP:20260923T095006Z
+UID:2026-10-02-mensa-johanna@mensa-meal-overview
+SUMMARY:🍽️ Mensa Johanna
+DESCRIPTION:• Kleine Gemüseplatte mit Schnittlauchsoße und Kartoffelrösti
+  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Kasslersteak mit Honig-Merrettichkruste, Bratensoße, Butterbohnen und Kartoffelkroketten
+  (Stud: 3.58€, Ma: 6.51€)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 END:VCALENDAR
