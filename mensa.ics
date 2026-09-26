@@ -6,21 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260925T110000Z
-DTEND:20260925T120000Z
-DTSTAMP:20260925T100514Z
-UID:2026-09-25-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Maultaschen mit Kräutersoße und buntem Gemüse
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Kohlroulade in deftiger Kraut-Bratensoße und Petersilienkartoffeln
-  (Stud: 3.65€, Ma: 6.64€)\n\n• Hausgemachte Joghurt-Sahneschnitte mit Mandarinen
-  (Stud: 1.95€, Ma: 2.10€)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260928T110000Z
 DTEND:20260928T120000Z
-DTSTAMP:20260925T100514Z
+DTSTAMP:20260926T094610Z
 UID:2026-09-28-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Gemüselasagne mit Salat
@@ -32,7 +20,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260929T110000Z
 DTEND:20260929T120000Z
-DTSTAMP:20260925T100514Z
+DTSTAMP:20260926T094611Z
 UID:2026-09-29-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Planted Currywurst mit Currysoße und Pommes frites
@@ -44,7 +32,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260930T110000Z
 DTEND:20260930T120000Z
-DTSTAMP:20260925T100514Z
+DTSTAMP:20260926T094611Z
 UID:2026-09-30-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Blumenkohl-Schnitzel mit Kräutersoße oder vegetarische Alternative mit Kräuterhollandaise und Petersilienkartoffeln
@@ -56,7 +44,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261001T110000Z
 DTEND:20261001T120000Z
-DTSTAMP:20260925T100515Z
+DTSTAMP:20260926T094611Z
 UID:2026-10-01-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Quinoa-Kürbisfrikadelle mit Rahmgemüse und Salat
@@ -68,7 +56,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261002T110000Z
 DTEND:20261002T120000Z
-DTSTAMP:20260925T100515Z
+DTSTAMP:20260926T094611Z
 UID:2026-10-02-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Kleine Gemüseplatte mit Schnittlauchsoße und Kartoffelrösti
@@ -79,7 +67,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261005T110000Z
 DTEND:20261005T120000Z
-DTSTAMP:20260925T100515Z
+DTSTAMP:20260926T094611Z
 UID:2026-10-05-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Crispy Nuggets aus Gemüse und Jackfrucht mit Sweet-Chili-Dip , dazu Pommes frites und Salat
@@ -92,7 +80,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261006T110000Z
 DTEND:20261006T120000Z
-DTSTAMP:20260925T100515Z
+DTSTAMP:20260926T094611Z
 UID:2026-10-06-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Spaghetti mit Gemüsebolognese, dazu Rucola-Topping
@@ -105,7 +93,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261007T110000Z
 DTEND:20261007T120000Z
-DTSTAMP:20260925T100515Z
+DTSTAMP:20260926T094612Z
 UID:2026-10-07-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Chili sin carne mit Kräuterreis
@@ -118,7 +106,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261008T110000Z
 DTEND:20261008T120000Z
-DTSTAMP:20260925T100515Z
+DTSTAMP:20260926T094612Z
 UID:2026-10-08-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Kross gebratene Curry-Tofuwürfel mit Kartoffel- Zucchinipfanne und Salat
@@ -126,6 +114,18 @@ DESCRIPTION:• Kross gebratene Curry-Tofuwürfel mit Kartoffel- Zucchinipfanne 
   (Stud: 4.50€, Ma: 8.18€)\n\n• Spinatstrudel mit Hirtenkäse,dazu Paprikasoße und Gemüse- Couscous
   (Stud: 3.12€, Ma: 5.67€ | 🧀 Veg.)\n\n• Langos mit Sauerrahm, Schinken und Goudakäse oder vegetarische Alternative mit Tomate und Rucola
   (Stud: 3.10€, Ma: 6.64€)
+LOCATION:Mensa Johanna, Dresden
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20261009T110000Z
+DTEND:20261009T120000Z
+DTSTAMP:20260926T094612Z
+UID:2026-10-09-mensa-johanna@mensa-meal-overview
+SUMMARY:🍽️ Mensa Johanna
+DESCRIPTION:• Gemüse Chop Suey mit gebratenen Mie Nudeln
+  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Gulasch - Debreciner Art mit Knackwurst, dazu Bayrischkraut und Petersilienkartoffeln
+  (Stud: 3.65€, Ma: 6.64€)\n\n• Schweinefilet im Baconmantel mit Pfefferhollandaise auf Tagliatelle mit Zucchini und Kirschtomaten
+  (Stud: 4.20€, Ma: 7.64€)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 END:VCALENDAR
