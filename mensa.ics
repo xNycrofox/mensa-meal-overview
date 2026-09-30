@@ -6,35 +6,22 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20260929T110000Z
-DTEND:20260929T120000Z
-DTSTAMP:20260929T111324Z
-UID:2026-09-29-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Planted Currywurst mit Currysoße und Pommes frites
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Lasagne Bolognese mit Salat
-  (Stud: 3.73€, Ma: 6.78€)\n\n• Hausgebackener Zupfkuchen
-  (Stud: 1.95€, Ma: 2.10€ | 🧀 Veg.)\n\n• Pizza Funghi mit Champignons und Zwiebel
-  (Stud: 3.23€, Ma: 5.88€ | 🧀 Veg.)\n\n• Süßkartoffel- Kokos-Curry
-  (Stud: 2.18€, Ma: 3.97€ | 🌱 Vegan)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260930T110000Z
 DTEND:20260930T120000Z
-DTSTAMP:20260929T111324Z
+DTSTAMP:20260930T110152Z
 UID:2026-09-30-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Blumenkohl-Schnitzel mit Kräutersoße oder vegetarische Alternative mit Kräuterhollandaise und Petersilienkartoffeln
   (Stud: 2.35€, Ma: 4.90€ | 🧀 Veg.)\n\n• Mit Tomate und Mozzarella gratiniertes Hähnchenbrustfilet, dazu Basilikumsoße, Broccoli und Reis
   (Stud: 4.22€, Ma: 7.67€)\n\n• Hausgemachte sächsische Quarkkäulchen mit Apfelmus
-  (Stud: 2.90€, Ma: 5.27€ | 🧀 Veg.)
+  (Stud: 2.90€, Ma: 5.27€ | 🧀 Veg.)\n\n• Kesselgulasch
+  (Stud: 2.18€, Ma: 3.97€)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261001T110000Z
 DTEND:20261001T120000Z
-DTSTAMP:20260929T111324Z
+DTSTAMP:20260930T110152Z
 UID:2026-10-01-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Quinoa-Kürbisfrikadelle mit Rahmgemüse und Salat
@@ -46,7 +33,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261002T110000Z
 DTEND:20261002T120000Z
-DTSTAMP:20260929T111325Z
+DTSTAMP:20260930T110152Z
 UID:2026-10-02-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Kleine Gemüseplatte mit Schnittlauchsoße und Kartoffelrösti
@@ -57,7 +44,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261005T110000Z
 DTEND:20261005T120000Z
-DTSTAMP:20260929T111325Z
+DTSTAMP:20260930T110152Z
 UID:2026-10-05-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Crispy Nuggets aus Gemüse und Jackfrucht mit Sweet-Chili-Dip , dazu Pommes frites und Salat
@@ -70,7 +57,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261006T110000Z
 DTEND:20261006T120000Z
-DTSTAMP:20260929T111325Z
+DTSTAMP:20260930T110153Z
 UID:2026-10-06-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Spaghetti mit Gemüsebolognese, dazu Rucola-Topping
@@ -83,7 +70,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261007T110000Z
 DTEND:20261007T120000Z
-DTSTAMP:20260929T111325Z
+DTSTAMP:20260930T110153Z
 UID:2026-10-07-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Chili sin carne mit Kräuterreis
@@ -96,7 +83,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261008T110000Z
 DTEND:20261008T120000Z
-DTSTAMP:20260929T111325Z
+DTSTAMP:20260930T110153Z
 UID:2026-10-08-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Kross gebratene Curry-Tofuwürfel mit Kartoffel- Zucchinipfanne und Salat
@@ -109,7 +96,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261009T110000Z
 DTEND:20261009T120000Z
-DTSTAMP:20260929T111326Z
+DTSTAMP:20260930T110153Z
 UID:2026-10-09-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Gemüse Chop Suey mit gebratenen Mie Nudeln
