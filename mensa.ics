@@ -6,22 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20261009T110000Z
-DTEND:20261009T120000Z
-DTSTAMP:20261009T051955Z
-UID:2026-10-09-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Gemüse Chop Suey mit gebratenen Mie Nudeln
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Gulasch - Debreciner Art mit Knackwurst, dazu Bayrischkraut und Petersilienkartoffeln
-  (Stud: 3.65€, Ma: 6.64€)\n\n• Schweinefilet im Baconmantel mit Pfefferhollandaise auf Tagliatelle mit Zucchini und Kirschtomaten
-  (Stud: 4.20€, Ma: 7.64€)\n\n• Kürbis- Kokos- Currysuppe
-  (Stud: 2.18€, Ma: 3.97€ | 🌱 Vegan)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20261012T110000Z
 DTEND:20261012T120000Z
-DTSTAMP:20261009T051955Z
+DTSTAMP:20261010T051705Z
 UID:2026-10-12-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Dürüm mit Avocadocreme, Salat, marinierter Tofu in Petersilienpesto
@@ -33,7 +20,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261013T110000Z
 DTEND:20261013T120000Z
-DTSTAMP:20261009T051955Z
+DTSTAMP:20261010T051705Z
 UID:2026-10-13-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Hausgemachte Kartoffelpuffer mit Wurzelgemüse Tomaten-Zucchiniragout
@@ -45,7 +32,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261014T110000Z
 DTEND:20261014T120000Z
-DTSTAMP:20261009T051955Z
+DTSTAMP:20261010T051705Z
 UID:2026-10-14-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Broccoli-Quiche mit getrockneten Tomaten, dazu Salat
@@ -57,7 +44,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261015T110000Z
 DTEND:20261015T120000Z
-DTSTAMP:20261009T051955Z
+DTSTAMP:20261010T051706Z
 UID:2026-10-15-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tortelloni Mediterrano mit Paprika- Gemüsesoße und gerösteten Sonnenblumenkernen
@@ -69,7 +56,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261016T110000Z
 DTEND:20261016T120000Z
-DTSTAMP:20261009T051955Z
+DTSTAMP:20261010T051706Z
 UID:2026-10-16-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Hackfleischfrikadelle mit Rahmgemüse und Bratkartoffeln
