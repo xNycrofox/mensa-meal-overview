@@ -8,7 +8,7 @@ X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
 DTSTART:20261012T110000Z
 DTEND:20261012T120000Z
-DTSTAMP:20261010T051705Z
+DTSTAMP:20261011T051745Z
 UID:2026-10-12-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Dürüm mit Avocadocreme, Salat, marinierter Tofu in Petersilienpesto
@@ -20,7 +20,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261013T110000Z
 DTEND:20261013T120000Z
-DTSTAMP:20261010T051705Z
+DTSTAMP:20261011T051745Z
 UID:2026-10-13-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Hausgemachte Kartoffelpuffer mit Wurzelgemüse Tomaten-Zucchiniragout
@@ -32,7 +32,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261014T110000Z
 DTEND:20261014T120000Z
-DTSTAMP:20261010T051705Z
+DTSTAMP:20261011T051745Z
 UID:2026-10-14-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Broccoli-Quiche mit getrockneten Tomaten, dazu Salat
@@ -44,7 +44,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261015T110000Z
 DTEND:20261015T120000Z
-DTSTAMP:20261010T051706Z
+DTSTAMP:20261011T051745Z
 UID:2026-10-15-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tortelloni Mediterrano mit Paprika- Gemüsesoße und gerösteten Sonnenblumenkernen
@@ -56,7 +56,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261016T110000Z
 DTEND:20261016T120000Z
-DTSTAMP:20261010T051706Z
+DTSTAMP:20261011T051745Z
 UID:2026-10-16-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Hackfleischfrikadelle mit Rahmgemüse und Bratkartoffeln
