@@ -6,34 +6,22 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20261022T110000Z
-DTEND:20261022T120000Z
-DTSTAMP:20261022T051717Z
-UID:2026-10-22-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Arabisches Linsencurry mit Fladenbrot
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Big Rib and Cheese-Burger mit Pommes frites
-  (Stud: 4.50€, Ma: 8.18€)\n\n• Französisches Kartoffelgratin mit Camembert und Hirtenkäse, dazu Ratatouillegemüse
-  (Stud: 3.57€, Ma: 6.49€ | 🧀 Veg.)\n\n• Kaiserschmarrn mit Apfelmus und Puderzucker
-  (Stud: 2.90€, Ma: 5.27€ | 🧀 Veg.)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20261023T110000Z
 DTEND:20261023T120000Z
-DTSTAMP:20261022T051717Z
+DTSTAMP:20261023T051629Z
 UID:2026-10-23-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Kartoffel-Gemüsecurry Indische Art mit Falafelbällchen
   (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Gebratene Gemüse-Mie Nudeln mit Röstzwiebeln und Ei, dazu Sweet- Chilisoße
   (Stud: 3.20€, Ma: 5.82€ | 🧀 Veg.)\n\n• Grillteller mit Kasslersteak, Grillwürstchen , Hähnchenbrust und Frikadelle, Grillbutter, Kartoffelkroketten und Salat
-  (Stud: 4.22€, Ma: 7.67€)
+  (Stud: 4.22€, Ma: 7.67€)\n\n• Frischkäse- Paprikacremesuppe
+  (Stud: 2.18€, Ma: 3.97€ | 🧀 Veg.)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261026T110000Z
 DTEND:20261026T120000Z
-DTSTAMP:20261022T051717Z
+DTSTAMP:20261023T051630Z
 UID:2026-10-26-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Frittierte Teigtaschen mit Curry-Gemüsefüllung, dazu Rote-Bete-Risotto und Salat
@@ -46,7 +34,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261027T110000Z
 DTEND:20261027T120000Z
-DTSTAMP:20261022T051717Z
+DTSTAMP:20261023T051630Z
 UID:2026-10-27-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tofuschnitzel mit Panko-Erdnusspanade, dazu Tomatenragout und Couscous
@@ -59,7 +47,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261028T110000Z
 DTEND:20261028T120000Z
-DTSTAMP:20261022T051717Z
+DTSTAMP:20261023T051630Z
 UID:2026-10-28-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Green Oat-Burger mit Tomate, Salat und Röstzwiebel, dazu Pommes frites
@@ -72,7 +60,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261029T110000Z
 DTEND:20261029T120000Z
-DTSTAMP:20261022T051717Z
+DTSTAMP:20261023T051630Z
 UID:2026-10-29-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Ratatouillegemüse mit Salbeipolenta und Salat
@@ -85,7 +73,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261030T110000Z
 DTEND:20261030T120000Z
-DTSTAMP:20261022T051717Z
+DTSTAMP:20261023T051630Z
 UID:2026-10-30-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Champignons und getrocknete Tomaten in Rahm mit Spirelli und geriebenem Käseersatz, vegan
