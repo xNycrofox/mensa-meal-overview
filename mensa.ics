@@ -8,7 +8,7 @@ X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
 DTSTART:20261026T110000Z
 DTEND:20261026T120000Z
-DTSTAMP:20261024T051534Z
+DTSTAMP:20261025T051537Z
 UID:2026-10-26-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Frittierte Teigtaschen mit Curry-Gemüsefüllung, dazu Rote-Bete-Risotto und Salat
@@ -21,7 +21,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261027T110000Z
 DTEND:20261027T120000Z
-DTSTAMP:20261024T051534Z
+DTSTAMP:20261025T051537Z
 UID:2026-10-27-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tofuschnitzel mit Panko-Erdnusspanade, dazu Tomatenragout und Couscous
@@ -34,7 +34,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261028T110000Z
 DTEND:20261028T120000Z
-DTSTAMP:20261024T051534Z
+DTSTAMP:20261025T051537Z
 UID:2026-10-28-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Green Oat-Burger mit Tomate, Salat und Röstzwiebel, dazu Pommes frites
@@ -47,7 +47,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261029T110000Z
 DTEND:20261029T120000Z
-DTSTAMP:20261024T051534Z
+DTSTAMP:20261025T051537Z
 UID:2026-10-29-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Ratatouillegemüse mit Salbeipolenta und Salat
@@ -60,7 +60,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261030T110000Z
 DTEND:20261030T120000Z
-DTSTAMP:20261024T051535Z
+DTSTAMP:20261025T051537Z
 UID:2026-10-30-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Champignons und getrocknete Tomaten in Rahm mit Spirelli und geriebenem Käseersatz, vegan
