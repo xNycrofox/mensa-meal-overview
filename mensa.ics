@@ -6,35 +6,23 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20261027T110000Z
-DTEND:20261027T120000Z
-DTSTAMP:20261027T051718Z
-UID:2026-10-27-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Tofuschnitzel mit Panko-Erdnusspanade, dazu Tomatenragout und Couscous
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Linseneintopf süß-sauer mit Knackwurstscheiben und Brötchen
-  (Stud: 3.23€, Ma: 5.88€)\n\n• Valess Schnitzel mit Goudafüllung, scharfe Tomatensalsa und Curry-Nudelsalat mit Paprika und Ananas
-  (Stud: 3.67€, Ma: 6.67€ | 🧀 Veg.)\n\n• Gyros in Metaxasoße mit Hirtenkäse überbacken
-  (Stud: 3.10€, Ma: 5.64€)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20261028T110000Z
 DTEND:20261028T120000Z
-DTSTAMP:20261027T051718Z
+DTSTAMP:20261028T051304Z
 UID:2026-10-28-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Green Oat-Burger mit Tomate, Salat und Röstzwiebel, dazu Pommes frites
   (Stud: 4.50€, Ma: 8.18€ | 🌱 Vegan)\n\n• Geflügelfrikassee mit Gemüsestreifen, dazu Reis
   (Stud: 2.35€, Ma: 4.90€)\n\n• Edamer Käseschnitzel mit Preiselbeersahne, Schwenkkartoffeln und Salat
   (Stud: 3.76€, Ma: 6.84€ | 🧀 Veg.)\n\n• Bruschetta mit Tomaten, Knoblauch und Basilikum
-  (Stud: 2.70€, Ma: 4.90€)
+  (Stud: 2.70€, Ma: 4.90€)\n\n• Kürbiscremesuppe
+  (Stud: 2.18€, Ma: 3.97€ | 🧀 Veg.)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261029T110000Z
 DTEND:20261029T120000Z
-DTSTAMP:20261027T051718Z
+DTSTAMP:20261028T051304Z
 UID:2026-10-29-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Ratatouillegemüse mit Salbeipolenta und Salat
@@ -47,7 +35,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261030T110000Z
 DTEND:20261030T120000Z
-DTSTAMP:20261027T051718Z
+DTSTAMP:20261028T051304Z
 UID:2026-10-30-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Champignons und getrocknete Tomaten in Rahm mit Spirelli und geriebenem Käseersatz, vegan
