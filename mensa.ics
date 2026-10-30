@@ -6,22 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20261029T110000Z
-DTEND:20261029T120000Z
-DTSTAMP:20261029T051304Z
-UID:2026-10-29-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Ratatouillegemüse mit Salbeipolenta und Salat
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Seelachs-Schlemmerfilet Bordelaise mit Kartoffelpüree und Gurken-Bohnensalat
-  (Stud: 3.99€, Ma: 7.25€)\n\n• Bauernomelette (Bratkartoffeln mit Ei), Gewürzgurke und Weißkrautsalat
-  (Stud: 3.23€, Ma: 5.88€ | 🧀 Veg.)\n\n• Maultaschen in Tomatensoße und Goudakäse gratiniert
-  (Stud: 2.90€, Ma: 5.27€ | 🧀 Veg.)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20261030T110000Z
 DTEND:20261030T120000Z
-DTSTAMP:20261029T051304Z
+DTSTAMP:20261030T051253Z
 UID:2026-10-30-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Champignons und getrocknete Tomaten in Rahm mit Spirelli und geriebenem Käseersatz, vegan
@@ -33,7 +20,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261102T110000Z
 DTEND:20261102T120000Z
-DTSTAMP:20261029T051305Z
+DTSTAMP:20261030T051253Z
 UID:2026-11-02-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Chili sin carne mit Kidneybohnen und Mais , dazu Couscous
@@ -46,7 +33,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261103T110000Z
 DTEND:20261103T120000Z
-DTSTAMP:20261029T051305Z
+DTSTAMP:20261030T051253Z
 UID:2026-11-03-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Veganer Kebab-Gyrosteller mit Eisbergsalat,Tomaten , Fladenbrot, Gurken-Knoblauch-Dip und Weißkrautsalat
@@ -59,7 +46,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261104T110000Z
 DTEND:20261104T120000Z
-DTSTAMP:20261029T051305Z
+DTSTAMP:20261030T051253Z
 UID:2026-11-04-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Szegediner Tofugulasch mit Bratkartoffeln
@@ -72,7 +59,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261105T110000Z
 DTEND:20261105T120000Z
-DTSTAMP:20261029T051305Z
+DTSTAMP:20261030T051253Z
 UID:2026-11-05-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tandoori-Blumenkohl mit Linsen-Mangocurry und Reis
@@ -85,7 +72,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261106T110000Z
 DTEND:20261106T120000Z
-DTSTAMP:20261029T051305Z
+DTSTAMP:20261030T051253Z
 UID:2026-11-06-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tibetische Pilzpfanne mit Glasnudeln, Ingwer und Basmati Reis
