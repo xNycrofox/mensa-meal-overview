@@ -413,6 +413,33 @@
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
+
+    /* Lade-Skeleton */
+    .skeleton {
+      background: linear-gradient(90deg, #F3F4F6 25%, #E5E7EB 50%, #F3F4F6 75%);
+      background-size: 200% 100%;
+      animation: skeleton-shimmer 1.5s ease-in-out infinite;
+    }
+
+    .dark .skeleton {
+      background-image: linear-gradient(90deg, #374151 25%, #4B5563 50%, #374151 75%);
+    }
+
+    @keyframes skeleton-shimmer {
+      0% {
+        background-position: 100% 0;
+      }
+
+      100% {
+        background-position: -100% 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .skeleton {
+        animation: none;
+      }
+    }
   </style>
   <script>
     let currentDate = new Date();
@@ -893,16 +920,65 @@
       return dayContainer;
     }
 
+    // Skeleton-Platzhalter, der während des Ladens angezeigt wird
+    function createLoadingSkeleton() {
+      const skeletonCard = (extraClasses = '') => `
+        <div class="meal-card overflow-hidden pointer-events-none ${extraClasses}">
+          <div class="skeleton w-full h-52"></div>
+          <div class="p-4">
+            <div class="flex justify-between items-start gap-4 mb-2">
+              <div class="flex-1 space-y-2">
+                <div class="skeleton h-5 w-3/4 rounded-md"></div>
+                <div class="skeleton h-5 w-1/2 rounded-md"></div>
+              </div>
+              <div class="skeleton h-7 w-16 rounded-lg"></div>
+            </div>
+            <div class="flex gap-1 mt-4">
+              <div class="skeleton w-7 h-7 rounded-full"></div>
+              <div class="skeleton w-7 h-7 rounded-full"></div>
+            </div>
+          </div>
+        </div>
+      `;
+
+      const loader = document.createElement("div");
+      loader.classList.add("mb-12");
+      loader.setAttribute("role", "status");
+      loader.innerHTML = `
+        <span class="sr-only">Gerichte werden geladen…</span>
+        <div aria-hidden="true">
+          <div class="skeleton h-8 w-36 rounded-lg mb-6"></div>
+          <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            ${skeletonCard()}
+            ${skeletonCard()}
+            ${skeletonCard('md:hidden lg:block')}
+          </div>
+        </div>
+      `;
+      return loader;
+    }
+
+    let renderWeekId = 0;
+
     // Rendern der gesamten Woche
     async function renderWeek() {
+      const renderId = ++renderWeekId;
       const weekContainer = document.getElementById("weekContainer");
       weekContainer.innerHTML = ""; // Vorherigen Inhalt löschen
+      const loader = createLoadingSkeleton();
+      weekContainer.appendChild(loader);
       const dates = getWeekDates();
-      for (const date of dates) {
-        const dayElement = await renderDay(date);
-        if (dayElement) {
-          weekContainer.appendChild(dayElement);
+      try {
+        for (const date of dates) {
+          const dayElement = await renderDay(date);
+          // Inzwischen wurde neu gerendert (z.B. Woche/Mensa gewechselt) -> Ergebnis verwerfen
+          if (renderId !== renderWeekId) return;
+          if (dayElement) {
+            weekContainer.insertBefore(dayElement, loader);
+          }
         }
+      } finally {
+        loader.remove();
       }
 
       // Aktualisiere den Datumsbereich im Header
