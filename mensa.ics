@@ -8,20 +8,21 @@ X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
 DTSTART:20261102T110000Z
 DTEND:20261102T120000Z
-DTSTAMP:20261101T051029Z
+DTSTAMP:20261102T051154Z
 UID:2026-11-02-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Chili sin carne mit Kidneybohnen und Mais , dazu Couscous
+DESCRIPTION:• Chili sin carne mit Kidneybohnen und Mais oder Soja-Currygeschnetzeltes , dazu Couscous
   (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• XL Schweinskammschnitzel mit Zitrone und Pommes frites
   (Stud: 4.22€, Ma: 7.67€)\n\n• Buntes Eierragout mit Petersilienkartoffeln
   (Stud: 2.90€, Ma: 5.27€ | 🧀 Veg.)\n\n• Hausgemachte Buchteln mit Puddingsoße Vanillegeschmack
-  (Stud: 2.70€, Ma: 4.90€ | 🧀 Veg.)
+  (Stud: 2.70€, Ma: 4.90€ | 🧀 Veg.)\n\n• Gulaschsuppe mit Kartoffelwürfel
+  (Stud: 2.18€, Ma: 2.06€)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261103T110000Z
 DTEND:20261103T120000Z
-DTSTAMP:20261101T051029Z
+DTSTAMP:20261102T051154Z
 UID:2026-11-03-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Veganer Kebab-Gyrosteller mit Eisbergsalat,Tomaten , Fladenbrot, Gurken-Knoblauch-Dip und Weißkrautsalat
@@ -34,7 +35,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261104T110000Z
 DTEND:20261104T120000Z
-DTSTAMP:20261101T051029Z
+DTSTAMP:20261102T051154Z
 UID:2026-11-04-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Szegediner Tofugulasch mit Bratkartoffeln
@@ -47,7 +48,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261105T110000Z
 DTEND:20261105T120000Z
-DTSTAMP:20261101T051029Z
+DTSTAMP:20261102T051155Z
 UID:2026-11-05-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tandoori-Blumenkohl mit Linsen-Mangocurry und Reis
@@ -60,7 +61,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261106T110000Z
 DTEND:20261106T120000Z
-DTSTAMP:20261101T051029Z
+DTSTAMP:20261102T051155Z
 UID:2026-11-06-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tibetische Pilzpfanne mit Glasnudeln, Ingwer und Basmati Reis
