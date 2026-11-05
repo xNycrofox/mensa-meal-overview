@@ -6,23 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20261104T110000Z
-DTEND:20261104T120000Z
-DTSTAMP:20261104T051123Z
-UID:2026-11-04-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Szegediner Tofugulasch mit Bratkartoffeln
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Pulled Pork Burger BBQ mit Cole slaw, Zwiebel und Gewürzgurke im Sesambrötchen, dazu Pommes frites
-  (Stud: 4.20€, Ma: 7.64€)\n\n• Hausgemachte Spinatknödel mit Sahnepilzen, geriebenem Gouda und Salat
-  (Stud: 3.64€, Ma: 6.61€ | 🧀 Veg.)\n\n• Blumenkohl-Broccoliauflauf mit Goudakäse gratiniert
-  (Stud: 2.70€, Ma: 4.90€ | 🧀 Veg.)\n\n• Süßkartoffel- Kürbiscremesuppe
-  (Stud: 2.18€, Ma: 2.06€ | 🧀 Veg.)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20261105T110000Z
 DTEND:20261105T120000Z
-DTSTAMP:20261104T051123Z
+DTSTAMP:20261105T051145Z
 UID:2026-11-05-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tandoori-Blumenkohl mit Linsen-Mangocurry und Reis
@@ -35,7 +21,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261106T110000Z
 DTEND:20261106T120000Z
-DTSTAMP:20261104T051123Z
+DTSTAMP:20261105T051145Z
 UID:2026-11-06-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Tibetische Pilzpfanne mit Glasnudeln, Ingwer und Basmati Reis
@@ -47,7 +33,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261109T110000Z
 DTEND:20261109T120000Z
-DTSTAMP:20261104T051123Z
+DTSTAMP:20261105T051145Z
 UID:2026-11-09-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Gnocchipfanne mit Broccoli, Zucchini, Tomaten und Karotten, dazu Basilikumsoße
@@ -60,7 +46,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261110T110000Z
 DTEND:20261110T120000Z
-DTSTAMP:20261104T051123Z
+DTSTAMP:20261105T051145Z
 UID:2026-11-10-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Krautnudeln mit Brew Bites Hack und Reibeschmelz
@@ -73,7 +59,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261111T110000Z
 DTEND:20261111T120000Z
-DTSTAMP:20261104T051124Z
+DTSTAMP:20261105T051145Z
 UID:2026-11-11-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Taxi-Teller-veganes Kebab, Planted Currywurst , Currysoße , Pommes frites , Gurken-Knoblauch-Dip und Weißkrautsalat
@@ -86,7 +72,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261112T110000Z
 DTEND:20261112T120000Z
-DTSTAMP:20261104T051124Z
+DTSTAMP:20261105T051146Z
 UID:2026-11-12-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Süßkartoffel-Kokoscurry mit gerösteten Sonnenblumenkernen und Basmatireis
@@ -99,7 +85,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261113T110000Z
 DTEND:20261113T120000Z
-DTSTAMP:20261104T051124Z
+DTSTAMP:20261105T051146Z
 UID:2026-11-13-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Burritos-Mexikanische Tortilla gefüllt mit Chili sin carne, dazu Salat
