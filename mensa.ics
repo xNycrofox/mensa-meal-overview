@@ -8,7 +8,7 @@ X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
 DTSTART:20261109T110000Z
 DTEND:20261109T120000Z
-DTSTAMP:20261108T051015Z
+DTSTAMP:20261109T051156Z
 UID:2026-11-09-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Gnocchipfanne mit Broccoli, Zucchini, Tomaten und Karotten, dazu Basilikumsoße
@@ -21,7 +21,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261110T110000Z
 DTEND:20261110T120000Z
-DTSTAMP:20261108T051015Z
+DTSTAMP:20261109T051156Z
 UID:2026-11-10-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Krautnudeln mit Brew Bites Hack und Reibeschmelz
@@ -34,7 +34,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261111T110000Z
 DTEND:20261111T120000Z
-DTSTAMP:20261108T051015Z
+DTSTAMP:20261109T051156Z
 UID:2026-11-11-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Taxi-Teller-veganes Kebab, Planted Currywurst , Currysoße , Pommes frites , Gurken-Knoblauch-Dip und Weißkrautsalat
@@ -47,7 +47,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261112T110000Z
 DTEND:20261112T120000Z
-DTSTAMP:20261108T051015Z
+DTSTAMP:20261109T051156Z
 UID:2026-11-12-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Süßkartoffel-Kokoscurry mit gerösteten Sonnenblumenkernen und Basmatireis
@@ -60,7 +60,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261113T110000Z
 DTEND:20261113T120000Z
-DTSTAMP:20261108T051015Z
+DTSTAMP:20261109T051156Z
 UID:2026-11-13-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Burritos-Mexikanische Tortilla gefüllt mit Chili sin carne, dazu Salat
