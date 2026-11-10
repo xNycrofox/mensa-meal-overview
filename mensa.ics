@@ -6,35 +6,23 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20261109T110000Z
-DTEND:20261109T120000Z
-DTSTAMP:20261109T051156Z
-UID:2026-11-09-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Gnocchipfanne mit Broccoli, Zucchini, Tomaten und Karotten, dazu Basilikumsoße
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Bratwurst mit Bratensoße, Sauerkraut und Kartoffelpüree
-  (Stud: 3.50€, Ma: 6.36€)\n\n• Chicken Crossies mit Sweet Chilidip, Pommes frites und Salat
-  (Stud: 4.22€, Ma: 7.67€)\n\n• Tortelloni mit Spinat-Ricottafüllung in Tomatensoße mit Goudakäse gratiniert
-  (Stud: 2.90€, Ma: 5.27€ | 🧀 Veg.)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20261110T110000Z
 DTEND:20261110T120000Z
-DTSTAMP:20261109T051156Z
+DTSTAMP:20261110T051131Z
 UID:2026-11-10-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Krautnudeln mit Brew Bites Hack und Reibeschmelz
   (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Sahne-Zwiebelhähnchen mit Buttererbsen und Tomatenreis
   (Stud: 3.54€, Ma: 6.44€)\n\n• Gelbe Erbseneintopf mit Rauchwurstscheiben und Brötchen
   (Stud: 2.77€, Ma: 5.04€)\n\n• Vier Hefeklöße mit Heidelbeeren
-  (Stud: 2.70€, Ma: 4.90€ | 🧀 Veg.)
+  (Stud: 2.70€, Ma: 4.90€ | 🧀 Veg.)\n\n• Indische Blumenkohlsuppe
+  (Stud: 2.18€, Ma: 2.06€)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261111T110000Z
 DTEND:20261111T120000Z
-DTSTAMP:20261109T051156Z
+DTSTAMP:20261110T051131Z
 UID:2026-11-11-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Taxi-Teller-veganes Kebab, Planted Currywurst , Currysoße , Pommes frites , Gurken-Knoblauch-Dip und Weißkrautsalat
@@ -47,7 +35,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261112T110000Z
 DTEND:20261112T120000Z
-DTSTAMP:20261109T051156Z
+DTSTAMP:20261110T051131Z
 UID:2026-11-12-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Süßkartoffel-Kokoscurry mit gerösteten Sonnenblumenkernen und Basmatireis
@@ -60,13 +48,61 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261113T110000Z
 DTEND:20261113T120000Z
-DTSTAMP:20261109T051156Z
+DTSTAMP:20261110T051131Z
 UID:2026-11-13-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Burritos-Mexikanische Tortilla gefüllt mit Chili sin carne, dazu Salat
   (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Gebratenes Seelachsfilet mit Senfsoße, Karottengemüse und Kartoffeln
   (Stud: 3.87€, Ma: 7.04€)\n\n• Radeberger Schweinsroulade mit Camembertfüllung in Biersoße, Bohnengemüse und Kartoffelklößen
   (Stud: 4.22€, Ma: 7.67€)
+LOCATION:Mensa Johanna, Dresden
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20261116T110000Z
+DTEND:20261116T120000Z
+DTSTAMP:20261110T051132Z
+UID:2026-11-16-mensa-johanna@mensa-meal-overview
+SUMMARY:🍽️ Mensa Johanna
+DESCRIPTION:• Gemüsekroketten aus Blumenkohl, Lauch, Sellerie und Erbsen mit Rahmspinat und Kartoffeln
+  (Stud: 3.21€, Ma: 5.84€ | 🌱 Vegan)\n\n• Spaghetti Bolognese, dazu geriebener Goudakäse
+  (Stud: 2.35€, Ma: 4.90€)\n\n• Soljanka mit saurer Sahne, dazu Brötchen
+  (Stud: 3.00€, Ma: 5.45€)
+LOCATION:Mensa Johanna, Dresden
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20261117T110000Z
+DTEND:20261117T120000Z
+DTSTAMP:20261110T051132Z
+UID:2026-11-17-mensa-johanna@mensa-meal-overview
+SUMMARY:🍽️ Mensa Johanna
+DESCRIPTION:• Zucchini-Möhrenpakoras mit Kräuter-Dip und Kartoffel- Karottenstampf
+  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Feuerfleisch vom Schwein mit Pommes frites und Weißkraut-Möhrensalat
+  (Stud: 3.55€, Ma: 6.45€)\n\n• Rahmspinat mit Rührei und Kartoffeln
+  (Stud: 2.90€, Ma: 5.27€ | 🧀 Veg.)
+LOCATION:Mensa Johanna, Dresden
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20261119T110000Z
+DTEND:20261119T120000Z
+DTSTAMP:20261110T051132Z
+UID:2026-11-19-mensa-johanna@mensa-meal-overview
+SUMMARY:🍽️ Mensa Johanna
+DESCRIPTION:• Ungarischer Seitangulasch mit Bratkartoffeln und Rotkohlsalat
+  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Gebratene Gemüse-Mie Nudeln mit Hähnchen, Ei und Röstzwiebeln
+  (Stud: 3.99€, Ma: 7.25€)\n\n• Seelachsfilet in Ei-Zwiebelhülle mit Dijon-Senfsoße, Buttermöhren und Petersilienkartoffeln
+  (Stud: 3.99€, Ma: 7.25€)
+LOCATION:Mensa Johanna, Dresden
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20261120T110000Z
+DTEND:20261120T120000Z
+DTSTAMP:20261110T051132Z
+UID:2026-11-20-mensa-johanna@mensa-meal-overview
+SUMMARY:🍽️ Mensa Johanna
+DESCRIPTION:• Ofengemüse mit Aioli-Sojadip, dazu Schwenkkartoffeln
+  (Stud: 3.76€, Ma: 6.84€ | 🌱 Vegan)\n\n• Gyros in Metaxasoße mit Hirtenkäse gratiniert, dazu Tomatenreis und Salat
+  (Stud: 3.99€, Ma: 7.25€)\n\n• Herzhafter gefüllter Kräutereierkuchen mit Blattspinat und Hirtenkäse, dazu Salat
+  (Stud: 2.35€, Ma: 4.90€ | 🧀 Veg.)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 END:VCALENDAR
