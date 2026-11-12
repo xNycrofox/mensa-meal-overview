@@ -6,36 +6,23 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20261111T110000Z
-DTEND:20261111T120000Z
-DTSTAMP:20261111T051102Z
-UID:2026-11-11-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Taxi-Teller-veganes Kebab, Planted Currywurst , Currysoße , Pommes frites , Gurken-Knoblauch-Dip und Weißkrautsalat
-  (Stud: 4.22€, Ma: 7.67€ | 🌱 Vegan)\n\n• Kräuterquark mit Butter, Gewürzgurke, Leberwurst und Kartoffeln vegetarisch ohne Leberwurst
-  (Stud: 2.35€, Ma: 4.90€)\n\n• Schweinesteak Strindberg mit buntem Gemüse und Bratkartoffeln
-  (Stud: 3.99€, Ma: 7.25€)\n\n• Pizza Piccante mit scharfer Salami und Paprika
-  (Stud: 3.23€, Ma: 5.88€)\n\n• Asiatische Pilzsuppe mit Gemüse und Glasnudeln
-  (Stud: 2.18€, Ma: 2.06€ | 🌱 Vegan)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20261112T110000Z
 DTEND:20261112T120000Z
-DTSTAMP:20261111T051102Z
+DTSTAMP:20261112T051124Z
 UID:2026-11-12-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Süßkartoffel-Kokoscurry mit gerösteten Sonnenblumenkernen und Basmatireis
   (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Hacksteak vom Schwein mit Zwiebelsoße , Erbsen und Kartoffeln
-  (Stud: 3.42€, Ma: 6.22€)\n\n• Gebackener Camembert mit Waldbeersahne, Schwenkkartoffeln und Salat
+  (Stud: 3.42€, Ma: 6.22€)\n\n• Panierter Hirtenkäse mit Waldbeersahne, Schwenkkartoffeln und Salat
   (Stud: 3.99€, Ma: 7.25€ | 🧀 Veg.)\n\n• Focaccia mit Tomaten, Mozzarella und Basilikumcreme
-  (Stud: 2.90€, Ma: 5.27€ | 🧀 Veg.)
+  (Stud: 2.90€, Ma: 5.27€ | 🧀 Veg.)\n\n• Kürbis- Kokoscremesuppe
+  (Stud: 2.18€, Ma: 2.06€ | 🌱 Vegan)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261113T110000Z
 DTEND:20261113T120000Z
-DTSTAMP:20261111T051102Z
+DTSTAMP:20261112T051124Z
 UID:2026-11-13-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Burritos-Mexikanische Tortilla gefüllt mit Chili sin carne, dazu Salat
@@ -47,7 +34,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261116T110000Z
 DTEND:20261116T120000Z
-DTSTAMP:20261111T051102Z
+DTSTAMP:20261112T051124Z
 UID:2026-11-16-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Gemüsekroketten aus Blumenkohl, Lauch, Sellerie und Erbsen mit Rahmspinat und Kartoffeln
@@ -59,7 +46,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261117T110000Z
 DTEND:20261117T120000Z
-DTSTAMP:20261111T051102Z
+DTSTAMP:20261112T051125Z
 UID:2026-11-17-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Zucchini-Möhrenpakoras mit Kräuter-Dip und Kartoffel- Karottenstampf
@@ -71,7 +58,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261119T110000Z
 DTEND:20261119T120000Z
-DTSTAMP:20261111T051103Z
+DTSTAMP:20261112T051125Z
 UID:2026-11-19-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Ungarischer Seitangulasch mit Bratkartoffeln und Rotkohlsalat
@@ -83,7 +70,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261120T110000Z
 DTEND:20261120T120000Z
-DTSTAMP:20261111T051103Z
+DTSTAMP:20261112T051125Z
 UID:2026-11-20-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Ofengemüse mit Aioli-Sojadip, dazu Schwenkkartoffeln
