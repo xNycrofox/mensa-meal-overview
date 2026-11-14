@@ -6,22 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20261113T110000Z
-DTEND:20261113T120000Z
-DTSTAMP:20261113T051105Z
-UID:2026-11-13-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Burritos-Mexikanische Tortilla gefüllt mit Chili sin carne, dazu Salat
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Gebratenes Seelachsfilet mit Senfsoße, Karottengemüse und Kartoffeln
-  (Stud: 3.87€, Ma: 7.04€)\n\n• Radeberger Schweinsroulade mit Camembertfüllung in Biersoße, Bohnengemüse und Kartoffelklößen
-  (Stud: 4.22€, Ma: 7.67€)\n\n• Rote Linsensuppe
-  (Stud: 2.18€, Ma: 2.06€ | 🌱 Vegan)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20261116T110000Z
 DTEND:20261116T120000Z
-DTSTAMP:20261113T051106Z
+DTSTAMP:20261114T051015Z
 UID:2026-11-16-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Gemüsekroketten aus Blumenkohl, Lauch, Sellerie und Erbsen mit Rahmspinat und Kartoffeln
@@ -33,19 +20,20 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261117T110000Z
 DTEND:20261117T120000Z
-DTSTAMP:20261113T051106Z
+DTSTAMP:20261114T051015Z
 UID:2026-11-17-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Zucchini-Möhrenpakoras mit Kräuter-Dip und Kartoffel- Karottenstampf
   (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Feuerfleisch vom Schwein mit Pommes frites und Weißkraut-Möhrensalat
   (Stud: 3.55€, Ma: 6.45€)\n\n• Rahmspinat mit Rührei und Kartoffeln
-  (Stud: 2.90€, Ma: 5.27€ | 🧀 Veg.)
+  (Stud: 2.90€, Ma: 5.27€ | 🧀 Veg.)\n\n• Miso-Suppe mit Algen und Tofu
+  (Stud: 2.18€, Ma: 2.06€ | 🌱 Vegan)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261119T110000Z
 DTEND:20261119T120000Z
-DTSTAMP:20261113T051106Z
+DTSTAMP:20261114T051015Z
 UID:2026-11-19-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Ungarischer Seitangulasch mit Bratkartoffeln und Rotkohlsalat
@@ -57,7 +45,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261120T110000Z
 DTEND:20261120T120000Z
-DTSTAMP:20261113T051106Z
+DTSTAMP:20261114T051015Z
 UID:2026-11-20-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Ofengemüse mit Aioli-Sojadip, dazu Schwenkkartoffeln
