@@ -6,34 +6,22 @@ METHOD:PUBLISH
 X-WR-CALNAME:Mensa Johanna Speiseplan
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTART:20261117T110000Z
-DTEND:20261117T120000Z
-DTSTAMP:20261117T051103Z
-UID:2026-11-17-mensa-johanna@mensa-meal-overview
-SUMMARY:🍽️ Mensa Johanna
-DESCRIPTION:• Zucchini-Möhrenpakoras mit Kräuter-Dip und Kartoffel- Karottenstampf
-  (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Feuerfleisch vom Schwein mit Pommes frites und Weißkraut-Möhrensalat
-  (Stud: 3.55€, Ma: 6.45€)\n\n• Rahmspinat mit Rührei und Kartoffeln
-  (Stud: 2.90€, Ma: 5.27€ | 🧀 Veg.)\n\n• Miso-Suppe mit Algen und Tofu
-  (Stud: 2.18€, Ma: 2.06€ | 🌱 Vegan)
-LOCATION:Mensa Johanna, Dresden
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20261119T110000Z
 DTEND:20261119T120000Z
-DTSTAMP:20261117T051104Z
+DTSTAMP:20261118T051124Z
 UID:2026-11-19-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Ungarischer Seitangulasch mit Bratkartoffeln und Rotkohlsalat
   (Stud: 2.35€, Ma: 4.90€ | 🌱 Vegan)\n\n• Gebratene Gemüse-Mie Nudeln mit Hähnchen, Ei und Röstzwiebeln
   (Stud: 3.99€, Ma: 7.25€)\n\n• Seelachsfilet in Ei-Zwiebelhülle mit Dijon-Senfsoße, Buttermöhren und Petersilienkartoffeln
-  (Stud: 3.99€, Ma: 7.25€)
+  (Stud: 3.99€, Ma: 7.25€)\n\n• Fischtopf mit Gemüse und Kartoffeln
+  (Stud: 2.18€, Ma: 2.06€)
 LOCATION:Mensa Johanna, Dresden
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261120T110000Z
 DTEND:20261120T120000Z
-DTSTAMP:20261117T051104Z
+DTSTAMP:20261118T051124Z
 UID:2026-11-20-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Ofengemüse mit Aioli-Sojadip, dazu Schwenkkartoffeln
@@ -45,7 +33,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261123T110000Z
 DTEND:20261123T120000Z
-DTSTAMP:20261117T051104Z
+DTSTAMP:20261118T051124Z
 UID:2026-11-23-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Spaghetti mit Tomatenpesto, dazu Cashewkern-Topping oder vegetarische Alternative mit Goudakäse
@@ -58,7 +46,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261124T110000Z
 DTEND:20261124T120000Z
-DTSTAMP:20261117T051104Z
+DTSTAMP:20261118T051124Z
 UID:2026-11-24-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Reistaler mit rotem Linsencurry , dazu Salat
@@ -71,7 +59,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261125T110000Z
 DTEND:20261125T120000Z
-DTSTAMP:20261117T051104Z
+DTSTAMP:20261118T051124Z
 UID:2026-11-25-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Crispy Chicken Burger mit Ajvar- Hafer-Dip, Salat, Tomate, Gewürzgurke und Röstzwiebeln, dazu Pommes frites
@@ -84,7 +72,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261126T110000Z
 DTEND:20261126T120000Z
-DTSTAMP:20261117T051105Z
+DTSTAMP:20261118T051125Z
 UID:2026-11-26-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Blumenkohl-Knuspermedaillon mit Kräutersoße, Petersilienkartoffeln und Salat
@@ -97,7 +85,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20261127T110000Z
 DTEND:20261127T120000Z
-DTSTAMP:20261117T051105Z
+DTSTAMP:20261118T051125Z
 UID:2026-11-27-mensa-johanna@mensa-meal-overview
 SUMMARY:🍽️ Mensa Johanna
 DESCRIPTION:• Mediterrane Kartoffelpfanne Gyros Art mit Kirschtomaten, Rucola und Paprika oder vegetarische Alternative mit Hirtenkäse, dazu Salat
